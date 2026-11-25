@@ -1,0 +1,11 @@
+:root { --bg:#15130f; --bg2:#1f1b15; --text:#f4efe6; --muted:#b9b0a1; --gelb:#f5b82e; color-scheme: dark; }
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--text); font: 17px/1.6 "Barlow Semi Condensed", system-ui, sans-serif; padding: 40px 16px 80px; }
+main { max-width: 760px; margin: 0 auto; }
+a { color: var(--gelb); }
+h1, h2 { font-family: "Barlow Condensed", sans-serif; font-style: italic; font-weight: 900; text-transform: uppercase; line-height: 1.05; }
+h1 { font-size: clamp(40px, 8vw, 60px); margin: 12px 0 4px; }
+h2 { font-size: 26px; margin: 36px 0 8px; color: var(--gelb); }
+.klein { color: var(--muted); font-size: 15px; }
+ul { padding-left: 20px; }
+li { margin: 4px 0; }
