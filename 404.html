@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MX Royale</title>
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#15130f">
+<link rel="icon" href="/img/icon.png">
+<link href="/fonts/fonts.css" rel="stylesheet">
+<link href="/recht.css" rel="stylesheet">
+<script>
+  // Feste Links (Mails, OAuth): mxroyale.com/go/<pfad>?<query> → aktuelle Spiel-Adresse aus /spiel.json + <pfad>?<query>
+  (function () {
+    var p = location.pathname;
+    if (!/^\/go(\/|$)/.test(p)) return;
+    document.documentElement.className = 'weiter';
+    var rest = p.replace(/^\/go\/?/, '') + location.search + location.hash;
+    var fallback = 'https://multimedia-recovered-tanks-compliance.trycloudflare.com/';
+    function los(u) { location.replace(u.replace(/\/?$/, '/') + rest); }
+    fetch('/spiel.json', { cache: 'no-store' }).then(function (r) { return r.json(); })
+      .then(function (j) { los(j && /^https:\/\//.test(j.spiel) ? j.spiel : fallback); })
+      .catch(function () { los(fallback); });
+  })();
+</script>
+<style>.weiter .nf { display: none; } .ok { display: none; } .weiter .ok { display: block; }</style>
+</head>
+<body>
+<main>
+  <div class="nf">
+    <h1>404</h1>
+    <p>This page doesn't exist. <a href="/">Back to MX Royale</a></p>
+  </div>
+  <p class="ok klein">Loading MX Royale…</p>
+</main>
+</body>
+</html>
