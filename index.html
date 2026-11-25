@@ -103,11 +103,13 @@
   </div>
 </footer>
 <script>
-  // Adresse des Spiels (Release-Server). Nur hier ändern.
+  // Adresse des Spiels (Release-Server). spiel.json pflegt der Link-Wächter auf dem Server, falls sich der Tunnel ändert.
   var SPIEL = 'https://multimedia-recovered-tanks-compliance.trycloudflare.com/';
-  document.querySelectorAll('a.spiel').forEach(function (a) { a.href = SPIEL + location.search; });
-  // ?los oder ?play → sofort ins Spiel (für Links aus Videos/Bios, die direkt starten sollen)
-  if (/[?&](los|play)\b/.test(location.search)) location.replace(SPIEL);
+  var sofort = /[?&](los|play)/.test(location.search);
+  function setze(u) { SPIEL = u; document.querySelectorAll('a.spiel').forEach(function (a) { a.href = SPIEL + location.search; }); }
+  setze(SPIEL);
+  fetch('/spiel.json', { cache: 'no-store' }).then(function (r) { return r.json(); }).then(function (j) { if (j && /^https:\/\//.test(j.spiel)) setze(j.spiel); })
+    .catch(function () {}).then(function () { if (sofort) location.replace(SPIEL); });
 </script>
 </body>
 </html>
