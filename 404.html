@@ -10,12 +10,14 @@
 <link href="/fonts/fonts.css" rel="stylesheet">
 <link href="/recht.css" rel="stylesheet">
 <script>
-  // Feste Links (Mails, OAuth): mxroyale.com/go/<pfad>?<query> → aktuelle Spiel-Adresse aus /spiel.json + <pfad>?<query>
+  // Feste Links (Mails, OAuth): mxroyale.com/go/api/<pfad>?<query> → aktuelle Spiel-Adresse aus /spiel.json + api/<pfad>?<query> (Server muss es direkt sehen)
   (function () {
     var p = location.pathname;
     if (!/^\/go(\/|$)/.test(p)) return;
     document.documentElement.className = 'weiter';
-    var rest = p.replace(/^\/go\/?/, '') + location.search + location.hash;
+    var pfad = p.replace(/^\/go\/?/, ''), rest = pfad + location.search + location.hash;
+    // Spiel-Links ohne Server-Pfad (z. B. /go/?konto-reset=…) → eingebettet unter /play, die Adresse bleibt mxroyale.com
+    if (!/^api\//.test(pfad)) { location.replace('/play/' + location.search + location.hash); return; }
     var fallback = 'https://multimedia-recovered-tanks-compliance.trycloudflare.com/';
     function los(u) { location.replace(u.replace(/\/?$/, '/') + rest); }
     fetch('/spiel.json', { cache: 'no-store' }).then(function (r) { return r.json(); })

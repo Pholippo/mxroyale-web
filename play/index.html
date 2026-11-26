@@ -23,7 +23,7 @@
     var f = document.createElement('iframe');
     f.src = j.spiel + location.search + location.hash;
     f.title = 'MX Royale';
-    f.allow = 'fullscreen; gamepad; autoplay; clipboard-read; clipboard-write; screen-wake-lock; web-share; publickey-credentials-get';
+    f.allow = 'fullscreen; gamepad; autoplay; clipboard-read; clipboard-write; screen-wake-lock; web-share; publickey-credentials-get; publickey-credentials-create';
     f.allowFullscreen = true;
     f.onload = function () { var w = document.getElementById('warte'); if (w) w.remove(); f.focus(); };
     document.body.appendChild(f);
