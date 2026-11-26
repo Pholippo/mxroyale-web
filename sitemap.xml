@@ -1,11 +1,115 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://mxroyale.com/</loc></url>
-  <url><loc>https://mxroyale.com/de/</loc></url>
-  <url><loc>https://mxroyale.com/press/</loc></url>
-  <url><loc>https://mxroyale.com/presse/</loc></url>
-  <url><loc>https://mxroyale.com/legal/</loc></url>
-  <url><loc>https://mxroyale.com/privacy/</loc></url>
-  <url><loc>https://mxroyale.com/impressum/</loc></url>
-  <url><loc>https://mxroyale.com/datenschutz/</loc></url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://mxroyale.com/</loc>
+    <lastmod>2026-11-26</lastmod>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mxroyale.com/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://mxroyale.com/de/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mxroyale.com/"/>
+  </url>
+  <url>
+    <loc>https://mxroyale.com/de/</loc>
+    <lastmod>2026-11-26</lastmod>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mxroyale.com/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://mxroyale.com/de/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mxroyale.com/"/>
+  </url>
+  <url>
+    <loc>https://mxroyale.com/tracks/</loc>
+    <lastmod>2026-11-26</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mxroyale.com/tracks/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://mxroyale.com/de/strecken/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mxroyale.com/tracks/"/>
+  </url>
+  <url>
+    <loc>https://mxroyale.com/de/strecken/</loc>
+    <lastmod>2026-11-26</lastmod>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mxroyale.com/tracks/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://mxroyale.com/de/strecken/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mxroyale.com/tracks/"/>
+  </url>
+  <url>
+    <loc>https://mxroyale.com/how-to-play/</loc>
+    <lastmod>2026-11-26</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mxroyale.com/how-to-play/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://mxroyale.com/de/anleitung/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mxroyale.com/how-to-play/"/>
+  </url>
+  <url>
+    <loc>https://mxroyale.com/de/anleitung/</loc>
+    <lastmod>2026-11-26</lastmod>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mxroyale.com/how-to-play/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://mxroyale.com/de/anleitung/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mxroyale.com/how-to-play/"/>
+  </url>
+  <url>
+    <loc>https://mxroyale.com/about/</loc>
+    <lastmod>2026-11-26</lastmod>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mxroyale.com/about/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://mxroyale.com/de/ueber/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mxroyale.com/about/"/>
+  </url>
+  <url>
+    <loc>https://mxroyale.com/de/ueber/</loc>
+    <lastmod>2026-11-26</lastmod>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mxroyale.com/about/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://mxroyale.com/de/ueber/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mxroyale.com/about/"/>
+  </url>
+  <url>
+    <loc>https://mxroyale.com/press/</loc>
+    <lastmod>2026-11-26</lastmod>
+    <priority>0.4</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mxroyale.com/press/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://mxroyale.com/presse/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mxroyale.com/press/"/>
+  </url>
+  <url>
+    <loc>https://mxroyale.com/presse/</loc>
+    <lastmod>2026-11-26</lastmod>
+    <priority>0.3</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mxroyale.com/press/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://mxroyale.com/presse/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mxroyale.com/press/"/>
+  </url>
+  <url>
+    <loc>https://mxroyale.com/legal/</loc>
+    <lastmod>2026-11-26</lastmod>
+    <priority>0.1</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mxroyale.com/legal/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://mxroyale.com/impressum/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mxroyale.com/legal/"/>
+  </url>
+  <url>
+    <loc>https://mxroyale.com/impressum/</loc>
+    <lastmod>2026-11-26</lastmod>
+    <priority>0.1</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mxroyale.com/legal/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://mxroyale.com/impressum/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mxroyale.com/legal/"/>
+  </url>
+  <url>
+    <loc>https://mxroyale.com/privacy/</loc>
+    <lastmod>2026-11-26</lastmod>
+    <priority>0.1</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mxroyale.com/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://mxroyale.com/datenschutz/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mxroyale.com/privacy/"/>
+  </url>
+  <url>
+    <loc>https://mxroyale.com/datenschutz/</loc>
+    <lastmod>2026-11-26</lastmod>
+    <priority>0.1</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mxroyale.com/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://mxroyale.com/datenschutz/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mxroyale.com/privacy/"/>
+  </url>
 </urlset>

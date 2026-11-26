@@ -1,117 +1,369 @@
 <!doctype html>
+<!-- Erzeugt von _werkzeug/build.py – Änderungen dort machen, dann neu bauen. -->
 <html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>MX Royale – Free Motocross Game in Your Browser</title>
-<meta name="description" content="MX Royale is a motocross game that runs right in your browser: free, no download, works on phones. 10+ tracks, whips, flips, ghost laps and online races with friends.">
+<title>MX Royale – Free Motocross Game Online, No Download</title>
+<meta name="description" content="Free motocross game in your browser: no download, on phone, PC or controller. 15 tracks, supercross, whips and online races with friends.">
+<link rel="canonical" href="https://mxroyale.com/">
+<link rel="alternate" hreflang="en" href="https://mxroyale.com/">
+<link rel="alternate" hreflang="de" href="https://mxroyale.com/de/">
+<link rel="alternate" hreflang="x-default" href="https://mxroyale.com/">
 <meta name="theme-color" content="#15130f">
-<link rel="icon" href="img/icon.png">
-<link rel="apple-touch-icon" href="img/icon.png">
+<link rel="icon" href="/img/icon.png">
+<link rel="apple-touch-icon" href="/img/icon.png">
+<link rel="preload" as="image" href="/img/hero-1600.webp" imagesrcset="/img/hero-800.webp 800w, /img/hero-1600.webp 1600w" imagesizes="100vw" fetchpriority="high">
+<link rel="preload" as="font" type="font/woff2" href="/fonts/HTxyL3I-JCGChYJ8VI-L6OO_au7B6xTrW3bmu4kG.woff2" crossorigin>
+<link rel="preload" as="font" type="font/woff2" href="/fonts/wlpigxjLBV1hqnzfr-F8sEYMB0Yybp0mudRfi6m_B2sl.woff2" crossorigin>
+<link rel="preload" as="font" type="font/woff2" href="/fonts/wlpigxjLBV1hqnzfr-F8sEYMB0Yybp0mudRfw6-_B2sl.woff2" crossorigin>
+<link href="/fonts/fonts.css" rel="stylesheet">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="MX Royale">
+<meta property="og:locale" content="en_US">
+<meta property="og:locale:alternate" content="de_DE">
 <meta property="og:title" content="MX Royale – Motocross in your browser">
-<meta property="og:description" content="Free, no download, works on your phone. Whips, flips and online races.">
+<meta property="og:description" content="Free motocross game in your browser: no download, on phone, PC or controller. 15 tracks, supercross, whips and online races with friends.">
 <meta property="og:url" content="https://mxroyale.com/">
 <meta property="og:image" content="https://mxroyale.com/img/og.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="MX Royale – motocross game in the browser">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="MX Royale – Motocross in your browser">
-<meta name="twitter:description" content="Free, no download, works on your phone.">
+<meta name="twitter:description" content="Free motocross game in your browser: no download, on phone, PC or controller. 15 tracks, supercross, whips and online races with friends.">
 <meta name="twitter:image" content="https://mxroyale.com/img/og.jpg">
-<link rel="alternate" hreflang="en" href="https://mxroyale.com/">
-<link rel="alternate" hreflang="de" href="https://mxroyale.com/de/">
-<link rel="alternate" hreflang="x-default" href="https://mxroyale.com/">
-<link href="fonts/fonts.css" rel="stylesheet">
-<style>
-  :root { --bg:#15130f; --bg2:#1f1b15; --text:#f4efe6; --muted:#b9b0a1; --gelb:#f5b82e; color-scheme: dark; }
-  * { box-sizing: border-box; }
-  body { margin: 0; background: var(--bg); color: var(--text); font: 17px/1.55 "Barlow Semi Condensed", system-ui, sans-serif; }
-  a { color: inherit; }
-  .hero { position: relative; min-height: 92vh; display: grid; align-items: end; padding: 0 16px 9vh;
-          background: linear-gradient(0deg, var(--bg) 2%, rgba(21,19,15,.55) 45%, rgba(21,19,15,.25)), url(img/sunvale.jpg) center/cover; }
-  .wrap { max-width: 1080px; margin: 0 auto; width: 100%; }
-  .logo { display: inline-flex; flex-direction: column; line-height: .82; font-family: "Barlow Condensed", sans-serif; }
-  .logo .mx { font-weight: 900; font-style: italic; font-size: clamp(84px, 19vw, 170px); letter-spacing: -.02em; }
-  .logo .pl { align-self: flex-start; margin-top: .05em; background: var(--gelb); color: var(--bg); font-weight: 900; font-style: italic;
-              font-size: clamp(36px, 8vw, 72px); padding: .06em .3em 0; transform: skewX(-10deg); border: 3px solid var(--bg); box-shadow: 4px 4px 0 var(--bg); }
-  .claim { font-size: clamp(20px, 3.4vw, 28px); font-weight: 700; margin: 26px 0 26px; max-width: 640px; }
-  .los { display: inline-block; background: var(--gelb); color: var(--bg); text-decoration: none; font: italic 900 clamp(26px, 5vw, 36px) "Barlow Condensed", sans-serif;
-         text-transform: uppercase; padding: 14px 40px 12px; transform: skewX(-8deg); box-shadow: 5px 5px 0 #000; transition: transform .12s; }
-  .los:hover { transform: skewX(-8deg) translateY(-2px); }
-  .klein { color: var(--muted); margin-top: 14px; font-size: 15px; }
-  section { padding: 64px 16px; }
-  h2 { font: italic 900 clamp(34px, 6vw, 52px)/1 "Barlow Condensed", sans-serif; text-transform: uppercase; margin: 0 0 28px; }
-  h2 span { color: var(--gelb); }
-  .karten { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px; }
-  .karte { background: var(--bg2); border-left: 4px solid var(--gelb); padding: 18px 20px; }
-  .karte b { display: block; font: italic 800 26px "Barlow Condensed", sans-serif; text-transform: uppercase; margin-bottom: 4px; }
-  .karte p { margin: 0; color: var(--muted); }
-  .bilder { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 10px; }
-  .bilder img { width: 100%; aspect-ratio: 16/9; object-fit: cover; display: block; }
-  .team { background: var(--bg2); }
-  footer { padding: 40px 16px 60px; color: var(--muted); font-size: 15px; }
-  footer .wrap { display: flex; flex-wrap: wrap; gap: 10px 28px; justify-content: space-between; }
-</style>
+<style>:root{--bg:#15130f;--bg2:#1f1b15;--bg3:#2a251d;--text:#f4efe6;--muted:#bdb4a5;--gelb:#f5b82e;color-scheme:dark}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--text);font:17px/1.55 "Barlow Semi Condensed",system-ui,sans-serif}
+a{color:inherit}
+p a,li a,td a,dd a{color:var(--gelb)}
+.wrap{max-width:1080px;margin:0 auto;width:100%}
+.skip{position:absolute;left:-9999px}.skip:focus{left:16px;top:8px;z-index:9;background:var(--gelb);color:var(--bg);padding:8px 12px}
+.nav{position:relative;z-index:2;padding:14px 16px}
+.nav .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:6px 18px}
+.marke{font:italic 900 26px/1 "Barlow Condensed",sans-serif;text-decoration:none;letter-spacing:-.01em}
+.marke span{background:var(--gelb);color:var(--bg);padding:1px 6px 0;display:inline-block;transform:skewX(-10deg)}
+.nav ul{display:flex;flex-wrap:wrap;gap:4px 16px;list-style:none;margin:0;padding:0;font-weight:700;font-size:16px}
+.nav ul a{text-decoration:none;display:inline-block;padding:6px 0}
+.nav ul a:hover,.nav ul a[aria-current]{color:var(--gelb)}
+.hero{position:relative;min-height:92vh;display:grid;grid-template-rows:auto 1fr;overflow:hidden}
+.hero-bild{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:0}
+.hero::after{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(0deg,var(--bg) 2%,rgba(21,19,15,.6) 45%,rgba(21,19,15,.35))}
+.hero-inhalt{position:relative;z-index:2;align-self:end;padding:0 16px 9vh}
+.logo{display:inline-flex;flex-direction:column;line-height:.82;font-family:"Barlow Condensed",sans-serif}
+.logo .mx{font-weight:900;font-style:italic;font-size:clamp(84px,19vw,170px);letter-spacing:-.02em}
+.logo .pl{align-self:flex-start;margin-top:.05em;background:var(--gelb);color:var(--bg);font-weight:900;font-style:italic;font-size:clamp(36px,8vw,72px);padding:.06em .3em 0;transform:skewX(-10deg);border:3px solid var(--bg);box-shadow:4px 4px 0 var(--bg)}
+h1.claim{font:700 clamp(22px,3.6vw,30px)/1.25 "Barlow Semi Condensed",sans-serif;text-transform:none;margin:26px 0;max-width:680px}
+.los{display:inline-block;background:var(--gelb);color:var(--bg);text-decoration:none;font:italic 900 clamp(26px,5vw,36px) "Barlow Condensed",sans-serif;text-transform:uppercase;padding:14px 40px 12px;transform:skewX(-8deg);box-shadow:5px 5px 0 #000;transition:transform .12s}
+.los:hover{transform:skewX(-8deg) translateY(-2px)}
+.los.klein-los{font-size:24px;padding:10px 26px 8px}
+.klein{color:var(--muted);margin-top:14px;font-size:15px}
+section{padding:64px 16px}
+h1,h2{font:italic 900 clamp(34px,6vw,52px)/1 "Barlow Condensed",sans-serif;text-transform:uppercase;margin:0 0 28px}
+h1 span,h2 span{color:var(--gelb)}
+h3{font:italic 800 26px/1.1 "Barlow Condensed",sans-serif;text-transform:uppercase;margin:0 0 6px}
+.lead{font-size:20px;max-width:760px;margin:0 0 28px}
+.karten{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:16px}
+.karte{background:var(--bg2);border-left:4px solid var(--gelb);padding:18px 20px}
+.karte b{display:block;font:italic 800 26px "Barlow Condensed",sans-serif;text-transform:uppercase;margin-bottom:4px}
+.karte p{margin:0;color:var(--muted)}
+.strecken{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:16px;list-style:none;margin:0;padding:0}
+.strecken li{background:var(--bg2)}
+.strecken a{text-decoration:none;display:block;height:100%}
+.strecken img,.strecke img{width:100%;height:auto;aspect-ratio:16/9;object-fit:cover;display:block;background:var(--bg3)}
+.strecken div{padding:12px 14px 16px}
+.strecken p{margin:4px 0 0;color:var(--muted);font-size:16px}
+.tag{display:inline-block;font-size:14px;font-weight:700;color:var(--bg);background:var(--gelb);padding:0 6px;margin-right:6px}
+.tag.grau{background:var(--bg3);color:var(--text)}
+@media (max-width:560px){.strecken{grid-template-columns:1fr 1fr;gap:10px}.strecken div{padding:8px 10px 12px}.strecken h3{font-size:19px}.strecken p{font-size:14px;line-height:1.4}.tag{font-size:12px;margin-bottom:2px}}
+.mehr{display:inline-block;margin-top:22px;font-weight:700;color:var(--gelb)}
+.faq{max-width:820px}
+.faq h3{font:700 21px/1.3 "Barlow Semi Condensed",sans-serif;text-transform:none;margin:26px 0 6px}
+.faq p{margin:0;color:var(--muted)}
+.team,.dunkel{background:var(--bg2)}
+.seitenkopf{padding:40px 16px 8px}
+.strecke{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);gap:24px;align-items:center;padding:28px 0;border-top:1px solid var(--bg3);scroll-margin-top:16px}
+.strecke p{margin:8px 0 0}
+.fakten{color:var(--muted);font-size:15px;margin-top:6px}
+@media (max-width:720px){.strecke{grid-template-columns:1fr;gap:12px}}
+.text{max-width:820px}
+.text h2{font-size:clamp(28px,5vw,40px);margin:44px 0 14px}
+.text ul{padding-left:20px}.text li{margin:6px 0}
+kbd{display:inline-block;min-width:1.6em;text-align:center;background:var(--bg3);border:1px solid #4a4234;border-bottom-width:3px;border-radius:4px;padding:0 6px;font:700 15px/1.5 "Barlow Semi Condensed",sans-serif}
+table{border-collapse:collapse;width:100%;margin:8px 0 0}
+th,td{padding:9px 10px;border-bottom:1px solid var(--bg3);vertical-align:top;text-align:left}
+th{color:var(--muted);font-weight:500;width:34%}
+.tabelle{overflow-x:auto}
+footer{padding:40px 16px 60px;color:var(--muted);font-size:15px;border-top:1px solid var(--bg3)}
+footer .wrap{display:flex;flex-wrap:wrap;gap:14px 36px;justify-content:space-between}
+footer ul{list-style:none;margin:0;padding:0}footer li{margin:4px 0}
+footer a{text-decoration:none}footer a:hover{color:var(--gelb);text-decoration:underline}</style>
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "Organization",
+   "@id": "https://mxroyale.com/#org",
+   "name": "MX Royale",
+   "url": "https://mxroyale.com/",
+   "logo": {
+    "@type": "ImageObject",
+    "url": "https://mxroyale.com/img/logo-512.png",
+    "width": 512,
+    "height": 512
+   },
+   "email": "info@mxroyale.com",
+   "sameAs": [
+    "https://www.tiktok.com/@mxroyalegame",
+    "https://www.instagram.com/mxroyalegame/",
+    "https://www.youtube.com/@mxroyalegame"
+   ]
+  },
+  {
+   "@type": "WebSite",
+   "@id": "https://mxroyale.com/#website",
+   "name": "MX Royale",
+   "url": "https://mxroyale.com/",
+   "inLanguage": [
+    "en",
+    "de"
+   ],
+   "publisher": {
+    "@id": "https://mxroyale.com/#org"
+   }
+  },
+  {
+   "@type": "VideoGame",
+   "@id": "https://mxroyale.com/#game",
+   "name": "MX Royale",
+   "url": "https://mxroyale.com/",
+   "description": "MX Royale is a free motocross racing game that runs in the web browser. No download, works on PC and phones, with keyboard, touch or gamepad. 15 race tracks, 2 freeride maps, whips, scrubs and flips, races against AI, time trial with ghosts and online races with friends.",
+   "inLanguage": [
+    "en",
+    "de",
+    "es",
+    "fr",
+    "pt-BR"
+   ],
+   "image": "https://mxroyale.com/img/og.jpg",
+   "screenshot": [
+    "https://mxroyale.com/img/tracks/sunvale.webp",
+    "https://mxroyale.com/img/tracks/larkmeadow.webp",
+    "https://mxroyale.com/img/tracks/frostline.webp",
+    "https://mxroyale.com/img/tracks/monsoon.webp",
+    "https://mxroyale.com/img/tracks/mirage-flats.webp",
+    "https://mxroyale.com/img/tracks/herbst.webp"
+   ],
+   "genre": [
+    "Racing",
+    "Sports",
+    "Motocross"
+   ],
+   "gamePlatform": [
+    "Web browser",
+    "PC",
+    "Mobile"
+   ],
+   "applicationCategory": "Game",
+   "operatingSystem": "Any (web browser)",
+   "playMode": [
+    "SinglePlayer",
+    "MultiPlayer"
+   ],
+   "numberOfPlayers": {
+    "@type": "QuantitativeValue",
+    "minValue": 1
+   },
+   "gameLocation": [
+    "Sunvale MX Park",
+    "Larkmeadow SX",
+    "Frostline MX",
+    "Monsoon Terraces",
+    "Mirage Flats",
+    "Glutwald MX",
+    "Rustleaf Hollow",
+    "Neon Harbor SX",
+    "Pine Ridge GP",
+    "Sandglass Canyon GP",
+    "Highcrest Valley GP",
+    "Canopy Hollow",
+    "Tidewater Flats",
+    "Ironcut Quarry",
+    "Saltpan Speedway",
+    "Dust Devil Freeride",
+    "Midnight Arena"
+   ],
+   "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "EUR",
+    "availability": "https://schema.org/InStock",
+    "url": "https://play.mxroyale.com/"
+   },
+   "isAccessibleForFree": true,
+   "datePublished": "2026-11-26",
+   "publisher": {
+    "@id": "https://mxroyale.com/#org"
+   },
+   "author": {
+    "@id": "https://mxroyale.com/#org"
+   },
+   "sameAs": [
+    "https://www.tiktok.com/@mxroyalegame",
+    "https://www.instagram.com/mxroyalegame/",
+    "https://www.youtube.com/@mxroyalegame"
+   ]
+  },
+  {
+   "@type": "FAQPage",
+   "@id": "https://mxroyale.com/#faq",
+   "inLanguage": "en",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "Is MX Royale free?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Yes, MX Royale is completely free to play. There are no ads and no in-game purchases."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Do I need to download or install MX Royale?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "No, MX Royale runs directly in the web browser with no download and no install. It works in Chrome, Edge, Firefox and Safari, and no account is needed to start riding."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Can I play MX Royale on my phone?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Yes, MX Royale works on phones and tablets in landscape mode. It has touch controls with a thumb stick, throttle and brake buttons, and optional tilt steering."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Does MX Royale support a controller?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Yes, MX Royale supports gamepads. Throttle and brake are on the analog triggers (RT/LT), the left stick steers and whips, and the right stick moves your weight and leans the bike."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Can I race my friends online in MX Royale?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Yes, MX Royale has online races with room codes. One player creates a room and shares the 5-character code, the others enter it and the track loads automatically; bots can fill up the field."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "How many tracks does MX Royale have?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "MX Royale has 15 race tracks and 2 freeride maps. They include two supercross tracks and outdoor tracks in forest, desert, canyon, snow, rainforest, beach, quarry and salt-lake settings."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Is there supercross in MX Royale?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Yes, MX Royale has two supercross tracks: Larkmeadow SX in a night stadium and Neon Harbor SX in a harbour hall. Both have rhythm sections, whoops and triples."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Which game modes does MX Royale have?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "MX Royale has races against AI riders, time trial with your own ghost, a Daily Challenge, a Championship of four races, freeride, a trick school and online races with friends."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Which languages is MX Royale available in?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "MX Royale is available in English, German, Spanish, French and Brazilian Portuguese."
+     }
+    }
+   ]
+  }
+ ]
+}
+</script>
 </head>
 <body>
+<a class="skip" href="#inhalt">Skip to content</a>
 <header class="hero">
-  <div class="wrap">
-    <div class="logo" aria-label="MX Royale"><span class="mx">MX</span><span class="pl">ROYALE</span></div>
-    <p class="claim">Motocross right in your browser. Free, no download, on PC and phone.</p>
-    <a class="los spiel" href="#">Ride now</a>
-    <p class="klein">Open beta · no account needed · runs in Chrome, Edge, Firefox and Safari</p>
+  <img class="hero-bild" src="/img/hero-1600.webp" srcset="/img/hero-800.webp 800w, /img/hero-1600.webp 1600w" sizes="100vw" width="1600" height="900" alt="Sunvale MX Park in MX Royale, seen from above" fetchpriority="high">
+  <nav class="nav" aria-label="Main"><div class="wrap"><a class="marke" href="/">MX <span>ROYALE</span></a><ul><li><a href="/tracks/">Tracks</a></li><li><a href="/how-to-play/">How to play</a></li><li><a href="/about/">About</a></li><li><a href="/de/" hreflang="de" lang="de">Deutsch</a></li></ul></div></nav>
+  <div class="hero-inhalt" id="inhalt">
+    <div class="wrap">
+      <div class="logo" role="img" aria-label="MX Royale"><span class="mx" aria-hidden="true">MX</span><span class="pl" aria-hidden="true">ROYALE</span></div>
+      <h1 class="claim">Free motocross game you play online, right in your browser. No download, on PC, phone and controller.</h1>
+      <a class="los spiel" href="https://play.mxroyale.com/">Ride now</a>
+      <p class="klein">Open beta · no account needed · runs in Chrome, Edge, Firefox and Safari</p>
+    </div>
   </div>
 </header>
 
+<main>
 <section>
   <div class="wrap">
     <h2>What you <span>get</span></h2>
-    <div class="karten">
-      <div class="karte"><b>10+ tracks</b><p>From a supercross stadium to desert, canyon and snow. New tracks drop all the time.</p></div>
-      <div class="karte"><b>Whips &amp; flips</b><p>Backflips, Supermans, Nac-Nacs. Land it clean and score.</p></div>
-      <div class="karte"><b>Online races</b><p>Send a room code to your friends and race each other.</p></div>
-      <div class="karte"><b>Ghosts &amp; leaderboards</b><p>Race your best lap or the world #1 ghost and go for gold.</p></div>
-    </div>
+    <div class="karten"><div class="karte"><b>15 tracks + 2 freeride maps</b><p>Supercross stadiums, forest GPs, desert, canyon, snow, beach and a quarry.</p></div><div class="karte"><b>Race the AI</b><p>Line up at the gate against up to 11 AI riders, or ride a 4-race Championship.</p></div><div class="karte"><b>Online with friends</b><p>Create a room, send the 5-character code and race each other.</p></div><div class="karte"><b>Time trial &amp; ghosts</b><p>Chase your best lap or the top ghost, win medals and try the Daily Challenge.</p></div><div class="karte"><b>Whips, scrubs &amp; flips</b><p>Backflips, Supermans, Nac-Nacs and Can-Cans. Learn them in the trick school.</p></div><div class="karte"><b>Phone, PC or controller</b><p>Touch controls in landscape, keyboard or gamepad. Nothing to install.</p></div></div>
   </div>
 </section>
 
-<section style="padding-top:0">
-  <div class="wrap bilder">
-    <img src="img/larkmeadow.jpg" alt="Larkmeadow supercross stadium" loading="lazy">
-    <img src="img/frostline.jpg" alt="Frostline snow track" loading="lazy">
-    <img src="img/sandglass.jpg" alt="Sandglass canyon track" loading="lazy">
-    <img src="img/highcrest.jpg" alt="Highcrest limestone track" loading="lazy">
-    <img src="img/mirage-flats.jpg" alt="Mirage Flats desert track" loading="lazy">
-    <img src="img/sunvale.jpg" alt="Sunvale motocross park" loading="lazy">
+<section class="dunkel" id="tracks">
+  <div class="wrap">
+    <h2>The <span>tracks</span></h2>
+    <p class="lead">15 race tracks from a beginner MX park to supercross under lights, plus 2 freeride maps for tricks. New tracks are added during the beta.</p>
+    <ul class="strecken"><li><a href="/tracks/#sunvale"><img src="/img/tracks/sunvale-480.webp" width="480" height="270" alt="Sunvale MX Park – track in MX Royale" loading="lazy" decoding="async"><div><h3>Sunvale MX Park</h3><span class="tag">Beginner</span><span class="tag grau">Motocross</span><p>The beginner track: a farm-country MX park with rollers, small tables and a creek ford.</p></div></a></li><li><a href="/tracks/#larkmeadow"><img src="/img/tracks/larkmeadow-480.webp" width="480" height="270" alt="Larkmeadow SX – track in MX Royale" loading="lazy" decoding="async"><div><h3>Larkmeadow SX</h3><span class="tag">Medium</span><span class="tag grau">Supercross</span><p>Supercross in a night stadium: rhythm lanes, whoops, a sand section and a finish-line triple.</p></div></a></li><li><a href="/tracks/#frostline"><img src="/img/tracks/frostline-480.webp" width="480" height="270" alt="Frostline MX – track in MX Royale" loading="lazy" decoding="async"><div><h3>Frostline MX</h3><span class="tag">Medium</span><span class="tag grau">Snow</span><p>Snow track down a ski slope, along the chairlift and over the Frozen Creek Gap.</p></div></a></li><li><a href="/tracks/#monsoon"><img src="/img/tracks/monsoon-480.webp" width="480" height="270" alt="Monsoon Terraces – track in MX Royale" loading="lazy" decoding="async"><div><h3>Monsoon Terraces</h3><span class="tag">Medium</span><span class="tag grau">Motocross</span><p>A flowing track over rice terraces on a hillside, with a terrace chain and a wooden aqueduct.</p></div></a></li><li><a href="/tracks/#mirage-flats"><img src="/img/tracks/mirage-flats-480.webp" width="480" height="270" alt="Mirage Flats – track in MX Royale" loading="lazy" decoding="async"><div><h3>Mirage Flats</h3><span class="tag">Medium–hard</span><span class="tag grau">Desert</span><p>Desert jump park on a dry lake bed, with a rail gap over the train tracks and a long washboard.</p></div></a></li><li><a href="/tracks/#herbst"><img src="/img/tracks/herbst-480.webp" width="480" height="270" alt="Glutwald MX – track in MX Royale" loading="lazy" decoding="async"><div><h3>Glutwald MX</h3><span class="tag">Medium–hard</span><span class="tag grau">Forest</span><p>Autumn forest in evening light, with fire at three jumps, a big step-up and a big step-down.</p></div></a></li><li><a href="/tracks/#rustleaf"><img src="/img/tracks/rustleaf-480.webp" width="480" height="270" alt="Rustleaf Hollow – track in MX Royale" loading="lazy" decoding="async"><div><h3>Rustleaf Hollow</h3><span class="tag">Medium–hard</span><span class="tag grau">Forest</span><p>A twisty autumn woods track with roots, a muddy hollow and a log-skidding lane.</p></div></a></li><li><a href="/tracks/#neonharbor"><img src="/img/tracks/neonharbor-480.webp" width="480" height="270" alt="Neon Harbor SX – track in MX Royale" loading="lazy" decoding="async"><div><h3>Neon Harbor SX</h3><span class="tag">Medium–hard</span><span class="tag grau">Supercross</span><p>Supercross at night in a harbour hall: container table, crane turn, dock whoops and a triple.</p></div></a></li><li><a href="/tracks/#pine-ridge"><img src="/img/tracks/pine-ridge-480.webp" width="480" height="270" alt="Pine Ridge GP – track in MX Royale" loading="lazy" decoding="async"><div><h3>Pine Ridge GP</h3><span class="tag">Hard</span><span class="tag grau">Grand Prix</span><p>A long forest Grand Prix up a ridge, with Horsepower Hill, the Stump Double and the Ridge Double.</p></div></a></li><li><a href="/tracks/#sandglass"><img src="/img/tracks/sandglass-480.webp" width="480" height="270" alt="Sandglass Canyon GP – track in MX Royale" loading="lazy" decoding="async"><div><h3>Sandglass Canyon GP</h3><span class="tag">Hard</span><span class="tag grau">Canyon</span><p>Desert canyon Grand Prix: rock steps, a mesa table, a slot canyon, a cliff drop and a road gap.</p></div></a></li><li><a href="/tracks/#highcrest"><img src="/img/tracks/highcrest-480.webp" width="480" height="270" alt="Highcrest Valley GP – track in MX Royale" loading="lazy" decoding="async"><div><h3>Highcrest Valley GP</h3><span class="tag">Hard</span><span class="tag grau">Mountain</span><p>A long, fast mountain GP with 38 m of elevation, limestone slabs, switchbacks and a waterfall.</p></div></a></li><li><a href="/tracks/#canopy"><img src="/img/tracks/canopy-480.webp" width="480" height="270" alt="Canopy Hollow – track in MX Royale" loading="lazy" decoding="async"><div><h3>Canopy Hollow</h3><span class="tag">Hard</span><span class="tag grau">Rainforest</span><p>Rainforest in a hollow: canyon gap, suspension bridge, tree tunnel, waterfall and a dragon’s back.</p></div></a></li><li><a href="/tracks/#tidewater"><img src="/img/tracks/tidewater-480.webp" width="480" height="270" alt="Tidewater Flats – track in MX Royale" loading="lazy" decoding="async"><div><h3>Tidewater Flats</h3><span class="tag">Hard</span><span class="tag grau">Beach</span><p>A technical sand GP on the coast at low tide, with a creek gap and a ride through a shipwreck.</p></div></a></li><li><a href="/tracks/#ironcut"><img src="/img/tracks/ironcut-480.webp" width="480" height="270" alt="Ironcut Quarry – track in MX Royale" loading="lazy" decoding="async"><div><h3>Ironcut Quarry</h3><span class="tag">Hard</span><span class="tag grau">Quarry</span><p>A disused quarry: switchbacks up the mining terraces, a pit drop and a dragon’s back on the rim.</p></div></a></li><li><a href="/tracks/#saltpan"><img src="/img/tracks/saltpan-480.webp" width="480" height="270" alt="Saltpan Speedway – track in MX Royale" loading="lazy" decoding="async"><div><h3>Saltpan Speedway</h3><span class="tag">Hard</span><span class="tag grau">Salt lake</span><p>A fast Grand Prix on a salt lake, with the Salt Crust Triple and a conveyor table.</p></div></a></li><li><a href="/tracks/#freeride"><img src="/img/tracks/freeride-480.webp" width="480" height="270" alt="Dust Devil Freeride – track in MX Royale" loading="lazy" decoding="async"><div><h3>Dust Devil Freeride</h3><span class="tag">Freeride</span><span class="tag grau">Freeride</span><p>Freeride map: jump lines, a step-up, a hip and a foam pit, with no laps and no timer.</p></div></a></li><li><a href="/tracks/#arena"><img src="/img/tracks/arena-480.webp" width="480" height="270" alt="Midnight Arena – track in MX Royale" loading="lazy" decoding="async"><div><h3>Midnight Arena</h3><span class="tag">Freeride</span><span class="tag grau">Freestyle</span><p>Freestyle motocross night show in a stadium, with kickers for whips, flips and big air.</p></div></a></li></ul>
+    <a class="mehr" href="/tracks/">All tracks in detail →</a>
+  </div>
+</section>
+
+<section id="faq">
+  <div class="wrap faq">
+    <h2>Questions & <span>answers</span></h2>
+    <h3>Is MX Royale free?</h3><p>Yes, MX Royale is completely free to play. There are no ads and no in-game purchases.</p><h3>Do I need to download or install MX Royale?</h3><p>No, MX Royale runs directly in the web browser with no download and no install. It works in Chrome, Edge, Firefox and Safari, and no account is needed to start riding.</p><h3>Can I play MX Royale on my phone?</h3><p>Yes, MX Royale works on phones and tablets in landscape mode. It has touch controls with a thumb stick, throttle and brake buttons, and optional tilt steering.</p><h3>Does MX Royale support a controller?</h3><p>Yes, MX Royale supports gamepads. Throttle and brake are on the analog triggers (RT/LT), the left stick steers and whips, and the right stick moves your weight and leans the bike.</p><h3>Can I race my friends online in MX Royale?</h3><p>Yes, MX Royale has online races with room codes. One player creates a room and shares the 5-character code, the others enter it and the track loads automatically; bots can fill up the field.</p><h3>How many tracks does MX Royale have?</h3><p>MX Royale has 15 race tracks and 2 freeride maps. They include two supercross tracks and outdoor tracks in forest, desert, canyon, snow, rainforest, beach, quarry and salt-lake settings.</p><h3>Is there supercross in MX Royale?</h3><p>Yes, MX Royale has two supercross tracks: Larkmeadow SX in a night stadium and Neon Harbor SX in a harbour hall. Both have rhythm sections, whoops and triples.</p><h3>Which game modes does MX Royale have?</h3><p>MX Royale has races against AI riders, time trial with your own ghost, a Daily Challenge, a Championship of four races, freeride, a trick school and online races with friends.</p><h3>Which languages is MX Royale available in?</h3><p>MX Royale is available in English, German, Spanish, French and Brazilian Portuguese.</p>
+    <p style="margin-top:28px">New to motocross games? Read <a href="/how-to-play/">how to play</a> or the <a href="/about/">fact sheet</a>.</p>
   </div>
 </section>
 
 <section class="team">
   <div class="wrap">
     <h2>Built by <span>riders</span></h2>
-    <p style="max-width:720px;margin:0 0 26px">MX Royale is built by three students who ride themselves. New tracks, tricks and fixes ship every week.
-      Found a bug or got an idea? Write to us: <a href="mailto:feedback@mxroyale.com">feedback@mxroyale.com</a></p>
-    <a class="los spiel" href="#">Ride now</a>
+    <p style="max-width:720px;margin:0 0 26px">MX Royale is built by three students who ride themselves. New tracks, tricks and fixes ship every week. Found a bug or got an idea? Write to us: <a href="mailto:feedback@mxroyale.com">feedback@mxroyale.com</a></p>
+    <a class="los spiel" href="https://play.mxroyale.com/">Ride now</a>
   </div>
 </section>
-
+</main>
 <footer>
   <div class="wrap">
-    <span>© 2026 MX Royale</span>
-    <span>Social: @mxroyalegame · <a href="de/">Deutsch</a></span>
-    <span><a href="mailto:info@mxroyale.com">info@mxroyale.com</a> · <a href="press/">Press &amp; creators</a> · <a href="legal/">Legal notice</a> · <a href="privacy/">Privacy</a></span>
+    <div><b>MX Royale</b><br>Free motocross game in your browser.<br>© 2026 MX Royale</div>
+    <ul><li><a href="/">Home</a></li><li><a href="/tracks/">Tracks</a></li><li><a href="/how-to-play/">How to play</a></li><li><a href="/about/">About</a></li><li><a href="/press/">Press &amp; creators</a></li></ul>
+    <ul><li><a href="https://www.tiktok.com/@mxroyalegame" rel="me noopener">TikTok @mxroyalegame</a></li><li><a href="https://www.instagram.com/mxroyalegame/" rel="me noopener">Instagram @mxroyalegame</a></li><li><a href="https://www.youtube.com/@mxroyalegame" rel="me noopener">YouTube @mxroyalegame</a></li></ul>
+    <ul><li><a href="mailto:info@mxroyale.com">info@mxroyale.com</a></li><li><a href="/legal/">Legal notice</a></li><li><a href="/privacy/">Privacy</a></li><li><a href="/de/" hreflang="de" lang="de">Deutsch</a></li></ul>
   </div>
 </footer>
 <script>
   // Adresse des Spiels (Release-Server). spiel.json pflegt der Link-Wächter auf dem Server, falls sich der Tunnel ändert.
-  var SPIEL = 'https://play.mxroyale.com/';
+  var SPIEL = 'https://play.mxroyale.com/', Q = '';
   var sofort = /[?&](los|play)(=|&|$)/.test(location.search);
-  function setze(u) { SPIEL = u; document.querySelectorAll('a.spiel').forEach(function (a) { a.href = SPIEL + location.search; }); }
+  function setze(u) { SPIEL = u; document.querySelectorAll('a.spiel').forEach(function (a) { a.href = SPIEL + (location.search || Q); }); }
   setze(SPIEL);
   fetch('/spiel.json', { cache: 'no-store' }).then(function (r) { return r.json(); }).then(function (j) { if (j && /^https:\/\//.test(j.spiel)) setze(j.spiel); })
-    .catch(function () {}).then(function () { if (sofort) location.replace(SPIEL + location.search); });
+    .catch(function () {}).then(function () { if (sofort) location.replace(SPIEL + (location.search || Q)); });
 </script>
 </body>
 </html>
