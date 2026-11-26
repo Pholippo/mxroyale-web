@@ -1,0 +1,112 @@
+# MX Royale
+
+> MX Royale is a free motocross racing game that runs in the web browser. No download and no account are needed; it works on PC, Mac, phones and tablets with keyboard, touch controls or a gamepad. It has 15 race tracks (including supercross), 2 freeride maps, whips, scrubs and flips, races against AI, time trial with ghosts and online races with friends.
+
+Last updated: 2026-11-26
+
+## Facts
+
+- Price: free. No ads, no in-game purchases.
+- Platform: web browser (Chrome, Edge, Firefox, Safari) on PC, Mac, phones and tablets. No download, no install.
+- Controls: keyboard (remappable), touch controls in landscape with optional tilt steering, gamepad.
+- Modes: race vs. up to 11 AI riders, time trial with ghost and medal times, Daily Challenge, Championship (4 races), freeride, trick school, online races with friends via a 5-character room code (bots can fill the field).
+- Tracks: 15 race tracks + 2 freeride maps, including 2 supercross tracks.
+- Tricks: whips, scrubs, backflips, Superman, Nac-Nac, Can-Can, heel clicker, seat grab, cliffhanger.
+- Bikes: 450 four-stroke, 250 two-stroke, electric.
+- Languages: English, German, Spanish, French, Brazilian Portuguese.
+- Account: optional.
+- Status: open beta since 2026-11-26.
+- Developer: three students from Austria (hobby project).
+- Play: https://play.mxroyale.com/
+- Social: TikTok, Instagram and YouTube as @mxroyalegame.
+
+## Tracks
+
+- **Sunvale MX Park** (Beginner, Motocross): Most riders start here. Wide grassy turns, rollers and small tables lead over cow pastures and past hay bales, and one section runs straight through a creek. A good place to learn the pop and your first whips.
+- **Larkmeadow SX** (Medium, Supercross): A short, tight supercross track under stadium lights. Rhythm lanes, a whoops section and a sand section come one after another, and the lap ends with an SX double and a triple over the finish line.
+- **Frostline MX** (Medium, Snow): Frostline runs down a ski slope in winter: along the chairlift line, past snow cannons and over the Frozen Creek Gap. Snow rollers and a big jump into the finish straight close the lap.
+- **Monsoon Terraces** (Medium, Motocross): A flowing layout on a terraced hillside. A chain of jumps drops from terrace to terrace, the track passes bamboo and runs along a wooden aqueduct. Rewards a smooth line more than raw speed.
+- **Mirage Flats** (Medium–hard, Desert): A jump park in the desert. You clear the railway with the Rail Gap, hammer through a washboard section on the dry lake bed and finish with the Mirage table. Lots of air time, little room for mistakes on the landings.
+- **Glutwald MX** (Medium–hard, Forest): An autumn forest track in low evening light. Three jumps have fire next to them, the climb has a big step-up and the descent a big step-down into the valley. Leaves, roots and rhythm sections in between.
+- **Rustleaf Hollow** (Medium–hard, Forest): Narrow and twisty: Rustleaf winds through autumn woods over root carpets, through a muddy hollow, along a log-skidding lane and past an excavator. A track for precise steering rather than flat-out speed.
+- **Neon Harbor SX** (Medium–hard, Supercross): The second supercross track sits in a harbour hall at night. You jump a table built from shipping containers, turn under a crane, fight through the dock whoops and go for the Harbor Triple.
+- **Pine Ridge GP** (Hard, Grand Prix): A classic outdoor Grand Prix through pine forest. The track climbs Horsepower Hill, runs along the ridge over roots and doubles and comes back down through the woods. Long laps, a full gate of 12 riders.
+- **Sandglass Canyon GP** (Hard, Canyon): Sandglass takes you through red desert canyons. Rock steps and slabs, a table on top of a mesa, a narrow slot canyon, a drop off a cliff and a Road Gap over the highway, then back down the wash through the whoops.
+- **Highcrest Valley GP** (Hard, Mountain): The fastest outdoor track: Highcrest climbs 38 metres through forest and rock, over limestone slabs and up switchbacks to the summit, then drops through a rock gate and past a waterfall.
+- **Canopy Hollow** (Hard, Rainforest): A twisting rainforest track down in a hollow. Jump a canyon gap, cross a suspension bridge, ride through a tunnel of trees and past a waterfall, and keep your balance on the dragon’s back.
+- **Tidewater Flats** (Hard, Beach): Sand riding on the coast at low tide. Ripples and soft sand everywhere, a gap over a tidal creek, a turn by the lighthouse, a lane between the groynes and a line straight through an old shipwreck.
+- **Ironcut Quarry** (Hard, Quarry): Ironcut climbs a disused quarry in switchbacks from terrace to terrace. On top you ride a dragon’s back along the rim before a steep drop back down into the pit.
+- **Saltpan Speedway** (Hard, Salt lake): Wide open and fast: Saltpan crosses a salt lake with long straights and rollers. The highlights are the Salt Crust Triple and a table next to the salt works’ conveyor belt.
+- **Dust Devil Freeride** (Freeride, Freeride): No laps, no timer, no opponents. Dust Devil is an open map with jump lines, a step-up, a hip and a foam pit to practise tricks without consequences.
+- **Midnight Arena** (Freeride, Freestyle): A freestyle motocross show at night in a stadium. Separate ramps for whips, backflips, Nac-Nacs, Can-Cans and big air, plus a quarterpipe and fireworks.
+
+## Controls
+
+### Keyboard
+
+W/S throttle/brake · A/D steer (in the air: whip) · ←/→ lean the bike (scrub, lay it flat) · ↑/↓ weight forward/back · Space crouch/pop · Shift rear brake · R respawn · C camera · Q look back · G ghost · Esc pause. All riding keys can be remapped.
+
+### Phone (landscape)
+
+Left thumb: a stick appears where you touch (steer, weight). Right thumb: hold GAS, brake to its left; drag left/right on the throttle to lean (scrub), drag down and release at the lip to pop. Optional tilt steering in Settings.
+
+### Gamepad
+
+RT throttle, LT brake (analog) · left stick steer/whip · right stick weight and lean · A crouch/pop · X rear brake · Y respawn · Start pause · freeride tricks: hold LB or RB + left stick.
+
+### Whip, scrub, gate start
+
+Whip: steer in just before the lip, hold in the air, let go about half a second before landing. Scrub: lay the bike down on the ramp face and stand it up before the end of the lip. Gate start: hold throttle and brake from the "5" board, release the brake when the gate drops.
+
+## FAQ
+
+### Is MX Royale free?
+
+Yes, MX Royale is completely free to play. There are no ads and no in-game purchases.
+
+### Do I need to download or install MX Royale?
+
+No, MX Royale runs directly in the web browser with no download and no install. It works in Chrome, Edge, Firefox and Safari, and no account is needed to start riding.
+
+### Can I play MX Royale on my phone?
+
+Yes, MX Royale works on phones and tablets in landscape mode. It has touch controls with a thumb stick, throttle and brake buttons, and optional tilt steering.
+
+### Does MX Royale support a controller?
+
+Yes, MX Royale supports gamepads. Throttle and brake are on the analog triggers (RT/LT), the left stick steers and whips, and the right stick moves your weight and leans the bike.
+
+### Can I race my friends online in MX Royale?
+
+Yes, MX Royale has online races with room codes. One player creates a room and shares the 5-character code, the others enter it and the track loads automatically; bots can fill up the field.
+
+### How many tracks does MX Royale have?
+
+MX Royale has 15 race tracks and 2 freeride maps. They include two supercross tracks and outdoor tracks in forest, desert, canyon, snow, rainforest, beach, quarry and salt-lake settings.
+
+### Is there supercross in MX Royale?
+
+Yes, MX Royale has two supercross tracks: Larkmeadow SX in a night stadium and Neon Harbor SX in a harbour hall. Both have rhythm sections, whoops and triples.
+
+### Which game modes does MX Royale have?
+
+MX Royale has races against AI riders, time trial with your own ghost, a Daily Challenge, a Championship of four races, freeride, a trick school and online races with friends.
+
+### Which languages is MX Royale available in?
+
+MX Royale is available in English, German, Spanish, French and Brazilian Portuguese.
+
+## Pages
+
+- [Home (English)](https://mxroyale.com/): overview, track list and FAQ
+- [Tracks](https://mxroyale.com/tracks/): all tracks with descriptions
+- [How to play](https://mxroyale.com/how-to-play/): controls for keyboard, phone and controller; whips, scrubs, pop, gate start
+- [Fact sheet](https://mxroyale.com/about/): answer-first summary and feature table
+- [Press & creators](https://mxroyale.com/press/): press kit, logo, key art
+- [Deutsch – Startseite](https://mxroyale.com/de/), [Strecken](https://mxroyale.com/de/strecken/), [Anleitung](https://mxroyale.com/de/anleitung/), [Faktenblatt](https://mxroyale.com/de/ueber/), [Presse](https://mxroyale.com/presse/)
+
+## Optional
+
+- [Privacy](https://mxroyale.com/privacy/): no tracking, no analytics, no ads
+- [Legal notice](https://mxroyale.com/legal/)
+- [Full text for language models](https://mxroyale.com/llms-full.txt)
