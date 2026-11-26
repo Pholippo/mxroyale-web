@@ -218,7 +218,7 @@ a{color:inherit}
 p a,li a,td a,dd a{color:var(--gelb)}
 .wrap{max-width:1080px;margin:0 auto;width:100%}
 .skip{position:absolute;left:-9999px}.skip:focus{left:16px;top:8px;z-index:9;background:var(--gelb);color:var(--bg);padding:8px 12px}
-.nav{position:relative;z-index:2;padding:14px 16px}
+.nav{position:relative;z-index:2;padding:14px 16px;text-shadow:0 1px 3px rgba(0,0,0,.6)}
 .nav .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:6px 18px}
 .marke{font:italic 900 26px/1 "Barlow Condensed",sans-serif;text-decoration:none;letter-spacing:-.01em}
 .marke span{background:var(--gelb);color:var(--bg);padding:1px 6px 0;display:inline-block;transform:skewX(-10deg)}
@@ -226,8 +226,8 @@ p a,li a,td a,dd a{color:var(--gelb)}
 .nav ul a{text-decoration:none;display:inline-block;padding:6px 0}
 .nav ul a:hover,.nav ul a[aria-current]{color:var(--gelb)}
 .hero{position:relative;min-height:92vh;display:grid;grid-template-rows:auto 1fr;overflow:hidden}
-.hero-bild{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:0}
-.hero::after{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(0deg,var(--bg) 2%,rgba(21,19,15,.6) 45%,rgba(21,19,15,.35))}
+.hero-bild{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 0;z-index:0}
+.hero::after{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(180deg,rgba(21,19,15,.55),rgba(21,19,15,0) 16%),linear-gradient(0deg,var(--bg) 2%,rgba(21,19,15,.55) 40%,rgba(21,19,15,.1) 75%)}
 .hero-inhalt{position:relative;z-index:2;align-self:end;padding:0 16px 9vh}
 .logo{display:inline-flex;flex-direction:column;line-height:.82;font-family:"Barlow Condensed",sans-serif}
 .logo .mx{font-weight:900;font-style:italic;font-size:clamp(84px,19vw,170px);letter-spacing:-.02em}
@@ -468,9 +468,9 @@ def startseite(lang):
         f'<li><a href="{PFAD[lang]["tracks"]}#{t["id"]}">{img(t, alt_lang=lang)}<div><h3>{e(t["name"])}</h3>{diff_tag(t, lang)}'
         f'<p>{e(t["en_k"] if en else t["de_k"])}</p></div></a></li>' for t in TRACKS)
     faq = ''.join(f'<h3>{e(q)}</h3><p>{e(a)}</p>' for q, a in FAQ[lang])
-    hero_alt = 'Sunvale MX Park in MX Royale, seen from above' if en else 'Sunvale MX Park in MX Royale von oben'
+    hero_alt = 'Rider whipping a motocross bike over a jump on Highcrest Valley GP in MX Royale' if en else 'Fahrer whippt sein Motocross-Bike über einen Sprung auf Highcrest Valley GP in MX Royale'
     body = f"""<header class="hero">
-  <img class="hero-bild" src="/img/hero-1600.webp" srcset="/img/hero-800.webp 800w, /img/hero-1600.webp 1600w" sizes="100vw" width="1600" height="900" alt="{hero_alt}" fetchpriority="high">
+  <picture><source media="(max-aspect-ratio: 4/5)" srcset="/img/hero-whip-hoch-720.webp" width="720" height="867"><img class="hero-bild" src="/img/hero-whip-1600.webp" srcset="/img/hero-whip-800.webp 800w, /img/hero-whip-1600.webp 1600w" sizes="100vw" width="1600" height="900" alt="{hero_alt}" fetchpriority="high"></picture>
   {nav(lang, pfad)}
   <div class="hero-inhalt" id="inhalt">
     <div class="wrap">
@@ -518,7 +518,9 @@ def startseite(lang):
     titel = 'MX Royale – Free Motocross Game Online, No Download' if en else 'MX Royale – Motocross Spiel online kostenlos im Browser'
     desc = (f'Free motocross game in your browser: no download, on phone, PC or controller. {N_RACE} tracks, supercross, whips and online races with friends.'
             if en else f'Motocross Browserspiel, kostenlos und ohne Download: am Handy, PC oder mit Controller. {N_RACE} Strecken, Supercross, Whips und Online-Rennen.')
-    pre = '<link rel="preload" as="image" href="/img/hero-1600.webp" imagesrcset="/img/hero-800.webp 800w, /img/hero-1600.webp 1600w" imagesizes="100vw" fetchpriority="high">\n'
+    pre = ('<link rel="preload" as="image" href="/img/hero-whip-hoch-720.webp" media="(max-aspect-ratio: 4/5)" fetchpriority="high">\n'
+           '<link rel="preload" as="image" href="/img/hero-whip-1600.webp" imagesrcset="/img/hero-whip-800.webp 800w, /img/hero-whip-1600.webp 1600w" '
+           'imagesizes="100vw" media="(min-aspect-ratio: 801/1000)" fetchpriority="high">\n')
     ld = graph(ORG, website(lang), videogame(lang), faqpage(lang, pfad))
     return seite(lang, pfad, titel, desc, body, ld, og_titel=('MX Royale – Motocross in your browser' if en else 'MX Royale – Motocross im Browser'), preload=pre)
 
