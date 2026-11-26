@@ -2,32 +2,14 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>MX Royale – Play</title>
-<meta name="description" content="Motocross in your browser. Free, no download.">
-<link rel="icon" href="/img/favicon.png">
-<meta name="theme-color" content="#15130f">
-<style>
-  html, body { margin: 0; height: 100%; background: #15130f; overflow: hidden; }
-  iframe { position: fixed; inset: 0; width: 100%; height: 100%; border: 0; display: block; background: #15130f; }
-  .warte { position: fixed; inset: 0; display: grid; place-items: center; color: #f4efe4; font: 600 18px system-ui, sans-serif; }
-</style>
+<meta name="robots" content="noindex">
+<link rel="canonical" href="https://play.mxroyale.com/">
+<script>location.replace('https://play.mxroyale.com/' + location.search + location.hash);</script>
+<meta http-equiv="refresh" content="0; url=https://play.mxroyale.com/">
 </head>
-<body>
-<div class="warte" id="warte">Loading MX Royale…</div>
-<script>
-  // Das Spiel läuft auf dem Release-Server; dessen Adresse pflegt der Link-Wächter in /spiel.json.
-  // Diese Seite bettet es ein, damit in der Adresszeile mxroyale.com/play steht.
-  fetch('/spiel.json', { cache: 'no-store' }).then(function (r) { return r.json(); }).then(function (j) {
-    if (!j || !/^https:\/\//.test(j.spiel)) throw new Error('spiel.json');
-    var f = document.createElement('iframe');
-    f.src = j.spiel + location.search + location.hash;
-    f.title = 'MX Royale';
-    f.allow = 'fullscreen; gamepad; autoplay; clipboard-read; clipboard-write; screen-wake-lock; web-share; publickey-credentials-get; publickey-credentials-create';
-    f.allowFullscreen = true;
-    f.onload = function () { var w = document.getElementById('warte'); if (w) w.remove(); f.focus(); };
-    document.body.appendChild(f);
-  }).catch(function () { document.getElementById('warte').textContent = 'Game server unreachable – try again in a minute.'; });
-</script>
+<body style="background:#15130f;color:#f4efe4;font:600 18px system-ui,sans-serif;display:grid;place-items:center;height:100vh;margin:0">
+<a href="https://play.mxroyale.com/" style="color:#f2b632">Play MX Royale</a>
 </body>
 </html>

@@ -17,8 +17,8 @@
     document.documentElement.className = 'weiter';
     var pfad = p.replace(/^\/go\/?/, ''), rest = pfad + location.search + location.hash;
     // Spiel-Links ohne Server-Pfad (z. B. /go/?konto-reset=…) → eingebettet unter /play, die Adresse bleibt mxroyale.com
-    if (!/^api\//.test(pfad)) { location.replace('/play/' + location.search + location.hash); return; }
-    var fallback = 'https://multimedia-recovered-tanks-compliance.trycloudflare.com/';
+    if (!/^api\//.test(pfad)) { location.replace('https://play.mxroyale.com/' + location.search + location.hash); return; }
+    var fallback = 'https://play.mxroyale.com/';
     function los(u) { location.replace(u.replace(/\/?$/, '/') + rest); }
     fetch('/spiel.json', { cache: 'no-store' }).then(function (r) { return r.json(); })
       .then(function (j) { los(j && /^https:\/\//.test(j.spiel) ? j.spiel : fallback); })

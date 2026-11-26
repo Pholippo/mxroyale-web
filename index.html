@@ -106,12 +106,12 @@
 </footer>
 <script>
   // Adresse des Spiels (Release-Server). spiel.json pflegt der Link-Wächter auf dem Server, falls sich der Tunnel ändert.
-  var SPIEL = 'https://multimedia-recovered-tanks-compliance.trycloudflare.com/';
+  var SPIEL = 'https://play.mxroyale.com/';
   var sofort = /[?&](los|play)(=|&|$)/.test(location.search);
-  function setze(u) { SPIEL = u; document.querySelectorAll('a.spiel').forEach(function (a) { a.href = '/play/' + location.search; }); }
+  function setze(u) { SPIEL = u; document.querySelectorAll('a.spiel').forEach(function (a) { a.href = SPIEL + location.search; }); }
   setze(SPIEL);
   fetch('/spiel.json', { cache: 'no-store' }).then(function (r) { return r.json(); }).then(function (j) { if (j && /^https:\/\//.test(j.spiel)) setze(j.spiel); })
-    .catch(function () {}).then(function () { if (sofort) location.replace('/play/' + location.search); });
+    .catch(function () {}).then(function () { if (sofort) location.replace(SPIEL + location.search); });
 </script>
 </body>
 </html>
