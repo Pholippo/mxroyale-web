@@ -954,3 +954,23 @@ PRESSE_SHOTS = [
     ('neonharbor_whip_16x9_01.jpg', 'mx-royale-night-whip-neon-harbor-sx.jpg', 'Night whip at Neon Harbor SX', 'Whip bei Nacht auf Neon Harbor SX'),
     ('tidewater_air_16x9_01.jpg', 'mx-royale-beach-jump-tidewater-flats.jpg', 'Beach jump on Tidewater Flats', 'Sprung am Strand auf Tidewater Flats'),
 ]
+
+# ── Neuigkeiten (nur echte Updates; neueste zuerst) ────────────────────────────────────────────────
+NEWS = [
+    dict(datum='2026-11-27', id='website-five-languages',
+         en=('Website in five languages, new screenshots and a press kit',
+             'mxroyale.com now has pages in English, German, Spanish, French and Brazilian Portuguese – the same five languages as the game. Every track has a new in-game screenshot, and the press page has a downloadable press kit with logo, key art, eight screenshots and a fact sheet. In the game, the track menu now shows real shots of each track and the time-trial leaderboard got a new look.'),
+         de=('Website in fünf Sprachen, neue Screenshots und Pressepaket',
+             'mxroyale.com gibt es jetzt auf Englisch, Deutsch, Spanisch, Französisch und brasilianischem Portugiesisch – in denselben fünf Sprachen wie das Spiel. Jede Strecke hat einen neuen Screenshot aus dem Spiel, und auf der Presse-Seite gibt es ein Pressepaket zum Herunterladen mit Logo, Key Art, acht Screenshots und Faktenblatt. Im Spiel zeigt das Strecken-Menü jetzt echte Bilder jeder Strecke und die Zeitfahren-Bestenliste hat ein neues Aussehen.')),
+    dict(datum='2026-11-26', id='open-beta',
+         en=('Open beta: MX Royale is live',
+             'MX Royale is now open to everyone at play.mxroyale.com – free, in the browser, with no download and no account needed. The open beta starts with 15 race tracks and 2 freeride maps, races against AI riders, time trial with ghosts, the Daily Challenge, a Championship, the trick school and online races with friends via room code. Found a bug? Write to feedback@mxroyale.com.'),
+         de=('Offene Beta: MX Royale ist online',
+             'MX Royale ist ab sofort für alle offen unter play.mxroyale.com – kostenlos, im Browser, ohne Download und ohne Konto. Die offene Beta startet mit 15 Rennstrecken und 2 Freeride-Maps, Rennen gegen KI-Fahrer, Zeitfahren mit Geist, Tages-Challenge, Meisterschaft, Trick-Schule und Online-Rennen mit Freunden per Raum-Code. Fehler gefunden? Schreib an feedback@mxroyale.com.')),
+]
+NEWS_TX = {
+    'en': dict(titel='MX Royale News – Updates of the Browser Motocross Game', desc='What is new in MX Royale, the free motocross game in your browser: new tracks, features and fixes from the open beta.',
+               h1='News &amp; <span>updates</span>', crumb='News', nav='News', feed='Atom feed'),
+    'de': dict(titel='MX Royale Neuigkeiten – Updates zum Motocross Browserspiel', desc='Was es Neues in MX Royale gibt, dem kostenlosen Motocross-Spiel im Browser: neue Strecken, Funktionen und Fixes aus der offenen Beta.',
+               h1='Was ist <span>neu</span>', crumb='Neuigkeiten', nav='Neuigkeiten', feed='Atom-Feed'),
+}

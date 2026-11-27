@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="de">
+  <title>MX Royale Neuigkeiten – Updates zum Motocross Browserspiel</title>
+  <id>https://mxroyale.com/de/neuigkeiten/</id>
+  <link href="https://mxroyale.com/de/neuigkeiten/"/>
+  <link rel="self" href="https://mxroyale.com/de/neuigkeiten/feed.xml"/>
+  <updated>2026-11-27T12:00:00Z</updated>
+  <author><name>MX Royale</name><email>info@mxroyale.com</email></author>
+  <entry>
+    <title>Website in fünf Sprachen, neue Screenshots und Pressepaket</title>
+    <id>https://mxroyale.com/de/neuigkeiten/#website-five-languages</id>
+    <link href="https://mxroyale.com/de/neuigkeiten/#website-five-languages"/>
+    <updated>2026-11-27T12:00:00Z</updated>
+    <summary>mxroyale.com gibt es jetzt auf Englisch, Deutsch, Spanisch, Französisch und brasilianischem Portugiesisch – in denselben fünf Sprachen wie das Spiel. Jede Strecke hat einen neuen Screenshot aus dem Spiel, und auf der Presse-Seite gibt es ein Pressepaket zum Herunterladen mit Logo, Key Art, acht Screenshots und Faktenblatt. Im Spiel zeigt das Strecken-Menü jetzt echte Bilder jeder Strecke und die Zeitfahren-Bestenliste hat ein neues Aussehen.</summary>
+  </entry>
+  <entry>
+    <title>Offene Beta: MX Royale ist online</title>
+    <id>https://mxroyale.com/de/neuigkeiten/#open-beta</id>
+    <link href="https://mxroyale.com/de/neuigkeiten/#open-beta"/>
+    <updated>2026-11-26T12:00:00Z</updated>
+    <summary>MX Royale ist ab sofort für alle offen unter play.mxroyale.com – kostenlos, im Browser, ohne Download und ohne Konto. Die offene Beta startet mit 15 Rennstrecken und 2 Freeride-Maps, Rennen gegen KI-Fahrer, Zeitfahren mit Geist, Tages-Challenge, Meisterschaft, Trick-Schule und Online-Rennen mit Freunden per Raum-Code. Fehler gefunden? Schreib an feedback@mxroyale.com.</summary>
+  </entry>
+</feed>

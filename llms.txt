@@ -28,7 +28,8 @@ Last updated: 2026-11-27
 - [Tracks](https://mxroyale.com/tracks/): all tracks with descriptions
 - [How to play](https://mxroyale.com/how-to-play/): controls for keyboard, phone and controller; whips, scrubs, pop, gate start
 - [Fact sheet](https://mxroyale.com/about/): answer-first summary and feature table
-- [Press & creators](https://mxroyale.com/press/): press kit, logo, key art
+- [Press & creators](https://mxroyale.com/press/): press kit, logo, key art, screenshots
+- [News](https://mxroyale.com/news/): dated updates (Atom feed: https://mxroyale.com/news/feed.xml)
 - [Deutsch – Start](https://mxroyale.com/de/), [Strecken](https://mxroyale.com/de/strecken/), [Anleitung](https://mxroyale.com/de/anleitung/), [Über das Spiel](https://mxroyale.com/de/ueber/), [Presse](https://mxroyale.com/presse/)
 - [Español – Inicio](https://mxroyale.com/es/), [Pistas](https://mxroyale.com/es/pistas/), [Cómo jugar](https://mxroyale.com/es/como-jugar/), [Acerca de](https://mxroyale.com/es/acerca-de/)
 - [Français – Accueil](https://mxroyale.com/fr/), [Circuits](https://mxroyale.com/fr/circuits/), [Comment jouer](https://mxroyale.com/fr/comment-jouer/), [À propos](https://mxroyale.com/fr/a-propos/)

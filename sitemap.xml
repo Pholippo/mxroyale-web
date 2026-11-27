@@ -466,4 +466,20 @@
     <xhtml:link rel="alternate" hreflang="de" href="https://mxroyale.com/datenschutz/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://mxroyale.com/privacy/"/>
   </url>
+  <url>
+    <loc>https://mxroyale.com/news/</loc>
+    <lastmod>2026-11-27</lastmod>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mxroyale.com/news/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://mxroyale.com/de/neuigkeiten/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mxroyale.com/news/"/>
+  </url>
+  <url>
+    <loc>https://mxroyale.com/de/neuigkeiten/</loc>
+    <lastmod>2026-11-27</lastmod>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mxroyale.com/news/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://mxroyale.com/de/neuigkeiten/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mxroyale.com/news/"/>
+  </url>
 </urlset>

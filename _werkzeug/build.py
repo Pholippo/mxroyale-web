@@ -20,7 +20,7 @@ import re
 import sys
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from texte import PFAD, FAQ, TX, TRACK_TX, DIFF_INTL, TYP_INTL, BILD_ALT, IN_MX, PRESSE, PRESSE_SHOTS  # noqa: E402
+from texte import PFAD, FAQ, TX, TRACK_TX, DIFF_INTL, TYP_INTL, BILD_ALT, IN_MX, PRESSE, PRESSE_SHOTS, NEWS, NEWS_TX  # noqa: E402
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SITE = 'https://mxroyale.com'
@@ -42,7 +42,9 @@ PLAY_Q = {'en': '', 'de': '?lang=de', 'es': '?lang=es', 'fr': '?lang=fr', 'pt': 
 
 # hreflang-Gruppen: Inhaltsseiten in allen fünf Sprachen, Presse/Recht nur EN/DE (von Hand gepflegt)
 GRUPPEN = [{l: PFAD[l][k] for l in SPRACHEN} for k in ('home', 'tracks', 'how', 'about')] + \
-          [{'en': PFAD['en'][k], 'de': PFAD['de'][k]} for k in ('press', 'legal', 'privacy')]
+          [{'en': PFAD['en'][k], 'de': PFAD['de'][k]} for k in ('press', 'legal', 'privacy')] + \
+          [{'en': '/news/', 'de': '/de/neuigkeiten/'}]
+NEWS_PFAD = {'en': '/news/', 'de': '/de/neuigkeiten/'}
 PRIO = {'/': '1.0', '/de/': '0.9', '/es/': '0.9', '/fr/': '0.9', '/pt/': '0.9',
         '/tracks/': '0.8', '/how-to-play/': '0.8', '/about/': '0.7', '/press/': '0.4', '/presse/': '0.3',
         '/legal/': '0.1', '/impressum/': '0.1', '/privacy/': '0.1', '/datenschutz/': '0.1'}
@@ -299,7 +301,7 @@ def footer(lang, pfad):
     return f"""<footer>
   <div class="wrap">
     <div><b>MX Royale</b><br>{e(t['foot_claim'])}<br>© 2026 MX Royale</div>
-    <ul><li><a href="{p['home']}">{e(t['home'])}</a></li><li><a href="{p['tracks']}">{e(t['nav_tracks'])}</a></li><li><a href="{p['how']}">{e(t['nav_how'])}</a></li><li><a href="{p['about']}">{e(t['nav_about'])}</a></li><li><a href="{p['press']}">{e(t['nav_press'])}</a></li></ul>
+    <ul><li><a href="{p['home']}">{e(t['home'])}</a></li><li><a href="{p['tracks']}">{e(t['nav_tracks'])}</a></li><li><a href="{p['how']}">{e(t['nav_how'])}</a></li><li><a href="{p['about']}">{e(t['nav_about'])}</a></li><li><a href="{p['press']}">{e(t['nav_press'])}</a></li><li><a href="{NEWS_PFAD.get(lang, '/news/')}">{e(NEWS_TX.get(lang, NEWS_TX['en'])['nav'])}</a></li></ul>
     <ul>{soc}</ul>
     <ul><li><a href="mailto:info@mxroyale.com">info@mxroyale.com</a></li><li><a href="{p['legal']}">{e(t['legal'])}</a></li><li><a href="{p['privacy']}">{e(t['privacy'])}</a></li></ul>
     <ul aria-label="{e(t['lang_aria'])}">{spr}</ul>
@@ -307,7 +309,7 @@ def footer(lang, pfad):
 </footer>"""
 
 
-def seite(lang, pfad, titel, desc, body, ld, og_titel=None, preload='', og_bild=('/img/og.jpg', 1200, 630, None)):
+def seite(lang, pfad, titel, desc, body, ld, og_titel=None, preload='', og_bild=('/img/og.jpg', 1200, 630, None), head_extra=''):
     assert len(titel) <= 60, (pfad, len(titel), titel)
     assert len(desc) <= 155, (pfad, len(desc), desc)
     t = TX[lang]
@@ -326,7 +328,7 @@ def seite(lang, pfad, titel, desc, body, ld, og_titel=None, preload='', og_bild=
 <title>{e(titel)}</title>
 <meta name="description" content="{e(desc)}">
 <link rel="canonical" href="{SITE}{pfad}">
-{alts}<meta name="theme-color" content="#15130f">
+{alts}{head_extra}<meta name="theme-color" content="#15130f">
 <link rel="icon" href="/img/icon.png">
 <link rel="apple-touch-icon" href="/img/icon.png">
 {preload}{FONTS}<link href="/fonts/fonts.css" rel="stylesheet">
@@ -662,6 +664,49 @@ def pressseite(lang):
     return seite(lang, pfad, t['titel'], t['desc'], body, ld, og_bild=('/presse/mxroyale_key_art_1920.jpg', 1920, 1080, 'MX Royale key art'))
 
 
+# ── Neuigkeiten + Atom-Feed (nur EN/DE) ────────────────────────────────────────────────────────────
+def feed_url(lang):
+    return NEWS_PFAD[lang] + 'feed.xml'
+
+
+def newsseite(lang):
+    pfad, t = NEWS_PFAD[lang], NEWS_TX[lang]
+    eintraege = ''.join(
+        f'<article id="{n["id"]}" style="margin:0 0 36px"><p class="klein" style="margin:0"><time datetime="{n["datum"]}">{n["datum"]}</time></p>'
+        f'<h2 style="font-size:clamp(26px,4.5vw,36px);margin:6px 0 10px">{e(n[lang][0])}</h2><p>{e(n[lang][1])}</p></article>'
+        for n in NEWS)
+    body = f"""{nav(lang, pfad)}
+<main id="inhalt">
+<section class="seitenkopf"><div class="wrap text">
+  <h1>{t['h1']}</h1>
+  <p class="klein"><a href="{feed_url(lang)}">{e(t['feed'])}</a></p>
+  {eintraege}
+  {ride(lang)}
+</div></section>
+</main>"""
+    blog = {'@type': 'Blog', '@id': SITE + pfad, 'url': SITE + pfad, 'name': t['titel'], 'inLanguage': HL[lang],
+            'publisher': {'@id': SITE + '/#org'}, 'about': {'@id': SITE + '/#game'},
+            'blogPost': [{'@type': 'BlogPosting', 'headline': n[lang][0], 'datePublished': n['datum'], 'url': SITE + pfad + '#' + n['id'],
+                          'author': {'@id': SITE + '/#org'}} for n in NEWS]}
+    feed = f'<link rel="alternate" type="application/atom+xml" title="{e(t["titel"])}" href="{SITE}{feed_url(lang)}">\n'
+    return seite(lang, pfad, t['titel'], t['desc'], body, graph(blog, breadcrumb(lang, pfad, t['crumb'])), head_extra=feed)
+
+
+def atom(lang):
+    from xml.sax.saxutils import escape as x
+    pfad, t = NEWS_PFAD[lang], NEWS_TX[lang]
+    z = ['<?xml version="1.0" encoding="utf-8"?>', f'<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="{HL[lang]}">',
+         f'  <title>{x(t["titel"])}</title>', f'  <id>{SITE}{pfad}</id>', f'  <link href="{SITE}{pfad}"/>',
+         f'  <link rel="self" href="{SITE}{feed_url(lang)}"/>', f'  <updated>{NEWS[0]["datum"]}T12:00:00Z</updated>',
+         '  <author><name>MX Royale</name><email>info@mxroyale.com</email></author>']
+    for n in NEWS:
+        z += ['  <entry>', f'    <title>{x(n[lang][0])}</title>', f'    <id>{SITE}{pfad}#{n["id"]}</id>',
+              f'    <link href="{SITE}{pfad}#{n["id"]}"/>', f'    <updated>{n["datum"]}T12:00:00Z</updated>',
+              f'    <summary>{x(n[lang][1])}</summary>', '  </entry>']
+    z.append('</feed>\n')
+    return '\n'.join(z)
+
+
 # ── Textdateien ────────────────────────────────────────────────────────────────────────────────────
 def bilder_fuer(p):
     """Bilder einer Seite für die Bilder-Sitemap."""
@@ -728,7 +773,8 @@ def llms(voll):
 - [Tracks]({SITE}/tracks/): all tracks with descriptions
 - [How to play]({SITE}/how-to-play/): controls for keyboard, phone and controller; whips, scrubs, pop, gate start
 - [Fact sheet]({SITE}/about/): answer-first summary and feature table
-- [Press & creators]({SITE}/press/): press kit, logo, key art
+- [Press & creators]({SITE}/press/): press kit, logo, key art, screenshots
+- [News]({SITE}/news/): dated updates (Atom feed: {SITE}/news/feed.xml)
 {weitere}
 
 ## Optional
@@ -823,6 +869,14 @@ def main():
         pruefe_ld(txt, PFAD[lang]['press'])
         seiten[PFAD[lang]['press']] = txt
         gebaut.append(schreibe(PFAD[lang]['press'], txt))
+    for lang in ('en', 'de'):
+        txt = newsseite(lang)
+        pruefe_ld(txt, NEWS_PFAD[lang])
+        seiten[NEWS_PFAD[lang]] = txt
+        gebaut.append(schreibe(NEWS_PFAD[lang], txt))
+        gebaut.append(schreibe(feed_url(lang), atom(lang)))
+        import xml.dom.minidom
+        xml.dom.minidom.parse(os.path.join(ROOT, feed_url(lang).lstrip('/')))
     pruefe_hreflang(seiten)
     gebaut.append(schreibe('sitemap.xml', sitemap()))
     gebaut.append(schreibe('robots.txt', robots()))
