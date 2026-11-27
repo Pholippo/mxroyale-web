@@ -407,6 +407,15 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://mxroyale.com/press/"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://mxroyale.com/presse/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://mxroyale.com/press/"/>
+    <image:image><image:loc>https://mxroyale.com/presse/mxroyale_key_art_1920.jpg</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/presse/mx-royale-supercross-larkmeadow-sx.jpg</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/presse/mx-royale-whip-highcrest-valley-gp.jpg</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/presse/mx-royale-rail-gap-mirage-flats.jpg</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/presse/mx-royale-fire-jumps-glutwald-mx.jpg</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/presse/mx-royale-snow-race-frostline-mx.jpg</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/presse/mx-royale-gate-pack-sunvale-mx-park.jpg</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/presse/mx-royale-night-whip-neon-harbor-sx.jpg</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/presse/mx-royale-beach-jump-tidewater-flats.jpg</image:loc></image:image>
   </url>
   <url>
     <loc>https://mxroyale.com/presse/</loc>
@@ -415,6 +424,15 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://mxroyale.com/press/"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://mxroyale.com/presse/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://mxroyale.com/press/"/>
+    <image:image><image:loc>https://mxroyale.com/presse/mxroyale_key_art_1920.jpg</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/presse/mx-royale-supercross-larkmeadow-sx.jpg</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/presse/mx-royale-whip-highcrest-valley-gp.jpg</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/presse/mx-royale-rail-gap-mirage-flats.jpg</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/presse/mx-royale-fire-jumps-glutwald-mx.jpg</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/presse/mx-royale-snow-race-frostline-mx.jpg</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/presse/mx-royale-gate-pack-sunvale-mx-park.jpg</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/presse/mx-royale-night-whip-neon-harbor-sx.jpg</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/presse/mx-royale-beach-jump-tidewater-flats.jpg</image:loc></image:image>
   </url>
   <url>
     <loc>https://mxroyale.com/legal/</loc>

@@ -288,7 +288,7 @@ def nav(lang, pfad):
     spr = ''.join(sprachlinks(lang, pfad))
     return (f'<nav class="nav" aria-label="{e(t["nav_aria"])}"><div class="wrap">'
             f'<a class="marke" href="{p["home"]}">MX <span>ROYALE</span></a>'
-            f'<ul>{"".join(teile)}<li class="sprachen" role="group" aria-label="{e(t["lang_aria"])}">{spr}</li></ul></div></nav>')
+            f'<ul>{"".join(teile)}<li class="sprachen">{spr}</li></ul></div></nav>')
 
 
 def footer(lang, pfad):
@@ -667,6 +667,8 @@ def bilder_fuer(p):
     """Bilder einer Seite für die Bilder-Sitemap."""
     if p in [PFAD[l]['home'] for l in SPRACHEN]:
         return ['/img/hero-whip-1600.webp', '/img/og.jpg'] + [bild_url(t) for t in TRACKS]
+    if p in ('/press/', '/presse/'):
+        return ['/presse/mxroyale_key_art_1920.jpg'] + ['/presse/' + n for _, n, _, _ in PRESSE_SHOTS]
     if p in [PFAD[l]['tracks'] for l in SPRACHEN]:
         return [bild_url(t) for t in TRACKS]
     return []
