@@ -1,0 +1,15 @@
+/* TEAM */
+Team: three students from Austria who ride motocross themselves
+Contact: info@mxroyale.com
+Feedback: feedback@mxroyale.com
+From: Austria
+
+/* THANKS */
+Everyone who tests the open beta and sends bug reports.
+
+/* SITE */
+Last update: 2026/11/27
+Language: English, Deutsch, Español, Français, Português (Brasil)
+Standards: HTML5, CSS3
+Components: plain HTML and CSS, no tracking, no external scripts
+Software: Three.js (game), Python (site builder)

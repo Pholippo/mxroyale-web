@@ -1,72 +1,408 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://mxroyale.com/</loc>
-    <lastmod>2026-11-26</lastmod>
+    <lastmod>2026-11-27</lastmod>
     <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://mxroyale.com/"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://mxroyale.com/de/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://mxroyale.com/es/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://mxroyale.com/fr/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://mxroyale.com/pt/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://mxroyale.com/"/>
+    <image:image><image:loc>https://mxroyale.com/img/hero-whip-1600.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/og.jpg</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/sunvale.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/larkmeadow.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/frostline.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/monsoon.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/mirage-flats.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/herbst.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/rustleaf.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/neonharbor.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/pine-ridge.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/sandglass.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/highcrest.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/canopy.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/tidewater.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/ironcut.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/saltpan.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/freeride.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/arena.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://mxroyale.com/de/</loc>
-    <lastmod>2026-11-26</lastmod>
+    <lastmod>2026-11-27</lastmod>
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://mxroyale.com/"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://mxroyale.com/de/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://mxroyale.com/es/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://mxroyale.com/fr/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://mxroyale.com/pt/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://mxroyale.com/"/>
+    <image:image><image:loc>https://mxroyale.com/img/hero-whip-1600.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/og.jpg</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/sunvale.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/larkmeadow.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/frostline.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/monsoon.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/mirage-flats.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/herbst.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/rustleaf.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/neonharbor.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/pine-ridge.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/sandglass.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/highcrest.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/canopy.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/tidewater.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/ironcut.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/saltpan.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/freeride.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/arena.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://mxroyale.com/es/</loc>
+    <lastmod>2026-11-27</lastmod>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mxroyale.com/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://mxroyale.com/de/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://mxroyale.com/es/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://mxroyale.com/fr/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://mxroyale.com/pt/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mxroyale.com/"/>
+    <image:image><image:loc>https://mxroyale.com/img/hero-whip-1600.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/og.jpg</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/sunvale.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/larkmeadow.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/frostline.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/monsoon.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/mirage-flats.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/herbst.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/rustleaf.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/neonharbor.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/pine-ridge.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/sandglass.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/highcrest.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/canopy.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/tidewater.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/ironcut.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/saltpan.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/freeride.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/arena.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://mxroyale.com/fr/</loc>
+    <lastmod>2026-11-27</lastmod>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mxroyale.com/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://mxroyale.com/de/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://mxroyale.com/es/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://mxroyale.com/fr/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://mxroyale.com/pt/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mxroyale.com/"/>
+    <image:image><image:loc>https://mxroyale.com/img/hero-whip-1600.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/og.jpg</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/sunvale.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/larkmeadow.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/frostline.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/monsoon.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/mirage-flats.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/herbst.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/rustleaf.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/neonharbor.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/pine-ridge.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/sandglass.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/highcrest.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/canopy.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/tidewater.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/ironcut.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/saltpan.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/freeride.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/arena.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://mxroyale.com/pt/</loc>
+    <lastmod>2026-11-27</lastmod>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mxroyale.com/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://mxroyale.com/de/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://mxroyale.com/es/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://mxroyale.com/fr/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://mxroyale.com/pt/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mxroyale.com/"/>
+    <image:image><image:loc>https://mxroyale.com/img/hero-whip-1600.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/og.jpg</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/sunvale.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/larkmeadow.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/frostline.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/monsoon.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/mirage-flats.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/herbst.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/rustleaf.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/neonharbor.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/pine-ridge.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/sandglass.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/highcrest.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/canopy.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/tidewater.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/ironcut.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/saltpan.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/freeride.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/arena.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://mxroyale.com/tracks/</loc>
-    <lastmod>2026-11-26</lastmod>
+    <lastmod>2026-11-27</lastmod>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://mxroyale.com/tracks/"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://mxroyale.com/de/strecken/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://mxroyale.com/es/pistas/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://mxroyale.com/fr/circuits/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://mxroyale.com/pt/pistas/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://mxroyale.com/tracks/"/>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/sunvale.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/larkmeadow.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/frostline.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/monsoon.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/mirage-flats.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/herbst.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/rustleaf.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/neonharbor.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/pine-ridge.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/sandglass.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/highcrest.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/canopy.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/tidewater.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/ironcut.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/saltpan.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/freeride.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/arena.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://mxroyale.com/de/strecken/</loc>
-    <lastmod>2026-11-26</lastmod>
+    <lastmod>2026-11-27</lastmod>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://mxroyale.com/tracks/"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://mxroyale.com/de/strecken/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://mxroyale.com/es/pistas/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://mxroyale.com/fr/circuits/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://mxroyale.com/pt/pistas/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://mxroyale.com/tracks/"/>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/sunvale.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/larkmeadow.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/frostline.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/monsoon.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/mirage-flats.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/herbst.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/rustleaf.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/neonharbor.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/pine-ridge.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/sandglass.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/highcrest.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/canopy.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/tidewater.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/ironcut.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/saltpan.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/freeride.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/arena.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://mxroyale.com/es/pistas/</loc>
+    <lastmod>2026-11-27</lastmod>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mxroyale.com/tracks/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://mxroyale.com/de/strecken/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://mxroyale.com/es/pistas/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://mxroyale.com/fr/circuits/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://mxroyale.com/pt/pistas/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mxroyale.com/tracks/"/>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/sunvale.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/larkmeadow.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/frostline.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/monsoon.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/mirage-flats.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/herbst.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/rustleaf.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/neonharbor.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/pine-ridge.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/sandglass.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/highcrest.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/canopy.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/tidewater.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/ironcut.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/saltpan.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/freeride.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/arena.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://mxroyale.com/fr/circuits/</loc>
+    <lastmod>2026-11-27</lastmod>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mxroyale.com/tracks/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://mxroyale.com/de/strecken/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://mxroyale.com/es/pistas/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://mxroyale.com/fr/circuits/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://mxroyale.com/pt/pistas/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mxroyale.com/tracks/"/>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/sunvale.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/larkmeadow.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/frostline.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/monsoon.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/mirage-flats.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/herbst.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/rustleaf.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/neonharbor.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/pine-ridge.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/sandglass.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/highcrest.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/canopy.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/tidewater.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/ironcut.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/saltpan.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/freeride.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/arena.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://mxroyale.com/pt/pistas/</loc>
+    <lastmod>2026-11-27</lastmod>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mxroyale.com/tracks/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://mxroyale.com/de/strecken/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://mxroyale.com/es/pistas/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://mxroyale.com/fr/circuits/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://mxroyale.com/pt/pistas/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mxroyale.com/tracks/"/>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/sunvale.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/larkmeadow.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/frostline.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/monsoon.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/mirage-flats.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/herbst.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/rustleaf.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/neonharbor.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/pine-ridge.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/sandglass.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/highcrest.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/canopy.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/tidewater.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/ironcut.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/saltpan.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/freeride.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/arena.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://mxroyale.com/how-to-play/</loc>
-    <lastmod>2026-11-26</lastmod>
+    <lastmod>2026-11-27</lastmod>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://mxroyale.com/how-to-play/"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://mxroyale.com/de/anleitung/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://mxroyale.com/es/como-jugar/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://mxroyale.com/fr/comment-jouer/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://mxroyale.com/pt/como-jogar/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://mxroyale.com/how-to-play/"/>
   </url>
   <url>
     <loc>https://mxroyale.com/de/anleitung/</loc>
-    <lastmod>2026-11-26</lastmod>
+    <lastmod>2026-11-27</lastmod>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://mxroyale.com/how-to-play/"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://mxroyale.com/de/anleitung/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://mxroyale.com/es/como-jugar/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://mxroyale.com/fr/comment-jouer/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://mxroyale.com/pt/como-jogar/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mxroyale.com/how-to-play/"/>
+  </url>
+  <url>
+    <loc>https://mxroyale.com/es/como-jugar/</loc>
+    <lastmod>2026-11-27</lastmod>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mxroyale.com/how-to-play/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://mxroyale.com/de/anleitung/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://mxroyale.com/es/como-jugar/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://mxroyale.com/fr/comment-jouer/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://mxroyale.com/pt/como-jogar/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mxroyale.com/how-to-play/"/>
+  </url>
+  <url>
+    <loc>https://mxroyale.com/fr/comment-jouer/</loc>
+    <lastmod>2026-11-27</lastmod>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mxroyale.com/how-to-play/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://mxroyale.com/de/anleitung/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://mxroyale.com/es/como-jugar/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://mxroyale.com/fr/comment-jouer/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://mxroyale.com/pt/como-jogar/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mxroyale.com/how-to-play/"/>
+  </url>
+  <url>
+    <loc>https://mxroyale.com/pt/como-jogar/</loc>
+    <lastmod>2026-11-27</lastmod>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mxroyale.com/how-to-play/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://mxroyale.com/de/anleitung/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://mxroyale.com/es/como-jugar/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://mxroyale.com/fr/comment-jouer/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://mxroyale.com/pt/como-jogar/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://mxroyale.com/how-to-play/"/>
   </url>
   <url>
     <loc>https://mxroyale.com/about/</loc>
-    <lastmod>2026-11-26</lastmod>
+    <lastmod>2026-11-27</lastmod>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://mxroyale.com/about/"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://mxroyale.com/de/ueber/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://mxroyale.com/es/acerca-de/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://mxroyale.com/fr/a-propos/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://mxroyale.com/pt/sobre/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://mxroyale.com/about/"/>
   </url>
   <url>
     <loc>https://mxroyale.com/de/ueber/</loc>
-    <lastmod>2026-11-26</lastmod>
+    <lastmod>2026-11-27</lastmod>
     <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://mxroyale.com/about/"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://mxroyale.com/de/ueber/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://mxroyale.com/es/acerca-de/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://mxroyale.com/fr/a-propos/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://mxroyale.com/pt/sobre/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mxroyale.com/about/"/>
+  </url>
+  <url>
+    <loc>https://mxroyale.com/es/acerca-de/</loc>
+    <lastmod>2026-11-27</lastmod>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mxroyale.com/about/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://mxroyale.com/de/ueber/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://mxroyale.com/es/acerca-de/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://mxroyale.com/fr/a-propos/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://mxroyale.com/pt/sobre/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mxroyale.com/about/"/>
+  </url>
+  <url>
+    <loc>https://mxroyale.com/fr/a-propos/</loc>
+    <lastmod>2026-11-27</lastmod>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mxroyale.com/about/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://mxroyale.com/de/ueber/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://mxroyale.com/es/acerca-de/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://mxroyale.com/fr/a-propos/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://mxroyale.com/pt/sobre/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mxroyale.com/about/"/>
+  </url>
+  <url>
+    <loc>https://mxroyale.com/pt/sobre/</loc>
+    <lastmod>2026-11-27</lastmod>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mxroyale.com/about/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://mxroyale.com/de/ueber/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://mxroyale.com/es/acerca-de/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://mxroyale.com/fr/a-propos/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://mxroyale.com/pt/sobre/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://mxroyale.com/about/"/>
   </url>
   <url>
     <loc>https://mxroyale.com/press/</loc>
-    <lastmod>2026-11-26</lastmod>
+    <lastmod>2026-11-27</lastmod>
     <priority>0.4</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://mxroyale.com/press/"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://mxroyale.com/presse/"/>
@@ -74,7 +410,7 @@
   </url>
   <url>
     <loc>https://mxroyale.com/presse/</loc>
-    <lastmod>2026-11-26</lastmod>
+    <lastmod>2026-11-27</lastmod>
     <priority>0.3</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://mxroyale.com/press/"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://mxroyale.com/presse/"/>
@@ -82,7 +418,7 @@
   </url>
   <url>
     <loc>https://mxroyale.com/legal/</loc>
-    <lastmod>2026-11-26</lastmod>
+    <lastmod>2026-11-27</lastmod>
     <priority>0.1</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://mxroyale.com/legal/"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://mxroyale.com/impressum/"/>
@@ -90,7 +426,7 @@
   </url>
   <url>
     <loc>https://mxroyale.com/impressum/</loc>
-    <lastmod>2026-11-26</lastmod>
+    <lastmod>2026-11-27</lastmod>
     <priority>0.1</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://mxroyale.com/legal/"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://mxroyale.com/impressum/"/>
@@ -98,7 +434,7 @@
   </url>
   <url>
     <loc>https://mxroyale.com/privacy/</loc>
-    <lastmod>2026-11-26</lastmod>
+    <lastmod>2026-11-27</lastmod>
     <priority>0.1</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://mxroyale.com/privacy/"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://mxroyale.com/datenschutz/"/>
@@ -106,7 +442,7 @@
   </url>
   <url>
     <loc>https://mxroyale.com/datenschutz/</loc>
-    <lastmod>2026-11-26</lastmod>
+    <lastmod>2026-11-27</lastmod>
     <priority>0.1</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://mxroyale.com/privacy/"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://mxroyale.com/datenschutz/"/>

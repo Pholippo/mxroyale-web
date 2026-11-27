@@ -2,7 +2,7 @@
 
 > MX Royale is a free motocross racing game that runs in the web browser. No download and no account are needed; it works on PC, Mac, phones and tablets with keyboard, touch controls or a gamepad. It has 15 race tracks (including supercross), 2 freeride maps, whips, scrubs and flips, races against AI, time trial with ghosts and online races with friends.
 
-Last updated: 2026-11-26
+Last updated: 2026-11-27
 
 ## Facts
 
@@ -27,7 +27,10 @@ Last updated: 2026-11-26
 - [How to play](https://mxroyale.com/how-to-play/): controls for keyboard, phone and controller; whips, scrubs, pop, gate start
 - [Fact sheet](https://mxroyale.com/about/): answer-first summary and feature table
 - [Press & creators](https://mxroyale.com/press/): press kit, logo, key art
-- [Deutsch – Startseite](https://mxroyale.com/de/), [Strecken](https://mxroyale.com/de/strecken/), [Anleitung](https://mxroyale.com/de/anleitung/), [Faktenblatt](https://mxroyale.com/de/ueber/), [Presse](https://mxroyale.com/presse/)
+- [Deutsch – Start](https://mxroyale.com/de/), [Strecken](https://mxroyale.com/de/strecken/), [Anleitung](https://mxroyale.com/de/anleitung/), [Über das Spiel](https://mxroyale.com/de/ueber/), [Presse](https://mxroyale.com/presse/)
+- [Español – Inicio](https://mxroyale.com/es/), [Pistas](https://mxroyale.com/es/pistas/), [Cómo jugar](https://mxroyale.com/es/como-jugar/), [Acerca de](https://mxroyale.com/es/acerca-de/)
+- [Français – Accueil](https://mxroyale.com/fr/), [Circuits](https://mxroyale.com/fr/circuits/), [Comment jouer](https://mxroyale.com/fr/comment-jouer/), [À propos](https://mxroyale.com/fr/a-propos/)
+- [Português – Início](https://mxroyale.com/pt/), [Pistas](https://mxroyale.com/pt/pistas/), [Como jogar](https://mxroyale.com/pt/como-jogar/), [Sobre](https://mxroyale.com/pt/sobre/)
 
 ## Optional
 

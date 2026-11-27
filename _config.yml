@@ -1,0 +1,2 @@
+# GitHub Pages: Ordner mit Punkt (.well-known) mitveröffentlichen; _werkzeug bleibt privat.
+include: ['.well-known']

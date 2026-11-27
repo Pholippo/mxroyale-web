@@ -1,0 +1,5 @@
+# Security contact for mxroyale.com and play.mxroyale.com
+Contact: mailto:info@mxroyale.com
+Expires: 2027-11-27T00:00:00.000Z
+Preferred-Languages: en, de
+Canonical: https://mxroyale.com/.well-known/security.txt
