@@ -43,6 +43,7 @@ def main():
         s = bild_slug(t)
         behalten.add(speichere(im.resize((960, 540), Image.LANCZOS), f'img/tracks/{s}.webp', 72))
         behalten.add(speichere(im.resize((480, 270), Image.LANCZOS), f'img/tracks/{s}-480.webp', 70))
+        behalten.add(speichere(im.resize((320, 180), Image.LANCZOS), f'img/tracks/{s}-320.webp', 68))
     ordner = os.path.join(ROOT, 'img', 'tracks')
     for f in os.listdir(ordner):
         if f.endswith('.webp') and f not in behalten:

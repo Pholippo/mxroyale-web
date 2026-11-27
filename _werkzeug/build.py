@@ -158,6 +158,8 @@ N_FREE = len(TRACKS) - N_RACE
 
 e = html.escape
 LAZY = ' loading="lazy"'
+FONTS_CSS = re.sub(r'\s+', ' ', re.sub(r'url\(([^)/]+\.woff2)\)', r'url(/fonts/\1)',
+                   open(os.path.join(ROOT, 'fonts', 'fonts.css'), encoding='utf-8').read())).strip()
 FONTS = ''.join(f'<link rel="preload" as="font" type="font/woff2" href="/fonts/{f}.woff2" crossorigin>\n' for f in (
     'HTxyL3I-JCGChYJ8VI-L6OO_au7B6xTrW3bmu4kG', 'wlpigxjLBV1hqnzfr-F8sEYMB0Yybp0mudRfi6m_B2sl', 'wlpigxjLBV1hqnzfr-F8sEYMB0Yybp0mudRfw6-_B2sl'))
 
@@ -331,7 +333,7 @@ def seite(lang, pfad, titel, desc, body, ld, og_titel=None, preload='', og_bild=
 {alts}{head_extra}<meta name="theme-color" content="#15130f">
 <link rel="icon" href="/img/icon.png">
 <link rel="apple-touch-icon" href="/img/icon.png">
-{preload}{FONTS}<link href="/fonts/fonts.css" rel="stylesheet">
+{preload}{FONTS}<style>{FONTS_CSS}</style>
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="MX Royale">
 <meta property="og:locale" content="{t['locale']}">
@@ -455,7 +457,9 @@ def img(t, breit=False, lazy=True, lang='en'):
     if breit:
         return (f'<img src="{bild_url(t)}" srcset="{bild_url(t, True)} 480w, {bild_url(t)} 960w" '
                 f'sizes="(max-width:720px) 100vw, 560px" width="960" height="540" alt="{e(alt)}"{LAZY if lazy else ""} decoding="async">')
-    return (f'<img src="{bild_url(t, True)}" width="480" height="270" alt="{e(alt)}" loading="lazy" decoding="async">')
+    k = bild_url(t, True)
+    return (f'<img src="{k}" srcset="{k.replace("-480.webp", "-320.webp")} 320w, {k} 480w" sizes="(max-width:560px) 46vw, 340px" '
+            f'width="480" height="270" alt="{e(alt)}" loading="lazy" decoding="async">')
 
 
 def diff_tag(t, lang):
