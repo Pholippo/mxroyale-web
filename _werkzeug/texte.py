@@ -158,6 +158,8 @@ FAQ = {
     'en': [
         ('Is MX Royale free?',
          'Yes, MX Royale is completely free to play. There are no ads and no in-game purchases.'),
+        ('Is there a free motocross game I can play online without downloading?',
+         'Yes. MX Royale is a free motocross and dirt bike game that runs in the browser on PC and phones, with no download and no account.'),
         ('Do I need to download or install MX Royale?',
          'No, MX Royale runs directly in the web browser with no download and no install. It works in Chrome, Edge, Firefox and Safari, and no account is needed to start riding.'),
         ('Can I play MX Royale on my phone?',
@@ -174,10 +176,16 @@ FAQ = {
          'MX Royale has races against AI riders, time trial with your own ghost, a Daily Challenge, a Championship of four races, freeride, a trick school and online races with friends.'),
         ('Which languages is MX Royale available in?',
          'MX Royale is available in English, German, Spanish, French and Brazilian Portuguese.'),
+        ('Is MX Royale like MX Bikes or MX vs ATV?',
+         'MX Bikes and MX vs ATV are games you download for PC or consoles. MX Royale is an arcade motocross game that runs free in the browser, with supercross tracks, whips and online races; it is less of a simulator.'),
+        ('Who makes MX Royale?',
+         'MX Royale is made by three students from Austria who ride motocross themselves. It is a hobby project in open beta.'),
     ],
     'de': [
         ('Ist MX Royale kostenlos?',
          'Ja, MX Royale ist komplett kostenlos. Es gibt keine Werbung und keine In-Game-Käufe.'),
+        ('Gibt es ein kostenloses Motocross-Spiel, das man online ohne Download spielen kann?',
+         'Ja. MX Royale ist ein kostenloses Motocross- und Dirt-Bike-Spiel, das im Browser am PC und am Handy läuft, ohne Download und ohne Konto.'),
         ('Muss ich MX Royale herunterladen oder installieren?',
          'Nein, MX Royale läuft direkt im Browser, ohne Download und ohne Installation. Es funktioniert in Chrome, Edge, Firefox und Safari, und zum Losfahren braucht es kein Konto.'),
         ('Kann ich MX Royale am Handy spielen?',
@@ -194,10 +202,16 @@ FAQ = {
          'MX Royale hat Rennen gegen KI-Fahrer, Zeitfahren gegen den eigenen Geist, eine Tages-Challenge, eine Meisterschaft über vier Rennen, Freeride, eine Trick-Schule und Online-Rennen mit Freunden.'),
         ('In welchen Sprachen gibt es MX Royale?',
          'MX Royale gibt es auf Englisch, Deutsch, Spanisch, Französisch und brasilianischem Portugiesisch.'),
+        ('Ist MX Royale wie MX Bikes oder MX vs ATV?',
+         'MX Bikes und MX vs ATV sind Spiele zum Herunterladen für PC oder Konsolen. MX Royale ist ein Arcade-Motocross-Spiel, das kostenlos im Browser läuft, mit Supercross-Strecken, Whips und Online-Rennen; eine Simulation ist es weniger.'),
+        ('Wer macht MX Royale?',
+         'MX Royale machen drei Schüler aus Österreich, die selbst Motocross fahren. Es ist ein Hobbyprojekt in der offenen Beta.'),
     ],
     'es': [
         ('¿MX Royale es gratis?',
          'Sí, MX Royale es completamente gratis. No tiene anuncios ni compras dentro del juego.'),
+        ('¿Hay un juego de motocross gratis para jugar online sin descargar?',
+         'Sí. MX Royale es un juego de motocross gratis que funciona en el navegador de PC y celular, sin descargas y sin cuenta.'),
         ('¿Tengo que descargar o instalar MX Royale?',
          'No, MX Royale se juega directamente en el navegador, sin descargas ni instalación. Funciona en Chrome, Edge, Firefox y Safari, y no necesitas una cuenta para empezar a correr.'),
         ('¿Puedo jugar MX Royale en el celular?',
@@ -214,10 +228,16 @@ FAQ = {
          'MX Royale tiene carreras contra pilotos de la IA, contrarreloj contra tu propio fantasma, un Desafío diario, un Campeonato de cuatro carreras, freeride, una Escuela de trucos y carreras online con amigos.'),
         ('¿En qué idiomas está MX Royale?',
          'MX Royale está disponible en inglés, alemán, español, francés y portugués de Brasil.'),
+        ('¿MX Royale es como MX Bikes o MX vs ATV?',
+         'MX Bikes y MX vs ATV son juegos que se descargan para PC o consolas. MX Royale es un juego de motocross arcade que funciona gratis en el navegador, con pistas de supercross, whips y carreras online; es menos simulador.'),
+        ('¿Quién hace MX Royale?',
+         'MX Royale lo hacen tres estudiantes de Austria que también andan en motocross. Es un proyecto personal en beta abierta.'),
     ],
     'fr': [
         ('MX Royale est-il gratuit ?',
          'Oui, MX Royale est entièrement gratuit. Il n’y a ni publicité ni achats dans le jeu.'),
+        ('Existe-t-il un jeu de motocross gratuit en ligne sans téléchargement ?',
+         'Oui. MX Royale est un jeu de motocross gratuit qui tourne dans le navigateur sur PC et téléphone, sans téléchargement ni compte.'),
         ('Faut-il télécharger ou installer MX Royale ?',
          'Non, MX Royale se joue directement dans le navigateur, sans téléchargement ni installation. Il fonctionne dans Chrome, Edge, Firefox et Safari, et aucun compte n’est nécessaire pour rouler.'),
         ('Peut-on jouer à MX Royale sur téléphone ?',
@@ -234,10 +254,16 @@ FAQ = {
          'MX Royale propose des courses contre des pilotes IA, le contre-la-montre contre ton propre fantôme, un Défi du jour, un Championnat de quatre courses, le freeride, une École de figures et des courses en ligne entre amis.'),
         ('En quelles langues MX Royale est-il disponible ?',
          'MX Royale est disponible en anglais, allemand, espagnol, français et portugais du Brésil.'),
+        ('MX Royale ressemble-t-il à MX Bikes ou MX vs ATV ?',
+         'MX Bikes et MX vs ATV sont des jeux à télécharger sur PC ou consoles. MX Royale est un jeu de motocross arcade gratuit dans le navigateur, avec des circuits de supercross, des whips et des courses en ligne ; c’est moins une simulation.'),
+        ('Qui fait MX Royale ?',
+         'MX Royale est fait par trois élèves autrichiens qui roulent eux-mêmes en motocross. C’est un projet personnel en bêta ouverte.'),
     ],
     'pt': [
         ('MX Royale é grátis?',
          'Sim, MX Royale é totalmente grátis. Não tem anúncios nem compras dentro do jogo.'),
+        ('Existe um jogo de motocross grátis para jogar online sem baixar?',
+         'Sim. MX Royale é um jogo de motocross grátis que roda no navegador do PC e do celular, sem download e sem conta.'),
         ('Preciso baixar ou instalar MX Royale?',
          'Não, MX Royale roda direto no navegador, sem download e sem instalação. Funciona no Chrome, Edge, Firefox e Safari, e você não precisa de conta para começar a pilotar.'),
         ('Dá para jogar MX Royale no celular?',
@@ -254,6 +280,10 @@ FAQ = {
          'MX Royale tem corridas contra pilotos da IA, contra o relógio contra o seu próprio fantasma, um Desafio diário, um Campeonato de quatro corridas, freeride, uma Escola de manobras e corridas online com amigos.'),
         ('Em quais idiomas MX Royale está disponível?',
          'MX Royale está disponível em inglês, alemão, espanhol, francês e português do Brasil.'),
+        ('MX Royale é parecido com MX Bikes ou MX vs ATV?',
+         'MX Bikes e MX vs ATV são jogos para baixar no PC ou em consoles. MX Royale é um jogo de motocross arcade que roda grátis no navegador, com pistas de supercross, whips e corridas online; é menos simulador.'),
+        ('Quem faz o MX Royale?',
+         'MX Royale é feito por três estudantes da Áustria que também andam de motocross. É um projeto pessoal em beta aberto.'),
     ],
 }
 
@@ -274,7 +304,7 @@ TX['en'] = dict(
         ('Whips, scrubs & flips', 'Backflips, Supermans, Nac-Nacs and Can-Cans. Learn them in the trick school.'),
         ('Phone, PC or controller', 'Touch controls in landscape, keyboard or gamepad. Nothing to install.'),
     ],
-    claim='Free motocross game you play online, right in your browser. No download, on PC, phone and controller.',
+    claim='MX Royale – the free motocross game you play online, right in your browser',
     klein='Open beta · no account needed · runs in Chrome, Edge, Firefox and Safari',
     hero_alt='Rider whipping a motocross bike over a jump on Highcrest Valley GP in MX Royale',
     h_get='What you <span>get</span>', h_tracks='The <span>tracks</span>',
@@ -283,8 +313,8 @@ TX['en'] = dict(
     faq_more='New to motocross games? Read <a href="{how}">how to play</a> or the <a href="{about}">fact sheet</a>.',
     h_team='Built by <span>riders</span>',
     team='MX Royale is built by three students who ride themselves. New tracks, tricks and fixes ship every week. Found a bug or got an idea? Write to us: <a href="mailto:feedback@mxroyale.com">feedback@mxroyale.com</a>',
-    home_titel='MX Royale – Free Motocross Game Online, No Download',
-    home_desc='Free motocross game in your browser: no download, on phone, PC or controller. {nr} tracks, supercross, whips and online races with friends.',
+    home_titel='MX Royale – Free Motocross & Dirt Bike Game, No Download',
+    home_desc='Play MX Royale, a free motocross and dirt bike game in your browser: no download, on phone, PC or controller. {nr} tracks, supercross, whips, online races.',
     home_og='MX Royale – Motocross in your browser',
     vg_desc=('MX Royale is a free motocross racing game that runs in the web browser. No download, works on PC and phones, '
              'with keyboard, touch or gamepad. {nr} race tracks, {nf} freeride maps, whips, scrubs and flips, '
@@ -378,6 +408,8 @@ TX['en'] = dict(
     about_titel='About MX Royale – Fact Sheet of the Browser Motocross Game',
     about_desc='Fact sheet: MX Royale is a free motocross racing game in the web browser. Platforms, controls, modes, tracks, languages and status at a glance.',
     about_crumb='About',
+    claim_sub='No download, on PC, phone and controller.',
+    get_lead='Race dirt bikes on {nr} motocross and supercross tracks, against the AI or online with friends – free, in any modern browser.',
 )
 
 TX['de'] = dict(
@@ -393,7 +425,7 @@ TX['de'] = dict(
         ('Whips, Scrubs & Flips', 'Backflip, Superman, Nac-Nac und Can-Can. Lernen kannst du sie in der Trick-Schule.'),
         ('Handy, PC oder Controller', 'Touch-Steuerung im Querformat, Tastatur oder Gamepad. Nichts zu installieren.'),
     ],
-    claim='Motocross-Spiel online und kostenlos, direkt im Browser. Ohne Download, am PC, am Handy und mit Controller.',
+    claim='MX Royale – das kostenlose Motocross-Spiel, online direkt im Browser',
     klein='Offene Beta · kein Konto nötig · läuft in Chrome, Edge, Firefox und Safari',
     hero_alt='Fahrer whippt sein Motocross-Bike über einen Sprung auf Highcrest Valley GP in MX Royale',
     h_get='Was dich <span>erwartet</span>', h_tracks='Die <span>Strecken</span>',
@@ -402,7 +434,7 @@ TX['de'] = dict(
     faq_more='Neu bei Motocross-Spielen? Lies die <a href="{how}">Anleitung</a> oder das <a href="{about}">Faktenblatt</a>.',
     h_team='Von Ridern <span>gebaut</span>',
     team='MX Royale bauen drei Schüler, die selbst fahren. Jede Woche kommen neue Strecken, Tricks und Fixes dazu. Fehler gefunden oder eine Idee? Schreib uns: <a href="mailto:feedback@mxroyale.com">feedback@mxroyale.com</a>',
-    home_titel='MX Royale – Motocross Spiel online kostenlos im Browser',
+    home_titel='MX Royale – Motocross-Spiel kostenlos online im Browser',
     home_desc='Motocross Browserspiel, kostenlos und ohne Download: am Handy, PC oder mit Controller. {nr} Strecken, Supercross, Whips und Online-Rennen.',
     home_og='MX Royale – Motocross im Browser',
     vg_desc=('MX Royale ist ein kostenloses Motocross-Rennspiel, das im Browser läuft. Ohne Download, am PC und am Handy, '
@@ -494,6 +526,8 @@ TX['de'] = dict(
     about_titel='Über MX Royale – Faktenblatt zum Motocross Browserspiel',
     about_desc='Faktenblatt: MX Royale ist ein kostenloses Motocross-Rennspiel im Browser. Geräte, Steuerung, Modi, Strecken, Sprachen und Status im Überblick.',
     about_crumb='Über das Spiel',
+    claim_sub='Ohne Download, am PC, am Handy und mit Controller.',
+    get_lead='Fahr Motocross-Bikes auf {nr} Motocross- und Supercross-Strecken, gegen die KI oder online mit Freunden – kostenlos, in jedem aktuellen Browser.',
 )
 
 TX['es'] = dict(
@@ -509,7 +543,7 @@ TX['es'] = dict(
         ('Whips, scrubs y flips', 'Backflips, Supermans, Nac-Nacs y Can-Cans. Apréndelos en la Escuela de trucos.'),
         ('Celular, PC o control', 'Controles táctiles en horizontal, teclado o gamepad. Nada que instalar.'),
     ],
-    claim='Juego de motocross gratis para jugar online, directo en tu navegador. Sin descargas, en PC, celular y con control.',
+    claim='MX Royale: el juego de motocross gratis para jugar online, directo en tu navegador',
     klein='Beta abierta · sin cuenta · funciona en Chrome, Edge, Firefox y Safari',
     hero_alt='Piloto haciendo un whip con su moto de motocross sobre un salto en Highcrest Valley GP en MX Royale',
     h_get='Qué te <span>espera</span>', h_tracks='Las <span>pistas</span>',
@@ -518,7 +552,7 @@ TX['es'] = dict(
     faq_more='¿Nuevo en los juegos de motocross? Lee <a href="{how}">cómo jugar</a> o la <a href="{about}">ficha técnica</a>.',
     h_team='Hecho por <span>pilotos</span>',
     team='MX Royale lo hacen tres estudiantes que también andan en moto. Cada semana llegan pistas, trucos y correcciones nuevas. ¿Encontraste un error o tienes una idea? Escríbenos (en inglés o alemán): <a href="mailto:feedback@mxroyale.com">feedback@mxroyale.com</a>',
-    home_titel='MX Royale – Juego de motocross gratis online, sin descargas',
+    home_titel='MX Royale – Juego de motocross gratis online, sin descargar',
     home_desc='Juego de motocross gratis en el navegador: sin descargas, en celular, PC o con control. {nr} pistas, supercross, whips y carreras online con amigos.',
     home_og='MX Royale – Motocross en tu navegador',
     vg_desc=('MX Royale es un juego de carreras de motocross gratis que se juega en el navegador. Sin descargas, en PC y celular, '
@@ -610,6 +644,8 @@ TX['es'] = dict(
     about_titel='Acerca de MX Royale – Ficha del juego de motocross',
     about_desc='Ficha técnica: MX Royale es un juego de motocross gratis en el navegador. Plataformas, controles, modos, pistas, idiomas y estado de un vistazo.',
     about_crumb='Acerca de',
+    claim_sub='Sin descargas, en PC, celular y con control.',
+    get_lead='Corre en motos de cross por {nr} pistas de motocross y supercross, contra la IA u online con amigos, gratis y en cualquier navegador actual.',
 )
 
 TX['fr'] = dict(
@@ -625,7 +661,7 @@ TX['fr'] = dict(
         ('Whips, scrubs & flips', 'Backflips, Supermans, Nac-Nacs et Can-Cans. Apprends-les à l’École de figures.'),
         ('Téléphone, PC ou manette', 'Commandes tactiles en paysage, clavier ou manette. Rien à installer.'),
     ],
-    claim='Jeu de motocross gratuit en ligne, directement dans ton navigateur. Sans téléchargement, sur PC, téléphone et manette.',
+    claim='MX Royale, le jeu de motocross gratuit en ligne, directement dans ton navigateur',
     klein='Bêta ouverte · sans compte · fonctionne dans Chrome, Edge, Firefox et Safari',
     hero_alt='Pilote faisant un whip avec sa moto de motocross sur un saut de Highcrest Valley GP dans MX Royale',
     h_get='Ce qui <span>t’attend</span>', h_tracks='Les <span>circuits</span>',
@@ -726,6 +762,8 @@ TX['fr'] = dict(
     about_titel='À propos de MX Royale – Fiche du jeu de motocross',
     about_desc='Fiche du jeu : MX Royale est un jeu de motocross gratuit dans le navigateur. Plateformes, commandes, modes, circuits, langues et statut en bref.',
     about_crumb='À propos',
+    claim_sub='Sans téléchargement, sur PC, téléphone et manette.',
+    get_lead='Pilote des motos de cross sur {nr} circuits de motocross et de supercross, contre l’IA ou en ligne entre amis, gratuitement et dans n’importe quel navigateur récent.',
 )
 
 TX['pt'] = dict(
@@ -741,7 +779,7 @@ TX['pt'] = dict(
         ('Whips, scrubs e flips', 'Backflips, Supermans, Nac-Nacs e Can-Cans. Aprenda na Escola de manobras.'),
         ('Celular, PC ou controle', 'Controles de toque na horizontal, teclado ou gamepad. Nada para instalar.'),
     ],
-    claim='Jogo de motocross grátis para jogar online, direto no navegador. Sem download, no PC, no celular e com controle.',
+    claim='MX Royale: o jogo de motocross grátis para jogar online, direto no navegador',
     klein='Beta aberto · sem conta · funciona no Chrome, Edge, Firefox e Safari',
     hero_alt='Piloto fazendo um whip com a moto de motocross sobre um salto na Highcrest Valley GP no MX Royale',
     h_get='O que você <span>encontra</span>', h_tracks='As <span>pistas</span>',
@@ -842,4 +880,28 @@ TX['pt'] = dict(
     about_titel='Sobre o MX Royale – Ficha do jogo de motocross',
     about_desc='Ficha do jogo: MX Royale é um jogo de motocross grátis no navegador. Plataformas, controles, modos, pistas, idiomas e status em resumo.',
     about_crumb='Sobre',
+    claim_sub='Sem download, no PC, no celular e com controle.',
+    get_lead='Pilote motos de motocross em {nr} pistas de motocross e supercross, contra a IA ou online com amigos, de graça e em qualquer navegador atual.',
 )
+
+# ── Alt-Texte der Streckenbilder (beschreiben, was auf dem Bild zu sehen ist) ─────────────────────────
+BILD_ALT = {
+    'sunvale': {'en': 'Motocross riders racing through a grass turn, dirt flying', 'de': 'Motocross-Fahrer im Pulk in einer Wiesenkurve, Erde fliegt', 'es': 'Pilotos de motocross en una curva de pasto, con tierra volando', 'fr': 'Pilotes de motocross dans un virage herbeux, la terre vole', 'pt': 'Pilotos de motocross em uma curva na grama, com terra voando'},
+    'larkmeadow': {'en': 'Supercross stadium at night with rhythm lanes and flames', 'de': 'Supercross-Stadion bei Nacht mit Rhythmus-Reihen und Flammen', 'es': 'Estadio de supercross de noche con secciones de ritmo y llamas', 'fr': 'Stade de supercross de nuit avec sections de rythme et flammes', 'pt': 'Estádio de supercross à noite com seções de ritmo e chamas'},
+    'frostline': {'en': 'Pack of dirt bikes racing down a snow track', 'de': 'Pulk aus Motocross-Bikes auf einer Schneepiste', 'es': 'Grupo de motos de cross bajando por una pista de nieve', 'fr': 'Peloton de motos de cross sur une piste enneigée', 'pt': 'Pelotão de motos de motocross descendo uma pista de neve'},
+    'monsoon': {'en': 'Dirt track between rice terraces and palm trees', 'de': 'Erdpiste zwischen Reisterrassen und Palmen', 'es': 'Pista de tierra entre terrazas de arroz y palmeras', 'fr': 'Piste en terre entre rizières en terrasses et palmiers', 'pt': 'Pista de terra entre terraços de arroz e palmeiras'},
+    'mirage-flats': {'en': 'Rider jumping a dirt bike over freight wagons in the desert', 'de': 'Fahrer springt mit dem Motocross-Bike über Güterwaggons in der Wüste', 'es': 'Piloto saltando con su moto sobre vagones de carga en el desierto', 'fr': 'Pilote sautant au-dessus de wagons de marchandises dans le désert', 'pt': 'Piloto saltando com a moto sobre vagões de carga no deserto'},
+    'herbst': {'en': 'Rider on an autumn forest track between jets of fire', 'de': 'Fahrer auf einer Herbstwald-Strecke zwischen Feuersäulen', 'es': 'Piloto en una pista de bosque otoñal entre columnas de fuego', 'fr': 'Pilote sur un circuit en forêt d’automne entre des jets de feu', 'pt': 'Piloto em uma pista de floresta de outono entre jatos de fogo'},
+    'rustleaf': {'en': 'Track under a start bridge in autumn woods', 'de': 'Strecke unter einer Startbrücke im Herbstwald', 'es': 'Pista bajo un puente de salida en el bosque otoñal', 'fr': 'Piste sous une passerelle de départ en forêt d’automne', 'pt': 'Pista sob uma ponte de largada na floresta de outono'},
+    'neonharbor': {'en': 'Supercross track at night next to a harbour', 'de': 'Supercross-Strecke bei Nacht am Hafen', 'es': 'Pista de supercross de noche junto a un puerto', 'fr': 'Circuit de supercross de nuit au bord d’un port', 'pt': 'Pista de supercross à noite ao lado de um porto'},
+    'pine-ridge': {'en': 'Bermed turn on a pine forest Grand Prix track', 'de': 'Anlieger-Kurve auf einer Grand-Prix-Strecke im Kiefernwald', 'es': 'Curva peraltada en un Gran Premio en un bosque de pinos', 'fr': 'Virage relevé sur un Grand Prix en forêt de pins', 'pt': 'Curva inclinada em um Grande Prêmio na floresta de pinheiros'},
+    'sandglass': {'en': 'Desert track below red canyon walls', 'de': 'Wüstenstrecke unter roten Canyon-Wänden', 'es': 'Pista en el desierto bajo paredes rojas de cañón', 'fr': 'Piste dans le désert sous des parois de canyon rouges', 'pt': 'Pista no deserto sob paredões vermelhos de cânion'},
+    'highcrest': {'en': 'Rider on a rock slab section below a stone arch', 'de': 'Fahrer auf Felsplatten unter einem Steinbogen', 'es': 'Piloto sobre losas de roca bajo un arco de piedra', 'fr': 'Pilote sur des dalles rocheuses sous une arche de pierre', 'pt': 'Piloto sobre lajes de rocha sob um arco de pedra'},
+    'canopy': {'en': 'Rider on a red dirt rainforest track with spectators', 'de': 'Fahrer auf roter Erde im Regenwald, Zuschauer am Rand', 'es': 'Piloto en una pista de tierra roja en la selva con público', 'fr': 'Pilote sur une piste de terre rouge en forêt tropicale, avec des spectateurs', 'pt': 'Piloto em uma pista de terra vermelha na floresta tropical com público'},
+    'tidewater': {'en': 'Sand whoops on a beach track next to the sea', 'de': 'Sand-Whoops auf einer Strandstrecke am Meer', 'es': 'Whoops de arena en una pista de playa junto al mar', 'fr': 'Whoops dans le sable sur une piste de plage au bord de la mer', 'pt': 'Whoops de areia em uma pista de praia à beira-mar'},
+    'ironcut': {'en': 'Dirt berm turn in a grey stone quarry', 'de': 'Anlieger-Kurve in einem grauen Steinbruch', 'es': 'Curva peraltada en una cantera de piedra gris', 'fr': 'Virage relevé dans une carrière de pierre grise', 'pt': 'Curva inclinada em uma pedreira de pedra cinza'},
+    'saltpan': {'en': 'Track across a white salt flat with salt piles', 'de': 'Strecke über einen weißen Salzsee mit Salzhaufen', 'es': 'Pista sobre un salar blanco con montones de sal', 'fr': 'Piste sur un lac salé blanc avec des tas de sel', 'pt': 'Pista sobre uma salina branca com montes de sal'},
+    'freeride': {'en': 'Desert freeride map with jump lines seen from above', 'de': 'Wüsten-Freeride-Map mit Sprung-Linien von oben', 'es': 'Mapa de freeride en el desierto con líneas de saltos visto desde arriba', 'fr': 'Carte freeride dans le désert avec des lignes de sauts, vue d’en haut', 'pt': 'Mapa de freeride no deserto com linhas de saltos visto de cima'},
+    'arena': {'en': 'Freestyle motocross stadium at night with ramps under spotlights', 'de': 'Freestyle-Motocross-Stadion bei Nacht mit Rampen im Scheinwerferlicht', 'es': 'Estadio de freestyle motocross de noche con rampas bajo los reflectores', 'fr': 'Stade de freestyle motocross de nuit avec rampes sous les projecteurs', 'pt': 'Estádio de freestyle motocross à noite com rampas sob os refletores'},
+}
+IN_MX = {'en': 'in MX Royale', 'de': 'in MX Royale', 'es': 'en MX Royale', 'fr': 'dans MX Royale', 'pt': 'no MX Royale'}

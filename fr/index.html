@@ -63,7 +63,8 @@ p a,li a,td a,dd a{color:var(--gelb)}
 .logo{display:inline-flex;flex-direction:column;line-height:.82;font-family:"Barlow Condensed",sans-serif}
 .logo .mx{font-weight:900;font-style:italic;font-size:clamp(84px,19vw,170px);letter-spacing:-.02em}
 .logo .pl{align-self:flex-start;margin-top:.05em;background:var(--gelb);color:var(--bg);font-weight:900;font-style:italic;font-size:clamp(36px,8vw,72px);padding:.06em .3em 0;transform:skewX(-10deg);border:3px solid var(--bg);box-shadow:4px 4px 0 var(--bg)}
-h1.claim{font:700 clamp(22px,3.6vw,30px)/1.25 "Barlow Semi Condensed",sans-serif;text-transform:none;margin:26px 0;max-width:680px}
+h1.claim{font:700 clamp(22px,3.6vw,30px)/1.25 "Barlow Semi Condensed",sans-serif;text-transform:none;margin:26px 0 6px;max-width:680px}
+.claim-sub{font:600 clamp(17px,2.4vw,21px)/1.3 "Barlow Semi Condensed",sans-serif;margin:0 0 26px;color:var(--muted)}
 .los{display:inline-block;background:var(--gelb);color:var(--bg);text-decoration:none;font:italic 900 clamp(26px,5vw,36px) "Barlow Condensed",sans-serif;text-transform:uppercase;padding:14px 40px 12px;transform:skewX(-8deg);box-shadow:5px 5px 0 #000;transition:transform .12s}
 .los:hover{transform:skewX(-8deg) translateY(-2px)}
 .los.klein-los{font-size:24px;padding:10px 26px 8px}
@@ -125,7 +126,13 @@ footer a{text-decoration:none}footer a:hover{color:var(--gelb);text-decoration:u
     "width": 512,
     "height": 512
    },
+   "description": "Indie game team of three students from Austria",
    "email": "info@mxroyale.com",
+   "contactPoint": {
+    "@type": "ContactPoint",
+    "contactType": "press",
+    "email": "press@mxroyale.com"
+   },
    "sameAs": [
     "https://www.tiktok.com/@mxroyalegame",
     "https://www.instagram.com/mxroyalegame/",
@@ -149,10 +156,17 @@ footer a{text-decoration:none}footer a:hover{color:var(--gelb);text-decoration:u
    }
   },
   {
-   "@type": "VideoGame",
+   "@type": [
+    "VideoGame",
+    "WebApplication"
+   ],
    "@id": "https://mxroyale.com/#game",
    "name": "MX Royale",
    "url": "https://mxroyale.com/",
+   "alternateName": [
+    "MXRoyale",
+    "MX Royale Motocross"
+   ],
    "description": "MX Royale est un jeu de course de motocross gratuit qui se joue dans le navigateur. Sans téléchargement, sur PC et téléphone, au clavier, en tactile ou à la manette. 15 circuits de course, 2 cartes freeride, whips, scrubs et flips, courses contre l’IA, contre-la-montre avec fantôme et courses en ligne entre amis.",
    "inLanguage": [
     "en",
@@ -163,13 +177,38 @@ footer a{text-decoration:none}footer a:hover{color:var(--gelb);text-decoration:u
    ],
    "image": "https://mxroyale.com/img/og.jpg",
    "screenshot": [
-    "https://mxroyale.com/img/tracks/sunvale.webp",
-    "https://mxroyale.com/img/tracks/larkmeadow.webp",
-    "https://mxroyale.com/img/tracks/frostline.webp",
-    "https://mxroyale.com/img/tracks/monsoon.webp",
-    "https://mxroyale.com/img/tracks/mirage-flats.webp",
-    "https://mxroyale.com/img/tracks/herbst.webp"
+    {
+     "@type": "ImageObject",
+     "url": "https://mxroyale.com/img/tracks/sunvale-mx-park.webp",
+     "caption": "Motocross riders racing through a grass turn, dirt flying – Sunvale MX Park in MX Royale"
+    },
+    {
+     "@type": "ImageObject",
+     "url": "https://mxroyale.com/img/tracks/larkmeadow-sx.webp",
+     "caption": "Supercross stadium at night with rhythm lanes and flames – Larkmeadow SX in MX Royale"
+    },
+    {
+     "@type": "ImageObject",
+     "url": "https://mxroyale.com/img/tracks/frostline-mx.webp",
+     "caption": "Pack of dirt bikes racing down a snow track – Frostline MX in MX Royale"
+    },
+    {
+     "@type": "ImageObject",
+     "url": "https://mxroyale.com/img/tracks/monsoon-terraces.webp",
+     "caption": "Dirt track between rice terraces and palm trees – Monsoon Terraces in MX Royale"
+    },
+    {
+     "@type": "ImageObject",
+     "url": "https://mxroyale.com/img/tracks/mirage-flats.webp",
+     "caption": "Rider jumping a dirt bike over freight wagons in the desert – Mirage Flats in MX Royale"
+    },
+    {
+     "@type": "ImageObject",
+     "url": "https://mxroyale.com/img/tracks/glutwald-mx.webp",
+     "caption": "Rider on an autumn forest track between jets of fire – Glutwald MX in MX Royale"
+    }
    ],
+   "keywords": "motocross game, dirt bike game, supercross game, browser game, free racing game",
    "genre": [
     "Racing",
     "Sports",
@@ -180,15 +219,18 @@ footer a{text-decoration:none}footer a:hover{color:var(--gelb);text-decoration:u
     "PC",
     "Mobile"
    ],
-   "applicationCategory": "Game",
+   "applicationCategory": "GameApplication",
+   "applicationSubCategory": "Racing game",
    "operatingSystem": "Any (web browser)",
+   "browserRequirements": "Requires a browser with WebGL 2",
    "playMode": [
     "SinglePlayer",
     "MultiPlayer"
    ],
    "numberOfPlayers": {
     "@type": "QuantitativeValue",
-    "minValue": 1
+    "minValue": 1,
+    "maxValue": 12
    },
    "gameLocation": [
     "Sunvale MX Park",
@@ -241,6 +283,14 @@ footer a{text-decoration:none}footer a:hover{color:var(--gelb);text-decoration:u
      "acceptedAnswer": {
       "@type": "Answer",
       "text": "Oui, MX Royale est entièrement gratuit. Il n’y a ni publicité ni achats dans le jeu."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Existe-t-il un jeu de motocross gratuit en ligne sans téléchargement ?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Oui. MX Royale est un jeu de motocross gratuit qui tourne dans le navigateur sur PC et téléphone, sans téléchargement ni compte."
      }
     },
     {
@@ -306,6 +356,22 @@ footer a{text-decoration:none}footer a:hover{color:var(--gelb);text-decoration:u
       "@type": "Answer",
       "text": "MX Royale est disponible en anglais, allemand, espagnol, français et portugais du Brésil."
      }
+    },
+    {
+     "@type": "Question",
+     "name": "MX Royale ressemble-t-il à MX Bikes ou MX vs ATV ?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "MX Bikes et MX vs ATV sont des jeux à télécharger sur PC ou consoles. MX Royale est un jeu de motocross arcade gratuit dans le navigateur, avec des circuits de supercross, des whips et des courses en ligne ; c’est moins une simulation."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Qui fait MX Royale ?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "MX Royale est fait par trois élèves autrichiens qui roulent eux-mêmes en motocross. C’est un projet personnel en bêta ouverte."
+     }
     }
    ]
   }
@@ -321,7 +387,8 @@ footer a{text-decoration:none}footer a:hover{color:var(--gelb);text-decoration:u
   <div class="hero-inhalt" id="inhalt">
     <div class="wrap">
       <div class="logo" role="img" aria-label="MX Royale"><span class="mx" aria-hidden="true">MX</span><span class="pl" aria-hidden="true">ROYALE</span></div>
-      <h1 class="claim">Jeu de motocross gratuit en ligne, directement dans ton navigateur. Sans téléchargement, sur PC, téléphone et manette.</h1>
+      <h1 class="claim">MX Royale, le jeu de motocross gratuit en ligne, directement dans ton navigateur</h1>
+      <p class="claim-sub">Sans téléchargement, sur PC, téléphone et manette.</p>
       <a class="los spiel" href="https://play.mxroyale.com/?lang=fr">Jouer</a>
       <p class="klein">Bêta ouverte · sans compte · fonctionne dans Chrome, Edge, Firefox et Safari</p>
     </div>
@@ -332,6 +399,7 @@ footer a{text-decoration:none}footer a:hover{color:var(--gelb);text-decoration:u
 <section>
   <div class="wrap">
     <h2>Ce qui <span>t’attend</span></h2>
+    <p class="lead">Pilote des motos de cross sur 15 circuits de motocross et de supercross, contre l’IA ou en ligne entre amis, gratuitement et dans n’importe quel navigateur récent.</p>
     <div class="karten"><div class="karte"><b>15 circuits + 2 cartes freeride</b><p>Stades de supercross, GP en forêt, désert, canyon, neige, plage et une carrière.</p></div><div class="karte"><b>Course contre l’IA</b><p>Pars de la grille contre jusqu’à 11 pilotes IA, ou dispute un Championnat de 4 courses.</p></div><div class="karte"><b>En ligne entre amis</b><p>Crée un salon, envoie le code à 5 caractères et affrontez-vous.</p></div><div class="karte"><b>Contre-la-montre &amp; fantômes</b><p>Chasse ton meilleur tour ou le meilleur fantôme, gagne des médailles et tente le Défi du jour.</p></div><div class="karte"><b>Whips, scrubs &amp; flips</b><p>Backflips, Supermans, Nac-Nacs et Can-Cans. Apprends-les à l’École de figures.</p></div><div class="karte"><b>Téléphone, PC ou manette</b><p>Commandes tactiles en paysage, clavier ou manette. Rien à installer.</p></div></div>
   </div>
 </section>
@@ -340,7 +408,7 @@ footer a{text-decoration:none}footer a:hover{color:var(--gelb);text-decoration:u
   <div class="wrap">
     <h2>Les <span>circuits</span></h2>
     <p class="lead">15 circuits de course, d’un parc MX pour débutants au supercross sous les projecteurs, plus 2 cartes freeride pour les figures. De nouveaux circuits arrivent pendant la bêta.</p>
-    <ul class="strecken"><li><a href="/fr/circuits/#sunvale"><img src="/img/tracks/sunvale-480.webp" width="480" height="270" alt="Sunvale MX Park – circuit dans MX Royale" loading="lazy" decoding="async"><div><h3>Sunvale MX Park</h3><span class="tag">Débutant</span><span class="tag grau">Motocross</span><p>Le circuit débutant : un parc MX à la campagne, avec rollers, petites tables et un gué dans le ruisseau.</p></div></a></li><li><a href="/fr/circuits/#larkmeadow"><img src="/img/tracks/larkmeadow-480.webp" width="480" height="270" alt="Larkmeadow SX – circuit dans MX Royale" loading="lazy" decoding="async"><div><h3>Larkmeadow SX</h3><span class="tag">Moyen</span><span class="tag grau">Supercross</span><p>Supercross dans un stade de nuit : sections de rythme, whoops, une section de sable et un triple sur la ligne.</p></div></a></li><li><a href="/fr/circuits/#frostline"><img src="/img/tracks/frostline-480.webp" width="480" height="270" alt="Frostline MX – circuit dans MX Royale" loading="lazy" decoding="async"><div><h3>Frostline MX</h3><span class="tag">Moyen</span><span class="tag grau">Neige</span><p>Circuit enneigé sur une piste de ski, le long du télésiège et au-dessus du Frozen Creek Gap.</p></div></a></li><li><a href="/fr/circuits/#monsoon"><img src="/img/tracks/monsoon-480.webp" width="480" height="270" alt="Monsoon Terraces – circuit dans MX Royale" loading="lazy" decoding="async"><div><h3>Monsoon Terraces</h3><span class="tag">Moyen</span><span class="tag grau">Motocross</span><p>Un circuit fluide sur des rizières en terrasses, avec une chaîne de terrasses et un aqueduc en bois.</p></div></a></li><li><a href="/fr/circuits/#mirage-flats"><img src="/img/tracks/mirage-flats-480.webp" width="480" height="270" alt="Mirage Flats – circuit dans MX Royale" loading="lazy" decoding="async"><div><h3>Mirage Flats</h3><span class="tag">Moyen–difficile</span><span class="tag grau">Désert</span><p>Parc à sauts dans le désert sur un lac asséché, avec un rail gap au-dessus des voies et une longue tôle ondulée.</p></div></a></li><li><a href="/fr/circuits/#herbst"><img src="/img/tracks/herbst-480.webp" width="480" height="270" alt="Glutwald MX – circuit dans MX Royale" loading="lazy" decoding="async"><div><h3>Glutwald MX</h3><span class="tag">Moyen–difficile</span><span class="tag grau">Forêt</span><p>Forêt d’automne dans la lumière du soir, du feu à trois sauts, un grand step-up et un grand step-down.</p></div></a></li><li><a href="/fr/circuits/#rustleaf"><img src="/img/tracks/rustleaf-480.webp" width="480" height="270" alt="Rustleaf Hollow – circuit dans MX Royale" loading="lazy" decoding="async"><div><h3>Rustleaf Hollow</h3><span class="tag">Moyen–difficile</span><span class="tag grau">Forêt</span><p>Un circuit sinueux en forêt d’automne, avec racines, un creux boueux et un layon de débardage.</p></div></a></li><li><a href="/fr/circuits/#neonharbor"><img src="/img/tracks/neonharbor-480.webp" width="480" height="270" alt="Neon Harbor SX – circuit dans MX Royale" loading="lazy" decoding="async"><div><h3>Neon Harbor SX</h3><span class="tag">Moyen–difficile</span><span class="tag grau">Supercross</span><p>Supercross de nuit dans un hangar du port : table en conteneurs, virage sous la grue, whoops du quai et un triple.</p></div></a></li><li><a href="/fr/circuits/#pine-ridge"><img src="/img/tracks/pine-ridge-480.webp" width="480" height="270" alt="Pine Ridge GP – circuit dans MX Royale" loading="lazy" decoding="async"><div><h3>Pine Ridge GP</h3><span class="tag">Difficile</span><span class="tag grau">Grand Prix</span><p>Un long Grand Prix en forêt sur une crête, avec Horsepower Hill, le Stump Double et le Ridge Double.</p></div></a></li><li><a href="/fr/circuits/#sandglass"><img src="/img/tracks/sandglass-480.webp" width="480" height="270" alt="Sandglass Canyon GP – circuit dans MX Royale" loading="lazy" decoding="async"><div><h3>Sandglass Canyon GP</h3><span class="tag">Difficile</span><span class="tag grau">Canyon</span><p>Grand Prix dans un canyon du désert : marches rocheuses, table sur une mesa, canyon étroit, drop de falaise et road gap.</p></div></a></li><li><a href="/fr/circuits/#highcrest"><img src="/img/tracks/highcrest-480.webp" width="480" height="270" alt="Highcrest Valley GP – circuit dans MX Royale" loading="lazy" decoding="async"><div><h3>Highcrest Valley GP</h3><span class="tag">Difficile</span><span class="tag grau">Montagne</span><p>Un GP de montagne long et rapide, avec 38 m de dénivelé, des dalles calcaires, des lacets et une cascade.</p></div></a></li><li><a href="/fr/circuits/#canopy"><img src="/img/tracks/canopy-480.webp" width="480" height="270" alt="Canopy Hollow – circuit dans MX Royale" loading="lazy" decoding="async"><div><h3>Canopy Hollow</h3><span class="tag">Difficile</span><span class="tag grau">Forêt tropicale</span><p>Forêt tropicale dans une cuvette : gap au-dessus d’une gorge, pont suspendu, tunnel d’arbres, cascade et dragon’s back.</p></div></a></li><li><a href="/fr/circuits/#tidewater"><img src="/img/tracks/tidewater-480.webp" width="480" height="270" alt="Tidewater Flats – circuit dans MX Royale" loading="lazy" decoding="async"><div><h3>Tidewater Flats</h3><span class="tag">Difficile</span><span class="tag grau">Plage</span><p>Un GP technique dans le sable, sur la côte à marée basse, avec un gap au-dessus d’un chenal et une épave.</p></div></a></li><li><a href="/fr/circuits/#ironcut"><img src="/img/tracks/ironcut-480.webp" width="480" height="270" alt="Ironcut Quarry – circuit dans MX Royale" loading="lazy" decoding="async"><div><h3>Ironcut Quarry</h3><span class="tag">Difficile</span><span class="tag grau">Carrière</span><p>Une carrière désaffectée : lacets sur les terrasses d’extraction, un drop dans la fosse et un dragon’s back sur le bord.</p></div></a></li><li><a href="/fr/circuits/#saltpan"><img src="/img/tracks/saltpan-480.webp" width="480" height="270" alt="Saltpan Speedway – circuit dans MX Royale" loading="lazy" decoding="async"><div><h3>Saltpan Speedway</h3><span class="tag">Difficile</span><span class="tag grau">Lac salé</span><p>Un Grand Prix rapide sur un lac salé, avec le Salt Crust Triple et une table près du convoyeur.</p></div></a></li><li><a href="/fr/circuits/#freeride"><img src="/img/tracks/freeride-480.webp" width="480" height="270" alt="Dust Devil Freeride – circuit dans MX Royale" loading="lazy" decoding="async"><div><h3>Dust Devil Freeride</h3><span class="tag">Freeride</span><span class="tag grau">Freeride</span><p>Carte freeride : lignes de sauts, un step-up, un hip et une fosse en mousse, sans tours ni chrono.</p></div></a></li><li><a href="/fr/circuits/#arena"><img src="/img/tracks/arena-480.webp" width="480" height="270" alt="Midnight Arena – circuit dans MX Royale" loading="lazy" decoding="async"><div><h3>Midnight Arena</h3><span class="tag">Freeride</span><span class="tag grau">Freestyle</span><p>Show de freestyle motocross de nuit dans un stade, avec des kickers pour whips, flips et big air.</p></div></a></li></ul>
+    <ul class="strecken"><li><a href="/fr/circuits/#sunvale"><img src="/img/tracks/sunvale-mx-park-480.webp" width="480" height="270" alt="Pilotes de motocross dans un virage herbeux, la terre vole – Sunvale MX Park dans MX Royale" loading="lazy" decoding="async"><div><h3>Sunvale MX Park</h3><span class="tag">Débutant</span><span class="tag grau">Motocross</span><p>Le circuit débutant : un parc MX à la campagne, avec rollers, petites tables et un gué dans le ruisseau.</p></div></a></li><li><a href="/fr/circuits/#larkmeadow"><img src="/img/tracks/larkmeadow-sx-480.webp" width="480" height="270" alt="Stade de supercross de nuit avec sections de rythme et flammes – Larkmeadow SX dans MX Royale" loading="lazy" decoding="async"><div><h3>Larkmeadow SX</h3><span class="tag">Moyen</span><span class="tag grau">Supercross</span><p>Supercross dans un stade de nuit : sections de rythme, whoops, une section de sable et un triple sur la ligne.</p></div></a></li><li><a href="/fr/circuits/#frostline"><img src="/img/tracks/frostline-mx-480.webp" width="480" height="270" alt="Peloton de motos de cross sur une piste enneigée – Frostline MX dans MX Royale" loading="lazy" decoding="async"><div><h3>Frostline MX</h3><span class="tag">Moyen</span><span class="tag grau">Neige</span><p>Circuit enneigé sur une piste de ski, le long du télésiège et au-dessus du Frozen Creek Gap.</p></div></a></li><li><a href="/fr/circuits/#monsoon"><img src="/img/tracks/monsoon-terraces-480.webp" width="480" height="270" alt="Piste en terre entre rizières en terrasses et palmiers – Monsoon Terraces dans MX Royale" loading="lazy" decoding="async"><div><h3>Monsoon Terraces</h3><span class="tag">Moyen</span><span class="tag grau">Motocross</span><p>Un circuit fluide sur des rizières en terrasses, avec une chaîne de terrasses et un aqueduc en bois.</p></div></a></li><li><a href="/fr/circuits/#mirage-flats"><img src="/img/tracks/mirage-flats-480.webp" width="480" height="270" alt="Pilote sautant au-dessus de wagons de marchandises dans le désert – Mirage Flats dans MX Royale" loading="lazy" decoding="async"><div><h3>Mirage Flats</h3><span class="tag">Moyen–difficile</span><span class="tag grau">Désert</span><p>Parc à sauts dans le désert sur un lac asséché, avec un rail gap au-dessus des voies et une longue tôle ondulée.</p></div></a></li><li><a href="/fr/circuits/#herbst"><img src="/img/tracks/glutwald-mx-480.webp" width="480" height="270" alt="Pilote sur un circuit en forêt d’automne entre des jets de feu – Glutwald MX dans MX Royale" loading="lazy" decoding="async"><div><h3>Glutwald MX</h3><span class="tag">Moyen–difficile</span><span class="tag grau">Forêt</span><p>Forêt d’automne dans la lumière du soir, du feu à trois sauts, un grand step-up et un grand step-down.</p></div></a></li><li><a href="/fr/circuits/#rustleaf"><img src="/img/tracks/rustleaf-hollow-480.webp" width="480" height="270" alt="Piste sous une passerelle de départ en forêt d’automne – Rustleaf Hollow dans MX Royale" loading="lazy" decoding="async"><div><h3>Rustleaf Hollow</h3><span class="tag">Moyen–difficile</span><span class="tag grau">Forêt</span><p>Un circuit sinueux en forêt d’automne, avec racines, un creux boueux et un layon de débardage.</p></div></a></li><li><a href="/fr/circuits/#neonharbor"><img src="/img/tracks/neon-harbor-sx-480.webp" width="480" height="270" alt="Circuit de supercross de nuit au bord d’un port – Neon Harbor SX dans MX Royale" loading="lazy" decoding="async"><div><h3>Neon Harbor SX</h3><span class="tag">Moyen–difficile</span><span class="tag grau">Supercross</span><p>Supercross de nuit dans un hangar du port : table en conteneurs, virage sous la grue, whoops du quai et un triple.</p></div></a></li><li><a href="/fr/circuits/#pine-ridge"><img src="/img/tracks/pine-ridge-gp-480.webp" width="480" height="270" alt="Virage relevé sur un Grand Prix en forêt de pins – Pine Ridge GP dans MX Royale" loading="lazy" decoding="async"><div><h3>Pine Ridge GP</h3><span class="tag">Difficile</span><span class="tag grau">Grand Prix</span><p>Un long Grand Prix en forêt sur une crête, avec Horsepower Hill, le Stump Double et le Ridge Double.</p></div></a></li><li><a href="/fr/circuits/#sandglass"><img src="/img/tracks/sandglass-canyon-gp-480.webp" width="480" height="270" alt="Piste dans le désert sous des parois de canyon rouges – Sandglass Canyon GP dans MX Royale" loading="lazy" decoding="async"><div><h3>Sandglass Canyon GP</h3><span class="tag">Difficile</span><span class="tag grau">Canyon</span><p>Grand Prix dans un canyon du désert : marches rocheuses, table sur une mesa, canyon étroit, drop de falaise et road gap.</p></div></a></li><li><a href="/fr/circuits/#highcrest"><img src="/img/tracks/highcrest-valley-gp-480.webp" width="480" height="270" alt="Pilote sur des dalles rocheuses sous une arche de pierre – Highcrest Valley GP dans MX Royale" loading="lazy" decoding="async"><div><h3>Highcrest Valley GP</h3><span class="tag">Difficile</span><span class="tag grau">Montagne</span><p>Un GP de montagne long et rapide, avec 38 m de dénivelé, des dalles calcaires, des lacets et une cascade.</p></div></a></li><li><a href="/fr/circuits/#canopy"><img src="/img/tracks/canopy-hollow-480.webp" width="480" height="270" alt="Pilote sur une piste de terre rouge en forêt tropicale, avec des spectateurs – Canopy Hollow dans MX Royale" loading="lazy" decoding="async"><div><h3>Canopy Hollow</h3><span class="tag">Difficile</span><span class="tag grau">Forêt tropicale</span><p>Forêt tropicale dans une cuvette : gap au-dessus d’une gorge, pont suspendu, tunnel d’arbres, cascade et dragon’s back.</p></div></a></li><li><a href="/fr/circuits/#tidewater"><img src="/img/tracks/tidewater-flats-480.webp" width="480" height="270" alt="Whoops dans le sable sur une piste de plage au bord de la mer – Tidewater Flats dans MX Royale" loading="lazy" decoding="async"><div><h3>Tidewater Flats</h3><span class="tag">Difficile</span><span class="tag grau">Plage</span><p>Un GP technique dans le sable, sur la côte à marée basse, avec un gap au-dessus d’un chenal et une épave.</p></div></a></li><li><a href="/fr/circuits/#ironcut"><img src="/img/tracks/ironcut-quarry-480.webp" width="480" height="270" alt="Virage relevé dans une carrière de pierre grise – Ironcut Quarry dans MX Royale" loading="lazy" decoding="async"><div><h3>Ironcut Quarry</h3><span class="tag">Difficile</span><span class="tag grau">Carrière</span><p>Une carrière désaffectée : lacets sur les terrasses d’extraction, un drop dans la fosse et un dragon’s back sur le bord.</p></div></a></li><li><a href="/fr/circuits/#saltpan"><img src="/img/tracks/saltpan-speedway-480.webp" width="480" height="270" alt="Piste sur un lac salé blanc avec des tas de sel – Saltpan Speedway dans MX Royale" loading="lazy" decoding="async"><div><h3>Saltpan Speedway</h3><span class="tag">Difficile</span><span class="tag grau">Lac salé</span><p>Un Grand Prix rapide sur un lac salé, avec le Salt Crust Triple et une table près du convoyeur.</p></div></a></li><li><a href="/fr/circuits/#freeride"><img src="/img/tracks/dust-devil-freeride-480.webp" width="480" height="270" alt="Carte freeride dans le désert avec des lignes de sauts, vue d’en haut – Dust Devil Freeride dans MX Royale" loading="lazy" decoding="async"><div><h3>Dust Devil Freeride</h3><span class="tag">Freeride</span><span class="tag grau">Freeride</span><p>Carte freeride : lignes de sauts, un step-up, un hip et une fosse en mousse, sans tours ni chrono.</p></div></a></li><li><a href="/fr/circuits/#arena"><img src="/img/tracks/midnight-arena-480.webp" width="480" height="270" alt="Stade de freestyle motocross de nuit avec rampes sous les projecteurs – Midnight Arena dans MX Royale" loading="lazy" decoding="async"><div><h3>Midnight Arena</h3><span class="tag">Freeride</span><span class="tag grau">Freestyle</span><p>Show de freestyle motocross de nuit dans un stade, avec des kickers pour whips, flips et big air.</p></div></a></li></ul>
     <a class="mehr" href="/fr/circuits/">Tous les circuits en détail →</a>
   </div>
 </section>
@@ -348,7 +416,7 @@ footer a{text-decoration:none}footer a:hover{color:var(--gelb);text-decoration:u
 <section id="faq">
   <div class="wrap faq">
     <h2>Questions & <span>réponses</span></h2>
-    <h3>MX Royale est-il gratuit ?</h3><p>Oui, MX Royale est entièrement gratuit. Il n’y a ni publicité ni achats dans le jeu.</p><h3>Faut-il télécharger ou installer MX Royale ?</h3><p>Non, MX Royale se joue directement dans le navigateur, sans téléchargement ni installation. Il fonctionne dans Chrome, Edge, Firefox et Safari, et aucun compte n’est nécessaire pour rouler.</p><h3>Peut-on jouer à MX Royale sur téléphone ?</h3><p>Oui, MX Royale fonctionne sur téléphone et tablette en mode paysage. Les commandes tactiles ont un stick pour le pouce, des boutons de gaz et de frein et, en option, la direction par inclinaison.</p><h3>MX Royale est-il compatible avec une manette ?</h3><p>Oui, MX Royale prend en charge les manettes. Les gaz et le frein sont sur les gâchettes analogiques (RT/LT), le stick gauche dirige et fait les whips, le stick droit déplace ton poids et incline la moto.</p><h3>Peut-on faire des courses en ligne entre amis dans MX Royale ?</h3><p>Oui, MX Royale propose des courses en ligne avec code de salon. Un joueur crée un salon et partage le code à 5 caractères, les autres le saisissent et le circuit se charge tout seul ; des bots peuvent compléter la grille.</p><h3>Combien de circuits compte MX Royale ?</h3><p>MX Royale compte 15 circuits de course et 2 cartes freeride. Parmi eux, deux circuits de supercross et des circuits outdoor en forêt, dans le désert, en canyon, sur la neige, en forêt tropicale, à la plage, dans une carrière et sur un lac salé.</p><h3>Y a-t-il du supercross dans MX Royale ?</h3><p>Oui, MX Royale a deux circuits de supercross : Larkmeadow SX dans un stade de nuit et Neon Harbor SX dans un hangar du port. Les deux ont des sections de rythme, des whoops et des triples.</p><h3>Quels modes de jeu propose MX Royale ?</h3><p>MX Royale propose des courses contre des pilotes IA, le contre-la-montre contre ton propre fantôme, un Défi du jour, un Championnat de quatre courses, le freeride, une École de figures et des courses en ligne entre amis.</p><h3>En quelles langues MX Royale est-il disponible ?</h3><p>MX Royale est disponible en anglais, allemand, espagnol, français et portugais du Brésil.</p>
+    <h3>MX Royale est-il gratuit ?</h3><p>Oui, MX Royale est entièrement gratuit. Il n’y a ni publicité ni achats dans le jeu.</p><h3>Existe-t-il un jeu de motocross gratuit en ligne sans téléchargement ?</h3><p>Oui. MX Royale est un jeu de motocross gratuit qui tourne dans le navigateur sur PC et téléphone, sans téléchargement ni compte.</p><h3>Faut-il télécharger ou installer MX Royale ?</h3><p>Non, MX Royale se joue directement dans le navigateur, sans téléchargement ni installation. Il fonctionne dans Chrome, Edge, Firefox et Safari, et aucun compte n’est nécessaire pour rouler.</p><h3>Peut-on jouer à MX Royale sur téléphone ?</h3><p>Oui, MX Royale fonctionne sur téléphone et tablette en mode paysage. Les commandes tactiles ont un stick pour le pouce, des boutons de gaz et de frein et, en option, la direction par inclinaison.</p><h3>MX Royale est-il compatible avec une manette ?</h3><p>Oui, MX Royale prend en charge les manettes. Les gaz et le frein sont sur les gâchettes analogiques (RT/LT), le stick gauche dirige et fait les whips, le stick droit déplace ton poids et incline la moto.</p><h3>Peut-on faire des courses en ligne entre amis dans MX Royale ?</h3><p>Oui, MX Royale propose des courses en ligne avec code de salon. Un joueur crée un salon et partage le code à 5 caractères, les autres le saisissent et le circuit se charge tout seul ; des bots peuvent compléter la grille.</p><h3>Combien de circuits compte MX Royale ?</h3><p>MX Royale compte 15 circuits de course et 2 cartes freeride. Parmi eux, deux circuits de supercross et des circuits outdoor en forêt, dans le désert, en canyon, sur la neige, en forêt tropicale, à la plage, dans une carrière et sur un lac salé.</p><h3>Y a-t-il du supercross dans MX Royale ?</h3><p>Oui, MX Royale a deux circuits de supercross : Larkmeadow SX dans un stade de nuit et Neon Harbor SX dans un hangar du port. Les deux ont des sections de rythme, des whoops et des triples.</p><h3>Quels modes de jeu propose MX Royale ?</h3><p>MX Royale propose des courses contre des pilotes IA, le contre-la-montre contre ton propre fantôme, un Défi du jour, un Championnat de quatre courses, le freeride, une École de figures et des courses en ligne entre amis.</p><h3>En quelles langues MX Royale est-il disponible ?</h3><p>MX Royale est disponible en anglais, allemand, espagnol, français et portugais du Brésil.</p><h3>MX Royale ressemble-t-il à MX Bikes ou MX vs ATV ?</h3><p>MX Bikes et MX vs ATV sont des jeux à télécharger sur PC ou consoles. MX Royale est un jeu de motocross arcade gratuit dans le navigateur, avec des circuits de supercross, des whips et des courses en ligne ; c’est moins une simulation.</p><h3>Qui fait MX Royale ?</h3><p>MX Royale est fait par trois élèves autrichiens qui roulent eux-mêmes en motocross. C’est un projet personnel en bêta ouverte.</p>
     <p style="margin-top:28px">Nouveau dans les jeux de motocross ? Lis <a href="/fr/comment-jouer/">comment jouer</a> ou la <a href="/fr/a-propos/">fiche du jeu</a>.</p>
   </div>
 </section>

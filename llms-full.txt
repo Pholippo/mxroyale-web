@@ -2,6 +2,8 @@
 
 > MX Royale is a free motocross racing game that runs in the web browser. No download and no account are needed; it works on PC, Mac, phones and tablets with keyboard, touch controls or a gamepad. It has 15 race tracks (including supercross), 2 freeride maps, whips, scrubs and flips, races against AI, time trial with ghosts and online races with friends.
 
+Also known as: MXRoyale
+
 Last updated: 2026-11-27
 
 ## Facts
@@ -64,6 +66,10 @@ Whip: steer in just before the lip, hold in the air, let go about half a second 
 
 Yes, MX Royale is completely free to play. There are no ads and no in-game purchases.
 
+### Is there a free motocross game I can play online without downloading?
+
+Yes. MX Royale is a free motocross and dirt bike game that runs in the browser on PC and phones, with no download and no account.
+
 ### Do I need to download or install MX Royale?
 
 No, MX Royale runs directly in the web browser with no download and no install. It works in Chrome, Edge, Firefox and Safari, and no account is needed to start riding.
@@ -95,6 +101,14 @@ MX Royale has races against AI riders, time trial with your own ghost, a Daily C
 ### Which languages is MX Royale available in?
 
 MX Royale is available in English, German, Spanish, French and Brazilian Portuguese.
+
+### Is MX Royale like MX Bikes or MX vs ATV?
+
+MX Bikes and MX vs ATV are games you download for PC or consoles. MX Royale is an arcade motocross game that runs free in the browser, with supercross tracks, whips and online races; it is less of a simulator.
+
+### Who makes MX Royale?
+
+MX Royale is made by three students from Austria who ride motocross themselves. It is a hobby project in open beta.
 
 ## Pages
 

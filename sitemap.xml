@@ -12,23 +12,23 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://mxroyale.com/"/>
     <image:image><image:loc>https://mxroyale.com/img/hero-whip-1600.webp</image:loc></image:image>
     <image:image><image:loc>https://mxroyale.com/img/og.jpg</image:loc></image:image>
-    <image:image><image:loc>https://mxroyale.com/img/tracks/sunvale.webp</image:loc></image:image>
-    <image:image><image:loc>https://mxroyale.com/img/tracks/larkmeadow.webp</image:loc></image:image>
-    <image:image><image:loc>https://mxroyale.com/img/tracks/frostline.webp</image:loc></image:image>
-    <image:image><image:loc>https://mxroyale.com/img/tracks/monsoon.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/sunvale-mx-park.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/larkmeadow-sx.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/frostline-mx.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/monsoon-terraces.webp</image:loc></image:image>
     <image:image><image:loc>https://mxroyale.com/img/tracks/mirage-flats.webp</image:loc></image:image>
-    <image:image><image:loc>https://mxroyale.com/img/tracks/herbst.webp</image:loc></image:image>
-    <image:image><image:loc>https://mxroyale.com/img/tracks/rustleaf.webp</image:loc></image:image>
-    <image:image><image:loc>https://mxroyale.com/img/tracks/neonharbor.webp</image:loc></image:image>
-    <image:image><image:loc>https://mxroyale.com/img/tracks/pine-ridge.webp</image:loc></image:image>
-    <image:image><image:loc>https://mxroyale.com/img/tracks/sandglass.webp</image:loc></image:image>
-    <image:image><image:loc>https://mxroyale.com/img/tracks/highcrest.webp</image:loc></image:image>
-    <image:image><image:loc>https://mxroyale.com/img/tracks/canopy.webp</image:loc></image:image>
-    <image:image><image:loc>https://mxroyale.com/img/tracks/tidewater.webp</image:loc></image:image>
-    <image:image><image:loc>https://mxroyale.com/img/tracks/ironcut.webp</image:loc></image:image>
-    <image:image><image:loc>https://mxroyale.com/img/tracks/saltpan.webp</image:loc></image:image>
-    <image:image><image:loc>https://mxroyale.com/img/tracks/freeride.webp</image:loc></image:image>
-    <image:image><image:loc>https://mxroyale.com/img/tracks/arena.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/glutwald-mx.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/rustleaf-hollow.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/neon-harbor-sx.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/pine-ridge-gp.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/sandglass-canyon-gp.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/highcrest-valley-gp.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/canopy-hollow.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/tidewater-flats.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/ironcut-quarry.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/saltpan-speedway.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/dust-devil-freeride.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/midnight-arena.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://mxroyale.com/de/</loc>
@@ -42,23 +42,23 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://mxroyale.com/"/>
     <image:image><image:loc>https://mxroyale.com/img/hero-whip-1600.webp</image:loc></image:image>
     <image:image><image:loc>https://mxroyale.com/img/og.jpg</image:loc></image:image>
-    <image:image><image:loc>https://mxroyale.com/img/tracks/sunvale.webp</image:loc></image:image>
-    <image:image><image:loc>https://mxroyale.com/img/tracks/larkmeadow.webp</image:loc></image:image>
-    <image:image><image:loc>https://mxroyale.com/img/tracks/frostline.webp</image:loc></image:image>
-    <image:image><image:loc>https://mxroyale.com/img/tracks/monsoon.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/sunvale-mx-park.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/larkmeadow-sx.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/frostline-mx.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/monsoon-terraces.webp</image:loc></image:image>
     <image:image><image:loc>https://mxroyale.com/img/tracks/mirage-flats.webp</image:loc></image:image>
-    <image:image><image:loc>https://mxroyale.com/img/tracks/herbst.webp</image:loc></image:image>
-    <image:image><image:loc>https://mxroyale.com/img/tracks/rustleaf.webp</image:loc></image:image>
-    <image:image><image:loc>https://mxroyale.com/img/tracks/neonharbor.webp</image:loc></image:image>
-    <image:image><image:loc>https://mxroyale.com/img/tracks/pine-ridge.webp</image:loc></image:image>
-    <image:image><image:loc>https://mxroyale.com/img/tracks/sandglass.webp</image:loc></image:image>
-    <image:image><image:loc>https://mxroyale.com/img/tracks/highcrest.webp</image:loc></image:image>
-    <image:image><image:loc>https://mxroyale.com/img/tracks/canopy.webp</image:loc></image:image>
-    <image:image><image:loc>https://mxroyale.com/img/tracks/tidewater.webp</image:loc></image:image>
-    <image:image><image:loc>https://mxroyale.com/img/tracks/ironcut.webp</image:loc></image:image>
-    <image:image><image:loc>https://mxroyale.com/img/tracks/saltpan.webp</image:loc></image:image>
-    <image:image><image:loc>https://mxroyale.com/img/tracks/freeride.webp</image:loc></image:image>
-    <image:image><image:loc>https://mxroyale.com/img/tracks/arena.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/glutwald-mx.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/rustleaf-hollow.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/neon-harbor-sx.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/pine-ridge-gp.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/sandglass-canyon-gp.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/highcrest-valley-gp.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/canopy-hollow.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/tidewater-flats.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/ironcut-quarry.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/saltpan-speedway.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/dust-devil-freeride.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/midnight-arena.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://mxroyale.com/es/</loc>
@@ -72,23 +72,23 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://mxroyale.com/"/>
     <image:image><image:loc>https://mxroyale.com/img/hero-whip-1600.webp</image:loc></image:image>
     <image:image><image:loc>https://mxroyale.com/img/og.jpg</image:loc></image:image>
-    <image:image><image:loc>https://mxroyale.com/img/tracks/sunvale.webp</image:loc></image:image>
-    <image:image><image:loc>https://mxroyale.com/img/tracks/larkmeadow.webp</image:loc></image:image>
-    <image:image><image:loc>https://mxroyale.com/img/tracks/frostline.webp</image:loc></image:image>
-    <image:image><image:loc>https://mxroyale.com/img/tracks/monsoon.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/sunvale-mx-park.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/larkmeadow-sx.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/frostline-mx.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/monsoon-terraces.webp</image:loc></image:image>
     <image:image><image:loc>https://mxroyale.com/img/tracks/mirage-flats.webp</image:loc></image:image>
-    <image:image><image:loc>https://mxroyale.com/img/tracks/herbst.webp</image:loc></image:image>
-    <image:image><image:loc>https://mxroyale.com/img/tracks/rustleaf.webp</image:loc></image:image>
-    <image:image><image:loc>https://mxroyale.com/img/tracks/neonharbor.webp</image:loc></image:image>
-    <image:image><image:loc>https://mxroyale.com/img/tracks/pine-ridge.webp</image:loc></image:image>
-    <image:image><image:loc>https://mxroyale.com/img/tracks/sandglass.webp</image:loc></image:image>
-    <image:image><image:loc>https://mxroyale.com/img/tracks/highcrest.webp</image:loc></image:image>
-    <image:image><image:loc>https://mxroyale.com/img/tracks/canopy.webp</image:loc></image:image>
-    <image:image><image:loc>https://mxroyale.com/img/tracks/tidewater.webp</image:loc></image:image>
-    <image:image><image:loc>https://mxroyale.com/img/tracks/ironcut.webp</image:loc></image:image>
-    <image:image><image:loc>https://mxroyale.com/img/tracks/saltpan.webp</image:loc></image:image>
-    <image:image><image:loc>https://mxroyale.com/img/tracks/freeride.webp</image:loc></image:image>
-    <image:image><image:loc>https://mxroyale.com/img/tracks/arena.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/glutwald-mx.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/rustleaf-hollow.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/neon-harbor-sx.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/pine-ridge-gp.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/sandglass-canyon-gp.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/highcrest-valley-gp.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/canopy-hollow.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/tidewater-flats.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/ironcut-quarry.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/saltpan-speedway.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/dust-devil-freeride.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/midnight-arena.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://mxroyale.com/fr/</loc>
@@ -102,23 +102,23 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://mxroyale.com/"/>
     <image:image><image:loc>https://mxroyale.com/img/hero-whip-1600.webp</image:loc></image:image>
     <image:image><image:loc>https://mxroyale.com/img/og.jpg</image:loc></image:image>
-    <image:image><image:loc>https://mxroyale.com/img/tracks/sunvale.webp</image:loc></image:image>
-    <image:image><image:loc>https://mxroyale.com/img/tracks/larkmeadow.webp</image:loc></image:image>
-    <image:image><image:loc>https://mxroyale.com/img/tracks/frostline.webp</image:loc></image:image>
-    <image:image><image:loc>https://mxroyale.com/img/tracks/monsoon.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/sunvale-mx-park.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/larkmeadow-sx.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/frostline-mx.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/monsoon-terraces.webp</image:loc></image:image>
     <image:image><image:loc>https://mxroyale.com/img/tracks/mirage-flats.webp</image:loc></image:image>
-    <image:image><image:loc>https://mxroyale.com/img/tracks/herbst.webp</image:loc></image:image>
-    <image:image><image:loc>https://mxroyale.com/img/tracks/rustleaf.webp</image:loc></image:image>
-    <image:image><image:loc>https://mxroyale.com/img/tracks/neonharbor.webp</image:loc></image:image>
-    <image:image><image:loc>https://mxroyale.com/img/tracks/pine-ridge.webp</image:loc></image:image>
-    <image:image><image:loc>https://mxroyale.com/img/tracks/sandglass.webp</image:loc></image:image>
-    <image:image><image:loc>https://mxroyale.com/img/tracks/highcrest.webp</image:loc></image:image>
-    <image:image><image:loc>https://mxroyale.com/img/tracks/canopy.webp</image:loc></image:image>
-    <image:image><image:loc>https://mxroyale.com/img/tracks/tidewater.webp</image:loc></image:image>
-    <image:image><image:loc>https://mxroyale.com/img/tracks/ironcut.webp</image:loc></image:image>
-    <image:image><image:loc>https://mxroyale.com/img/tracks/saltpan.webp</image:loc></image:image>
-    <image:image><image:loc>https://mxroyale.com/img/tracks/freeride.webp</image:loc></image:image>
-    <image:image><image:loc>https://mxroyale.com/img/tracks/arena.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/glutwald-mx.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/rustleaf-hollow.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/neon-harbor-sx.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/pine-ridge-gp.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/sandglass-canyon-gp.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/highcrest-valley-gp.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/canopy-hollow.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/tidewater-flats.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/ironcut-quarry.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/saltpan-speedway.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/dust-devil-freeride.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/midnight-arena.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://mxroyale.com/pt/</loc>
@@ -132,23 +132,23 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://mxroyale.com/"/>
     <image:image><image:loc>https://mxroyale.com/img/hero-whip-1600.webp</image:loc></image:image>
     <image:image><image:loc>https://mxroyale.com/img/og.jpg</image:loc></image:image>
-    <image:image><image:loc>https://mxroyale.com/img/tracks/sunvale.webp</image:loc></image:image>
-    <image:image><image:loc>https://mxroyale.com/img/tracks/larkmeadow.webp</image:loc></image:image>
-    <image:image><image:loc>https://mxroyale.com/img/tracks/frostline.webp</image:loc></image:image>
-    <image:image><image:loc>https://mxroyale.com/img/tracks/monsoon.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/sunvale-mx-park.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/larkmeadow-sx.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/frostline-mx.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/monsoon-terraces.webp</image:loc></image:image>
     <image:image><image:loc>https://mxroyale.com/img/tracks/mirage-flats.webp</image:loc></image:image>
-    <image:image><image:loc>https://mxroyale.com/img/tracks/herbst.webp</image:loc></image:image>
-    <image:image><image:loc>https://mxroyale.com/img/tracks/rustleaf.webp</image:loc></image:image>
-    <image:image><image:loc>https://mxroyale.com/img/tracks/neonharbor.webp</image:loc></image:image>
-    <image:image><image:loc>https://mxroyale.com/img/tracks/pine-ridge.webp</image:loc></image:image>
-    <image:image><image:loc>https://mxroyale.com/img/tracks/sandglass.webp</image:loc></image:image>
-    <image:image><image:loc>https://mxroyale.com/img/tracks/highcrest.webp</image:loc></image:image>
-    <image:image><image:loc>https://mxroyale.com/img/tracks/canopy.webp</image:loc></image:image>
-    <image:image><image:loc>https://mxroyale.com/img/tracks/tidewater.webp</image:loc></image:image>
-    <image:image><image:loc>https://mxroyale.com/img/tracks/ironcut.webp</image:loc></image:image>
-    <image:image><image:loc>https://mxroyale.com/img/tracks/saltpan.webp</image:loc></image:image>
-    <image:image><image:loc>https://mxroyale.com/img/tracks/freeride.webp</image:loc></image:image>
-    <image:image><image:loc>https://mxroyale.com/img/tracks/arena.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/glutwald-mx.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/rustleaf-hollow.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/neon-harbor-sx.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/pine-ridge-gp.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/sandglass-canyon-gp.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/highcrest-valley-gp.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/canopy-hollow.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/tidewater-flats.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/ironcut-quarry.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/saltpan-speedway.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/dust-devil-freeride.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/midnight-arena.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://mxroyale.com/tracks/</loc>
@@ -160,23 +160,23 @@
     <xhtml:link rel="alternate" hreflang="fr" href="https://mxroyale.com/fr/circuits/"/>
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://mxroyale.com/pt/pistas/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://mxroyale.com/tracks/"/>
-    <image:image><image:loc>https://mxroyale.com/img/tracks/sunvale.webp</image:loc></image:image>
-    <image:image><image:loc>https://mxroyale.com/img/tracks/larkmeadow.webp</image:loc></image:image>
-    <image:image><image:loc>https://mxroyale.com/img/tracks/frostline.webp</image:loc></image:image>
-    <image:image><image:loc>https://mxroyale.com/img/tracks/monsoon.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/sunvale-mx-park.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/larkmeadow-sx.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/frostline-mx.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/monsoon-terraces.webp</image:loc></image:image>
     <image:image><image:loc>https://mxroyale.com/img/tracks/mirage-flats.webp</image:loc></image:image>
-    <image:image><image:loc>https://mxroyale.com/img/tracks/herbst.webp</image:loc></image:image>
-    <image:image><image:loc>https://mxroyale.com/img/tracks/rustleaf.webp</image:loc></image:image>
-    <image:image><image:loc>https://mxroyale.com/img/tracks/neonharbor.webp</image:loc></image:image>
-    <image:image><image:loc>https://mxroyale.com/img/tracks/pine-ridge.webp</image:loc></image:image>
-    <image:image><image:loc>https://mxroyale.com/img/tracks/sandglass.webp</image:loc></image:image>
-    <image:image><image:loc>https://mxroyale.com/img/tracks/highcrest.webp</image:loc></image:image>
-    <image:image><image:loc>https://mxroyale.com/img/tracks/canopy.webp</image:loc></image:image>
-    <image:image><image:loc>https://mxroyale.com/img/tracks/tidewater.webp</image:loc></image:image>
-    <image:image><image:loc>https://mxroyale.com/img/tracks/ironcut.webp</image:loc></image:image>
-    <image:image><image:loc>https://mxroyale.com/img/tracks/saltpan.webp</image:loc></image:image>
-    <image:image><image:loc>https://mxroyale.com/img/tracks/freeride.webp</image:loc></image:image>
-    <image:image><image:loc>https://mxroyale.com/img/tracks/arena.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/glutwald-mx.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/rustleaf-hollow.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/neon-harbor-sx.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/pine-ridge-gp.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/sandglass-canyon-gp.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/highcrest-valley-gp.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/canopy-hollow.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/tidewater-flats.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/ironcut-quarry.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/saltpan-speedway.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/dust-devil-freeride.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/midnight-arena.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://mxroyale.com/de/strecken/</loc>
@@ -188,23 +188,23 @@
     <xhtml:link rel="alternate" hreflang="fr" href="https://mxroyale.com/fr/circuits/"/>
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://mxroyale.com/pt/pistas/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://mxroyale.com/tracks/"/>
-    <image:image><image:loc>https://mxroyale.com/img/tracks/sunvale.webp</image:loc></image:image>
-    <image:image><image:loc>https://mxroyale.com/img/tracks/larkmeadow.webp</image:loc></image:image>
-    <image:image><image:loc>https://mxroyale.com/img/tracks/frostline.webp</image:loc></image:image>
-    <image:image><image:loc>https://mxroyale.com/img/tracks/monsoon.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/sunvale-mx-park.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/larkmeadow-sx.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/frostline-mx.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/monsoon-terraces.webp</image:loc></image:image>
     <image:image><image:loc>https://mxroyale.com/img/tracks/mirage-flats.webp</image:loc></image:image>
-    <image:image><image:loc>https://mxroyale.com/img/tracks/herbst.webp</image:loc></image:image>
-    <image:image><image:loc>https://mxroyale.com/img/tracks/rustleaf.webp</image:loc></image:image>
-    <image:image><image:loc>https://mxroyale.com/img/tracks/neonharbor.webp</image:loc></image:image>
-    <image:image><image:loc>https://mxroyale.com/img/tracks/pine-ridge.webp</image:loc></image:image>
-    <image:image><image:loc>https://mxroyale.com/img/tracks/sandglass.webp</image:loc></image:image>
-    <image:image><image:loc>https://mxroyale.com/img/tracks/highcrest.webp</image:loc></image:image>
-    <image:image><image:loc>https://mxroyale.com/img/tracks/canopy.webp</image:loc></image:image>
-    <image:image><image:loc>https://mxroyale.com/img/tracks/tidewater.webp</image:loc></image:image>
-    <image:image><image:loc>https://mxroyale.com/img/tracks/ironcut.webp</image:loc></image:image>
-    <image:image><image:loc>https://mxroyale.com/img/tracks/saltpan.webp</image:loc></image:image>
-    <image:image><image:loc>https://mxroyale.com/img/tracks/freeride.webp</image:loc></image:image>
-    <image:image><image:loc>https://mxroyale.com/img/tracks/arena.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/glutwald-mx.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/rustleaf-hollow.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/neon-harbor-sx.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/pine-ridge-gp.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/sandglass-canyon-gp.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/highcrest-valley-gp.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/canopy-hollow.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/tidewater-flats.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/ironcut-quarry.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/saltpan-speedway.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/dust-devil-freeride.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/midnight-arena.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://mxroyale.com/es/pistas/</loc>
@@ -216,23 +216,23 @@
     <xhtml:link rel="alternate" hreflang="fr" href="https://mxroyale.com/fr/circuits/"/>
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://mxroyale.com/pt/pistas/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://mxroyale.com/tracks/"/>
-    <image:image><image:loc>https://mxroyale.com/img/tracks/sunvale.webp</image:loc></image:image>
-    <image:image><image:loc>https://mxroyale.com/img/tracks/larkmeadow.webp</image:loc></image:image>
-    <image:image><image:loc>https://mxroyale.com/img/tracks/frostline.webp</image:loc></image:image>
-    <image:image><image:loc>https://mxroyale.com/img/tracks/monsoon.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/sunvale-mx-park.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/larkmeadow-sx.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/frostline-mx.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/monsoon-terraces.webp</image:loc></image:image>
     <image:image><image:loc>https://mxroyale.com/img/tracks/mirage-flats.webp</image:loc></image:image>
-    <image:image><image:loc>https://mxroyale.com/img/tracks/herbst.webp</image:loc></image:image>
-    <image:image><image:loc>https://mxroyale.com/img/tracks/rustleaf.webp</image:loc></image:image>
-    <image:image><image:loc>https://mxroyale.com/img/tracks/neonharbor.webp</image:loc></image:image>
-    <image:image><image:loc>https://mxroyale.com/img/tracks/pine-ridge.webp</image:loc></image:image>
-    <image:image><image:loc>https://mxroyale.com/img/tracks/sandglass.webp</image:loc></image:image>
-    <image:image><image:loc>https://mxroyale.com/img/tracks/highcrest.webp</image:loc></image:image>
-    <image:image><image:loc>https://mxroyale.com/img/tracks/canopy.webp</image:loc></image:image>
-    <image:image><image:loc>https://mxroyale.com/img/tracks/tidewater.webp</image:loc></image:image>
-    <image:image><image:loc>https://mxroyale.com/img/tracks/ironcut.webp</image:loc></image:image>
-    <image:image><image:loc>https://mxroyale.com/img/tracks/saltpan.webp</image:loc></image:image>
-    <image:image><image:loc>https://mxroyale.com/img/tracks/freeride.webp</image:loc></image:image>
-    <image:image><image:loc>https://mxroyale.com/img/tracks/arena.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/glutwald-mx.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/rustleaf-hollow.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/neon-harbor-sx.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/pine-ridge-gp.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/sandglass-canyon-gp.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/highcrest-valley-gp.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/canopy-hollow.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/tidewater-flats.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/ironcut-quarry.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/saltpan-speedway.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/dust-devil-freeride.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/midnight-arena.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://mxroyale.com/fr/circuits/</loc>
@@ -244,23 +244,23 @@
     <xhtml:link rel="alternate" hreflang="fr" href="https://mxroyale.com/fr/circuits/"/>
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://mxroyale.com/pt/pistas/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://mxroyale.com/tracks/"/>
-    <image:image><image:loc>https://mxroyale.com/img/tracks/sunvale.webp</image:loc></image:image>
-    <image:image><image:loc>https://mxroyale.com/img/tracks/larkmeadow.webp</image:loc></image:image>
-    <image:image><image:loc>https://mxroyale.com/img/tracks/frostline.webp</image:loc></image:image>
-    <image:image><image:loc>https://mxroyale.com/img/tracks/monsoon.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/sunvale-mx-park.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/larkmeadow-sx.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/frostline-mx.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/monsoon-terraces.webp</image:loc></image:image>
     <image:image><image:loc>https://mxroyale.com/img/tracks/mirage-flats.webp</image:loc></image:image>
-    <image:image><image:loc>https://mxroyale.com/img/tracks/herbst.webp</image:loc></image:image>
-    <image:image><image:loc>https://mxroyale.com/img/tracks/rustleaf.webp</image:loc></image:image>
-    <image:image><image:loc>https://mxroyale.com/img/tracks/neonharbor.webp</image:loc></image:image>
-    <image:image><image:loc>https://mxroyale.com/img/tracks/pine-ridge.webp</image:loc></image:image>
-    <image:image><image:loc>https://mxroyale.com/img/tracks/sandglass.webp</image:loc></image:image>
-    <image:image><image:loc>https://mxroyale.com/img/tracks/highcrest.webp</image:loc></image:image>
-    <image:image><image:loc>https://mxroyale.com/img/tracks/canopy.webp</image:loc></image:image>
-    <image:image><image:loc>https://mxroyale.com/img/tracks/tidewater.webp</image:loc></image:image>
-    <image:image><image:loc>https://mxroyale.com/img/tracks/ironcut.webp</image:loc></image:image>
-    <image:image><image:loc>https://mxroyale.com/img/tracks/saltpan.webp</image:loc></image:image>
-    <image:image><image:loc>https://mxroyale.com/img/tracks/freeride.webp</image:loc></image:image>
-    <image:image><image:loc>https://mxroyale.com/img/tracks/arena.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/glutwald-mx.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/rustleaf-hollow.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/neon-harbor-sx.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/pine-ridge-gp.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/sandglass-canyon-gp.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/highcrest-valley-gp.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/canopy-hollow.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/tidewater-flats.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/ironcut-quarry.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/saltpan-speedway.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/dust-devil-freeride.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/midnight-arena.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://mxroyale.com/pt/pistas/</loc>
@@ -272,23 +272,23 @@
     <xhtml:link rel="alternate" hreflang="fr" href="https://mxroyale.com/fr/circuits/"/>
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://mxroyale.com/pt/pistas/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://mxroyale.com/tracks/"/>
-    <image:image><image:loc>https://mxroyale.com/img/tracks/sunvale.webp</image:loc></image:image>
-    <image:image><image:loc>https://mxroyale.com/img/tracks/larkmeadow.webp</image:loc></image:image>
-    <image:image><image:loc>https://mxroyale.com/img/tracks/frostline.webp</image:loc></image:image>
-    <image:image><image:loc>https://mxroyale.com/img/tracks/monsoon.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/sunvale-mx-park.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/larkmeadow-sx.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/frostline-mx.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/monsoon-terraces.webp</image:loc></image:image>
     <image:image><image:loc>https://mxroyale.com/img/tracks/mirage-flats.webp</image:loc></image:image>
-    <image:image><image:loc>https://mxroyale.com/img/tracks/herbst.webp</image:loc></image:image>
-    <image:image><image:loc>https://mxroyale.com/img/tracks/rustleaf.webp</image:loc></image:image>
-    <image:image><image:loc>https://mxroyale.com/img/tracks/neonharbor.webp</image:loc></image:image>
-    <image:image><image:loc>https://mxroyale.com/img/tracks/pine-ridge.webp</image:loc></image:image>
-    <image:image><image:loc>https://mxroyale.com/img/tracks/sandglass.webp</image:loc></image:image>
-    <image:image><image:loc>https://mxroyale.com/img/tracks/highcrest.webp</image:loc></image:image>
-    <image:image><image:loc>https://mxroyale.com/img/tracks/canopy.webp</image:loc></image:image>
-    <image:image><image:loc>https://mxroyale.com/img/tracks/tidewater.webp</image:loc></image:image>
-    <image:image><image:loc>https://mxroyale.com/img/tracks/ironcut.webp</image:loc></image:image>
-    <image:image><image:loc>https://mxroyale.com/img/tracks/saltpan.webp</image:loc></image:image>
-    <image:image><image:loc>https://mxroyale.com/img/tracks/freeride.webp</image:loc></image:image>
-    <image:image><image:loc>https://mxroyale.com/img/tracks/arena.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/glutwald-mx.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/rustleaf-hollow.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/neon-harbor-sx.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/pine-ridge-gp.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/sandglass-canyon-gp.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/highcrest-valley-gp.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/canopy-hollow.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/tidewater-flats.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/ironcut-quarry.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/saltpan-speedway.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/dust-devil-freeride.webp</image:loc></image:image>
+    <image:image><image:loc>https://mxroyale.com/img/tracks/midnight-arena.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://mxroyale.com/how-to-play/</loc>

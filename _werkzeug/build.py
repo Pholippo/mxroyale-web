@@ -20,7 +20,7 @@ import re
 import sys
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from texte import PFAD, FAQ, TX, TRACK_TX, DIFF_INTL, TYP_INTL  # noqa: E402
+from texte import PFAD, FAQ, TX, TRACK_TX, DIFF_INTL, TYP_INTL, BILD_ALT, IN_MX  # noqa: E402
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SITE = 'https://mxroyale.com'
@@ -184,7 +184,8 @@ p a,li a,td a,dd a{color:var(--gelb)}
 .logo{display:inline-flex;flex-direction:column;line-height:.82;font-family:"Barlow Condensed",sans-serif}
 .logo .mx{font-weight:900;font-style:italic;font-size:clamp(84px,19vw,170px);letter-spacing:-.02em}
 .logo .pl{align-self:flex-start;margin-top:.05em;background:var(--gelb);color:var(--bg);font-weight:900;font-style:italic;font-size:clamp(36px,8vw,72px);padding:.06em .3em 0;transform:skewX(-10deg);border:3px solid var(--bg);box-shadow:4px 4px 0 var(--bg)}
-h1.claim{font:700 clamp(22px,3.6vw,30px)/1.25 "Barlow Semi Condensed",sans-serif;text-transform:none;margin:26px 0;max-width:680px}
+h1.claim{font:700 clamp(22px,3.6vw,30px)/1.25 "Barlow Semi Condensed",sans-serif;text-transform:none;margin:26px 0 6px;max-width:680px}
+.claim-sub{font:600 clamp(17px,2.4vw,21px)/1.3 "Barlow Semi Condensed",sans-serif;margin:0 0 26px;color:var(--muted)}
 .los{display:inline-block;background:var(--gelb);color:var(--bg);text-decoration:none;font:italic 900 clamp(26px,5vw,36px) "Barlow Condensed",sans-serif;text-transform:uppercase;padding:14px 40px 12px;transform:skewX(-8deg);box-shadow:5px 5px 0 #000;transition:transform .12s}
 .los:hover{transform:skewX(-8deg) translateY(-2px)}
 .los.klein-los{font-size:24px;padding:10px 26px 8px}
@@ -301,7 +302,7 @@ def footer(lang, pfad):
 </footer>"""
 
 
-def seite(lang, pfad, titel, desc, body, ld, og_titel=None, preload=''):
+def seite(lang, pfad, titel, desc, body, ld, og_titel=None, preload='', og_bild=('/img/og.jpg', 1200, 630, None)):
     assert len(titel) <= 60, (pfad, len(titel), titel)
     assert len(desc) <= 155, (pfad, len(desc), desc)
     t = TX[lang]
@@ -330,15 +331,15 @@ def seite(lang, pfad, titel, desc, body, ld, og_titel=None, preload=''):
 {og_alt_loc}<meta property="og:title" content="{e(og_t)}">
 <meta property="og:description" content="{e(desc)}">
 <meta property="og:url" content="{SITE}{pfad}">
-<meta property="og:image" content="{SITE}/img/og.jpg">
-<meta property="og:image:width" content="1200">
-<meta property="og:image:height" content="630">
-<meta property="og:image:alt" content="{e(t['og_alt'])}">
+<meta property="og:image" content="{SITE}{og_bild[0]}">
+<meta property="og:image:width" content="{og_bild[1]}">
+<meta property="og:image:height" content="{og_bild[2]}">
+<meta property="og:image:alt" content="{e(og_bild[3] or t['og_alt'])}">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="{e(og_t)}">
 <meta name="twitter:description" content="{e(desc)}">
-<meta name="twitter:image" content="{SITE}/img/og.jpg">
-<meta name="twitter:image:alt" content="{e(t['og_alt'])}">
+<meta name="twitter:image" content="{SITE}{og_bild[0]}">
+<meta name="twitter:image:alt" content="{e(og_bild[3] or t['og_alt'])}">
 <style>{CSS.strip()}</style>
 <script type="application/ld+json">
 {ldjson}
@@ -357,7 +358,10 @@ def seite(lang, pfad, titel, desc, body, ld, og_titel=None, preload=''):
 # ── JSON-LD ────────────────────────────────────────────────────────────────────────────────────────
 ORG = {'@type': 'Organization', '@id': SITE + '/#org', 'name': 'MX Royale', 'url': SITE + '/',
        'logo': {'@type': 'ImageObject', 'url': SITE + '/img/logo-512.png', 'width': 512, 'height': 512},
-       'email': 'info@mxroyale.com', 'sameAs': SOCIAL}
+       'description': 'Indie game team of three students from Austria',
+       'email': 'info@mxroyale.com',
+       'contactPoint': {'@type': 'ContactPoint', 'contactType': 'press', 'email': 'press@mxroyale.com'},
+       'sameAs': SOCIAL}
 
 
 def website(lang):
@@ -367,15 +371,18 @@ def website(lang):
 
 def videogame(lang):
     return {
-        '@type': 'VideoGame', '@id': SITE + '/#game', 'name': 'MX Royale', 'url': SITE + '/',
+        '@type': ['VideoGame', 'WebApplication'], '@id': SITE + '/#game', 'name': 'MX Royale', 'url': SITE + '/',
+        'alternateName': ['MXRoyale', 'MX Royale Motocross'],
         'description': tx(lang, 'vg_desc'), 'inLanguage': LANGS,
         'image': SITE + '/img/og.jpg',
-        'screenshot': [SITE + f'/img/tracks/{t["id"]}.webp' for t in TRACKS[:6]],
+        'screenshot': [{'@type': 'ImageObject', 'url': SITE + bild_url(t), 'caption': bild_alt(t, 'en')} for t in TRACKS[:6]],
+        'keywords': 'motocross game, dirt bike game, supercross game, browser game, free racing game',
         'genre': ['Racing', 'Sports', 'Motocross'],
         'gamePlatform': ['Web browser', 'PC', 'Mobile'],
-        'applicationCategory': 'Game', 'operatingSystem': 'Any (web browser)',
+        'applicationCategory': 'GameApplication', 'applicationSubCategory': 'Racing game',
+        'operatingSystem': 'Any (web browser)', 'browserRequirements': 'Requires a browser with WebGL 2',
         'playMode': ['SinglePlayer', 'MultiPlayer'],
-        'numberOfPlayers': {'@type': 'QuantitativeValue', 'minValue': 1},
+        'numberOfPlayers': {'@type': 'QuantitativeValue', 'minValue': 1, 'maxValue': 12},
         'gameLocation': [t['name'] for t in TRACKS],
         'offers': {'@type': 'Offer', 'price': '0', 'priceCurrency': 'EUR', 'availability': 'https://schema.org/InStock',
                    'url': PLAY},
@@ -423,12 +430,25 @@ def t_typ(t, lang):
     return {'en': t['typ'][0], 'de': t['typ'][1]}.get(lang) or TYP_INTL[t['typ'][0]][lang]
 
 
+def bild_slug(t):
+    """Dateiname des Streckenbilds = Streckenname, z. B. 'sunvale-mx-park'."""
+    return re.sub(r'[^a-z0-9]+', '-', t['name'].lower()).strip('-')
+
+
+def bild_url(t, klein=False):
+    return f'/img/tracks/{bild_slug(t)}{"-480" if klein else ""}.webp'
+
+
+def bild_alt(t, lang):
+    return f'{BILD_ALT[t["id"]][lang]} – {t["name"]} {IN_MX[lang]}'
+
+
 def img(t, breit=False, lazy=True, lang='en'):
-    alt = f'{t["name"]} – {TX[lang]["track_alt"]}'
+    alt = bild_alt(t, lang)
     if breit:
-        return (f'<img src="/img/tracks/{t["id"]}.webp" srcset="/img/tracks/{t["id"]}-480.webp 480w, /img/tracks/{t["id"]}.webp 960w" '
+        return (f'<img src="{bild_url(t)}" srcset="{bild_url(t, True)} 480w, {bild_url(t)} 960w" '
                 f'sizes="(max-width:720px) 100vw, 560px" width="960" height="540" alt="{e(alt)}"{LAZY if lazy else ""} decoding="async">')
-    return (f'<img src="/img/tracks/{t["id"]}-480.webp" width="480" height="270" alt="{e(alt)}" loading="lazy" decoding="async">')
+    return (f'<img src="{bild_url(t, True)}" width="480" height="270" alt="{e(alt)}" loading="lazy" decoding="async">')
 
 
 def diff_tag(t, lang):
@@ -451,6 +471,7 @@ def startseite(lang):
     <div class="wrap">
       <div class="logo" role="img" aria-label="MX Royale"><span class="mx" aria-hidden="true">MX</span><span class="pl" aria-hidden="true">ROYALE</span></div>
       <h1 class="claim">{e(tx(lang, 'claim'))}</h1>
+      <p class="claim-sub">{e(tx(lang, 'claim_sub'))}</p>
       {ride(lang)}
       <p class="klein">{e(tx(lang, 'klein'))}</p>
     </div>
@@ -461,6 +482,7 @@ def startseite(lang):
 <section>
   <div class="wrap">
     <h2>{tx(lang, 'h_get')}</h2>
+    <p class="lead">{e(tx(lang, 'get_lead'))}</p>
     <div class="karten">{karten_html}</div>
   </div>
 </section>
@@ -525,10 +547,11 @@ def streckenseite(lang):
 </main>"""
     item_list = {'@type': 'ItemList', 'name': tx(lang, 'tracks_list'),
                  'itemListElement': [{'@type': 'ListItem', 'position': i + 1, 'name': t['name'], 'url': SITE + pfad + '#' + t['id'],
-                                      'image': SITE + f'/img/tracks/{t["id"]}.webp'}
+                                      'image': SITE + bild_url(t)}
                                      for i, t in enumerate(TRACKS)]}
     ld = graph(breadcrumb(lang, pfad, tx(lang, 'tracks_crumb')), item_list)
-    return seite(lang, pfad, tx(lang, 'tracks_titel'), tx(lang, 'tracks_desc'), body, ld)
+    sx = TRACKS[1]  # Larkmeadow SX als Vorschaubild der Strecken-Seite
+    return seite(lang, pfad, tx(lang, 'tracks_titel'), tx(lang, 'tracks_desc'), body, ld, og_bild=(bild_url(sx), 960, 540, bild_alt(sx, lang)))
 
 
 # ── Anleitung ──────────────────────────────────────────────────────────────────────────────────────
@@ -576,9 +599,9 @@ def ueber(lang):
 def bilder_fuer(p):
     """Bilder einer Seite für die Bilder-Sitemap."""
     if p in [PFAD[l]['home'] for l in SPRACHEN]:
-        return ['/img/hero-whip-1600.webp', '/img/og.jpg'] + [f'/img/tracks/{t["id"]}.webp' for t in TRACKS]
+        return ['/img/hero-whip-1600.webp', '/img/og.jpg'] + [bild_url(t) for t in TRACKS]
     if p in [PFAD[l]['tracks'] for l in SPRACHEN]:
-        return [f'/img/tracks/{t["id"]}.webp' for t in TRACKS]
+        return [bild_url(t) for t in TRACKS]
     return []
 
 
@@ -648,6 +671,8 @@ def llms(voll):
     kopf = f"""# MX Royale
 
 > MX Royale is a free motocross racing game that runs in the web browser. No download and no account are needed; it works on PC, Mac, phones and tablets with keyboard, touch controls or a gamepad. It has {N_RACE} race tracks (including supercross), {N_FREE} freeride maps, whips, scrubs and flips, races against AI, time trial with ghosts and online races with friends.
+
+Also known as: MXRoyale
 
 Last updated: {STAND}
 
