@@ -476,7 +476,7 @@ def startseite(lang):
         f'<p>{e(t_kurz(t, lang))}</p></div></a></li>' for t in TRACKS)
     faq = ''.join(f'<h3>{e(q)}</h3><p>{e(a)}</p>' for q, a in faq_liste(lang))
     body = f"""<header class="hero">
-  <picture><source media="(max-aspect-ratio: 4/5)" srcset="/img/hero-whip-hoch-720.webp" width="720" height="867"><img class="hero-bild" src="/img/hero-whip-1600.webp" srcset="/img/hero-whip-800.webp 800w, /img/hero-whip-1600.webp 1600w" sizes="100vw" width="1600" height="900" alt="{e(tx(lang, 'hero_alt'))}" fetchpriority="high"></picture>
+  <picture><source media="(max-aspect-ratio: 4/5)" srcset="/img/hero-beach-jump-hoch-720.webp" width="720" height="867"><img class="hero-bild" src="/img/hero-beach-jump-1600.webp" srcset="/img/hero-beach-jump-800.webp 800w, /img/hero-beach-jump-1600.webp 1600w" sizes="100vw" width="1600" height="900" alt="{e(tx(lang, 'hero_alt'))}" fetchpriority="high"></picture>
   {nav(lang, pfad)}
   <div class="hero-inhalt" id="inhalt">
     <div class="wrap">
@@ -523,8 +523,8 @@ def startseite(lang):
   </div>
 </section>
 </main>"""
-    pre = ('<link rel="preload" as="image" href="/img/hero-whip-hoch-720.webp" media="(max-aspect-ratio: 4/5)" fetchpriority="high">\n'
-           '<link rel="preload" as="image" href="/img/hero-whip-1600.webp" imagesrcset="/img/hero-whip-800.webp 800w, /img/hero-whip-1600.webp 1600w" '
+    pre = ('<link rel="preload" as="image" href="/img/hero-beach-jump-hoch-720.webp" media="(max-aspect-ratio: 4/5)" fetchpriority="high">\n'
+           '<link rel="preload" as="image" href="/img/hero-beach-jump-1600.webp" imagesrcset="/img/hero-beach-jump-800.webp 800w, /img/hero-beach-jump-1600.webp 1600w" '
            'imagesizes="100vw" media="(min-aspect-ratio: 801/1000)" fetchpriority="high">\n')
     ld = graph(ORG, website(lang), videogame(lang), faqpage(lang, pfad))
     return seite(lang, pfad, tx(lang, 'home_titel'), tx(lang, 'home_desc'), body, ld, og_titel=tx(lang, 'home_og'), preload=pre)
@@ -715,7 +715,7 @@ def atom(lang):
 def bilder_fuer(p):
     """Bilder einer Seite für die Bilder-Sitemap."""
     if p in [PFAD[l]['home'] for l in SPRACHEN]:
-        return ['/img/hero-whip-1600.webp', '/img/og.jpg'] + [bild_url(t) for t in TRACKS]
+        return ['/img/hero-beach-jump-1600.webp', '/img/og.jpg'] + [bild_url(t) for t in TRACKS]
     if p in ('/press/', '/presse/'):
         return ['/presse/mxroyale_key_art_1920.jpg'] + ['/presse/' + n for _, n, _, _ in PRESSE_SHOTS]
     if p in [PFAD[l]['tracks'] for l in SPRACHEN]:

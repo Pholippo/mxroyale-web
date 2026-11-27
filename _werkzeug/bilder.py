@@ -15,14 +15,22 @@ from build import TRACKS, bild_slug  # noqa: E402
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SHOTS = r'C:\Users\phili\Motocross\abnahme\content\shots_2611\beste'
-# Strecke → bester Shot (Standard: <id>_hero_16x9_01.jpg)
+SIEGER = os.environ.get('MX_SIEGER') or r'C:\Users\phili\Motocross\abnahme\mxroyale\bild-turnier\sieger_aktuell'
+# Strecke → bester Shot (Standard: <id>_hero_16x9_01.jpg). Absoluter Pfad = Blender-Render (Bild-Turnier-Sieger, 4K).
 STRECKEN_SHOTS = {
     'sunvale': 'sunvale_kurve_16x9_01.jpg',
-    'frostline': 'frostline_pulk_16x9_02.jpg',
-    'highcrest': 'highcrest_hero_16x9_01.jpg',
+    'frostline': os.path.join(SIEGER, 'B12.png'),
+    'highcrest': os.path.join(SIEGER, 'B06.png'),
+    'tidewater': os.path.join(SIEGER, 'B04.png'),
+    'neonharbor': os.path.join(SIEGER, 'B17.png'),
+    'larkmeadow': os.path.join(SIEGER, 'B19.png'),
+    'herbst': os.path.join(SIEGER, 'B09.png'),
+    'arena': os.path.join(SIEGER, 'B30.png'),
 }
-HERO_QUER = 'highcrest_whip_16x9_01.jpg'
-HERO_HOCH = 'highcrest_whip_9x16_02.jpg'
+HERO_QUER = os.path.join(SIEGER, 'B02.png')
+HERO_HOCH = os.path.join(SIEGER, 'B02_916.png')
+HERO_NAME = 'hero-beach-jump'
+HERO_HOCH_Y = 700  # oberer Rand des 1080×1300-Ausschnitts aus dem 9:16-Render
 
 
 def speichere(im, rel, q):
@@ -58,13 +66,17 @@ def main():
         os.replace(ziel + '.tmp', ziel)
         print('presse/' + name, os.path.getsize(ziel) // 1024, 'KB')
         speichere(im.resize((480, 270), Image.LANCZOS), 'presse/vorschau/' + name.replace('.jpg', '-480.webp'), 70)
-    q = Image.open(os.path.join(SHOTS, HERO_QUER)).convert('RGB')
-    speichere(q.resize((1600, 900), Image.LANCZOS), 'img/hero-whip-1600.webp', 70)
-    speichere(q.resize((800, 450), Image.LANCZOS), 'img/hero-whip-800.webp', 68)
-    h = Image.open(os.path.join(SHOTS, HERO_HOCH)).convert('RGB')
-    # oberen Himmel wegschneiden, damit der Fahrer am Handy über dem Text steht
-    h = h.crop((0, 620, 1080, 1920))
-    speichere(h.resize((720, 867), Image.LANCZOS), 'img/hero-whip-hoch-720.webp', 68)
+    q = Image.open(HERO_QUER).convert('RGB')
+    speichere(q.resize((1600, 900), Image.LANCZOS), f'img/{HERO_NAME}-1600.webp', 70)
+    speichere(q.resize((800, 450), Image.LANCZOS), f'img/{HERO_NAME}-800.webp', 68)
+    h = Image.open(HERO_HOCH).convert('RGB')
+    # Ausschnitt 1080×1300 (= 720×867), Fahrer im oberen Teil, damit er am Handy über dem Text steht
+    h = h.crop((0, HERO_HOCH_Y, 1080, HERO_HOCH_Y + 1300))
+    speichere(h.resize((720, 867), Image.LANCZOS), f'img/{HERO_NAME}-hoch-720.webp', 68)
+    for alt in ('hero-whip-1600.webp', 'hero-whip-800.webp', 'hero-whip-hoch-720.webp'):
+        if os.path.exists(os.path.join(ROOT, 'img', alt)):
+            os.remove(os.path.join(ROOT, 'img', alt))
+            print('entfernt', alt)
 
 
 if __name__ == '__main__':

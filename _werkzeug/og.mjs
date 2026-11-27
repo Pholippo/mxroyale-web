@@ -8,7 +8,7 @@ import { fileURLToPath, pathToFileURL } from 'node:url';
 const require = createRequire('C:/Users/phili/Motocross/worktrees/n-int/package.json');
 const { chromium } = require('playwright-core');
 const ROOT = path.dirname(path.dirname(fileURLToPath(import.meta.url)));
-const QUELLE = 'C:/Users/phili/Motocross/abnahme/content/shots_2611/beste/highcrest_whip_16x9_02.jpg';
+const QUELLE = process.env.MX_SIEGER_OG || 'C:/Users/phili/Motocross/abnahme/mxroyale/bild-turnier/sieger_aktuell/B02.png'; // Bild-Turnier-Sieger (Blender-Render)
 
 const vorlage = fs.readFileSync(path.join(ROOT, '_werkzeug/og.html'), 'utf8').replace('QUELLE', pathToFileURL(QUELLE).href);
 const tmpHtml = path.join(ROOT, '_werkzeug/og.tmp.html');
