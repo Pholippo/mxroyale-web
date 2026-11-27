@@ -905,3 +905,52 @@ BILD_ALT = {
     'arena': {'en': 'Freestyle motocross stadium at night with ramps under spotlights', 'de': 'Freestyle-Motocross-Stadion bei Nacht mit Rampen im Scheinwerferlicht', 'es': 'Estadio de freestyle motocross de noche con rampas bajo los reflectores', 'fr': 'Stade de freestyle motocross de nuit avec rampes sous les projecteurs', 'pt': 'Estádio de freestyle motocross à noite com rampas sob os refletores'},
 }
 IN_MX = {'en': 'in MX Royale', 'de': 'in MX Royale', 'es': 'en MX Royale', 'fr': 'dans MX Royale', 'pt': 'no MX Royale'}
+
+# ── Presse-Seite (nur EN/DE, /press/ und /presse/) ─────────────────────────────────────────────────
+PRESSE = {
+    'en': dict(
+        titel='MX Royale – Press Kit: Facts, Logo, Screenshots',
+        desc='MX Royale press kit: facts, short texts in 50/100/200 words, logo, key art and screenshots of the free browser motocross game. For press and creators.',
+        h1='Press &amp; <span>creators</span>', crumb='Press & creators',
+        intro='Want to write about MX Royale, make a video or stream it? Go ahead, no need to ask. Everything you need is on this page.',
+        h_fakten='Facts', h_texte='Short texts to copy', h_dl='Downloads', h_kontakt='Contact',
+        texte=[
+            ('50 words', 'MX Royale is a free motocross game that runs right in the browser, on PC and phones, with keyboard, touch or controller. No download, no account. {nr} race tracks from supercross stadiums to a desert Grand Prix, {nf} freeride maps, whips and flips, ghost laps and online races with friends.'),
+            ('100 words', 'MX Royale is a free motocross game that runs right in the browser, on PC and phones, with keyboard, touch or controller. No download, no account. {nr} race tracks from supercross stadiums to a desert Grand Prix, {nf} freeride maps, whips and flips. Riders line up at the gate against up to 11 AI opponents, chase their own ghost in time trial, take on the Daily Challenge or a four-race Championship. Online, one player creates a room and shares a five-character code. MX Royale is built by three students from Austria who ride motocross themselves. It has been in open beta since 26 November 2026.'),
+            ('200 words', 'MX Royale is a free motocross game that runs right in the browser. It works on PC, Mac, phones and tablets, with keyboard, touch controls or a gamepad, and needs no download and no account.\n\nThere are {nr} race tracks and {nf} freeride maps: two supercross tracks under stadium lights, a beginner MX park, forest Grand Prix tracks, a desert jump park with a rail gap, a red-rock canyon, a snow track down a ski slope, a rainforest hollow, a beach at low tide, a quarry and a salt lake. Riders race up to 11 AI opponents, ride time trial against their own ghost for medal times and a top-10 leaderboard, take on the Daily Challenge or a four-race Championship. Online races work with a five-character room code; bots fill up the field.\n\nThe riding is arcade, but with real technique: whips, scrubs, the pop off the lip and a proper gate start. In freeride there are backflips, Supermans, Nac-Nacs and Can-Cans, and a trick school explains each one. The game is available in English, German, Spanish, French and Brazilian Portuguese.\n\nMX Royale is built by three students from Austria who ride motocross themselves. It has been in open beta since 26 November 2026, with no ads and no in-game purchases.'),
+        ],
+        dl=[('mxroyale_logo_1080.png', 'Logo (PNG, 1080 × 1080)'), ('mxroyale_key_art_1920.jpg', 'Key art (JPG, 1920 × 1080)')],
+        zip='Complete press kit (ZIP: logo, key art, 8 screenshots 1920 × 1080, fact sheet)',
+        shots='Screenshots (1920 × 1080, click to download)',
+        clips='You can also record your own clips in the game (Replay → Share).',
+        kontakt='Press and partnerships: <a href="mailto:press@mxroyale.com">press@mxroyale.com</a><br>General: <a href="mailto:info@mxroyale.com">info@mxroyale.com</a><br>Social: @mxroyalegame on TikTok, Instagram and YouTube',
+    ),
+    'de': dict(
+        titel='MX Royale – Pressematerial: Fakten, Logo, Screenshots',
+        desc='Pressematerial zu MX Royale: Fakten, Kurztexte mit 50/100/200 Wörtern, Logo, Key Art und Screenshots des kostenlosen Motocross Browserspiels.',
+        h1='Presse &amp; <span>Creator</span>', crumb='Presse & Creator',
+        intro='Ihr wollt über MX Royale schreiben, ein Video machen oder es streamen? Gerne, ohne Nachfrage. Alles, was ihr braucht, steht hier.',
+        h_fakten='Fakten', h_texte='Kurztexte zum Kopieren', h_dl='Downloads', h_kontakt='Kontakt',
+        texte=[
+            ('50 Wörter', 'MX Royale ist ein kostenloses Motocross-Spiel, das direkt im Browser läuft, am PC und am Handy, mit Tastatur, Touch oder Controller. Kein Download, kein Konto. {nr} Rennstrecken von der Supercross-Halle bis zum Wüsten-Grand-Prix, {nf} Freeride-Maps, Whips und Flips, Geister-Runden und Online-Rennen mit Freunden.'),
+            ('100 Wörter', 'MX Royale ist ein kostenloses Motocross-Spiel, das direkt im Browser läuft, am PC und am Handy, mit Tastatur, Touch oder Controller. Kein Download, kein Konto. {nr} Rennstrecken von der Supercross-Halle bis zum Wüsten-Grand-Prix, {nf} Freeride-Maps, Whips und Flips. Man startet am Gatter gegen bis zu 11 KI-Fahrer, jagt im Zeitfahren den eigenen Geist, fährt die Tages-Challenge oder eine Meisterschaft über vier Rennen. Online erstellt einer einen Raum und schickt einen 5-stelligen Code. MX Royale bauen drei Schüler aus Österreich, die selbst Motocross fahren. Seit 26. November 2026 ist das Spiel in der offenen Beta.'),
+            ('200 Wörter', 'MX Royale ist ein kostenloses Motocross-Spiel, das direkt im Browser läuft. Es funktioniert am PC, Mac, Handy und Tablet, mit Tastatur, Touch-Steuerung oder Gamepad, ohne Download und ohne Konto.\n\nEs gibt {nr} Rennstrecken und {nf} Freeride-Maps: zwei Supercross-Strecken unter Flutlicht, einen Einsteiger-MX-Park, Wald-Grand-Prix, einen Wüsten-Sprungpark mit Rail Gap, einen roten Canyon, eine Schneestrecke auf der Skipiste, einen Regenwald, einen Strand bei Ebbe, einen Steinbruch und einen Salzsee. Man fährt gegen bis zu 11 KI-Fahrer, im Zeitfahren gegen den eigenen Geist um Medaillenzeiten und die Top 10 der Strecke, die Tages-Challenge oder eine Meisterschaft über vier Rennen. Online-Rennen laufen über einen 5-stelligen Raum-Code; Bots füllen das Feld auf.\n\nDas Fahren ist Arcade, aber mit echter Technik: Whips, Scrubs, der Pop an der Kante und ein richtiger Gatterstart. Im Freeride gibt es Backflips, Superman, Nac-Nac und Can-Can, eine Trick-Schule erklärt jeden Trick. Das Spiel gibt es auf Englisch, Deutsch, Spanisch, Französisch und brasilianischem Portugiesisch.\n\nMX Royale bauen drei Schüler aus Österreich, die selbst Motocross fahren. Seit 26. November 2026 ist es in der offenen Beta, ohne Werbung und ohne In-Game-Käufe.'),
+        ],
+        dl=[('mxroyale_logo_1080.png', 'Logo (PNG, 1080 × 1080)'), ('mxroyale_key_art_1920.jpg', 'Key Art (JPG, 1920 × 1080)')],
+        zip='Komplettes Pressepaket (ZIP: Logo, Key Art, 8 Screenshots 1920 × 1080, Faktenblatt)',
+        shots='Screenshots (1920 × 1080, Klick lädt herunter)',
+        clips='Clips dürft ihr auch selbst im Spiel aufnehmen (Replay → Teilen).',
+        kontakt='Presse und Kooperationen: <a href="mailto:presse@mxroyale.com">presse@mxroyale.com</a><br>Allgemein: <a href="mailto:info@mxroyale.com">info@mxroyale.com</a><br>Social: @mxroyalegame auf TikTok, Instagram und YouTube',
+    ),
+}
+# Pressefotos: Quelle (shots_2611/beste) → Dateiname in /presse/, Bildbeschreibung EN/DE
+PRESSE_SHOTS = [
+    ('larkmeadow_hero_16x9_01.jpg', 'mx-royale-supercross-larkmeadow-sx.jpg', 'Supercross stadium at night: Larkmeadow SX', 'Supercross-Stadion bei Nacht: Larkmeadow SX'),
+    ('highcrest_whip_16x9_01.jpg', 'mx-royale-whip-highcrest-valley-gp.jpg', 'Whip over a jump on Highcrest Valley GP', 'Whip über einen Sprung auf Highcrest Valley GP'),
+    ('mirage-flats_hero_16x9_01.jpg', 'mx-royale-rail-gap-mirage-flats.jpg', 'Rail gap over freight wagons on Mirage Flats', 'Rail Gap über Güterwaggons auf Mirage Flats'),
+    ('herbst_hero_16x9_01.jpg', 'mx-royale-fire-jumps-glutwald-mx.jpg', 'Fire jumps on the autumn forest track Glutwald MX', 'Feuer-Sprünge auf der Herbstwald-Strecke Glutwald MX'),
+    ('frostline_pulk_16x9_02.jpg', 'mx-royale-snow-race-frostline-mx.jpg', 'Race on snow at Frostline MX', 'Rennen im Schnee auf Frostline MX'),
+    ('sunvale_kurve_16x9_01.jpg', 'mx-royale-gate-pack-sunvale-mx-park.jpg', 'Pack of riders on Sunvale MX Park', 'Fahrerfeld auf Sunvale MX Park'),
+    ('neonharbor_whip_16x9_01.jpg', 'mx-royale-night-whip-neon-harbor-sx.jpg', 'Night whip at Neon Harbor SX', 'Whip bei Nacht auf Neon Harbor SX'),
+    ('tidewater_air_16x9_01.jpg', 'mx-royale-beach-jump-tidewater-flats.jpg', 'Beach jump on Tidewater Flats', 'Sprung am Strand auf Tidewater Flats'),
+]

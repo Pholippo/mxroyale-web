@@ -48,6 +48,15 @@ def main():
         if f.endswith('.webp') and f not in behalten:
             os.remove(os.path.join(ordner, f))
             print('entfernt', f)
+    # Pressefotos 1920×1080 JPG + Vorschau 480 (WebP) für /press/ und das ZIP
+    from texte import PRESSE_SHOTS
+    for quelle, name, _, _ in PRESSE_SHOTS:
+        im = Image.open(os.path.join(SHOTS, quelle)).convert('RGB')
+        ziel = os.path.join(ROOT, 'presse', name)
+        im.resize((1920, 1080), Image.LANCZOS).save(ziel + '.tmp', 'JPEG', quality=86, optimize=True, progressive=True)
+        os.replace(ziel + '.tmp', ziel)
+        print('presse/' + name, os.path.getsize(ziel) // 1024, 'KB')
+        speichere(im.resize((480, 270), Image.LANCZOS), 'presse/vorschau/' + name.replace('.jpg', '-480.webp'), 70)
     q = Image.open(os.path.join(SHOTS, HERO_QUER)).convert('RGB')
     speichere(q.resize((1600, 900), Image.LANCZOS), 'img/hero-whip-1600.webp', 70)
     speichere(q.resize((800, 450), Image.LANCZOS), 'img/hero-whip-800.webp', 68)

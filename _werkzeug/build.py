@@ -10,7 +10,7 @@ Texte: _werkzeug/texte.py (alle Sprachen), Strecken-Grunddaten + EN/DE-Streckent
 Aufruf (im Repo-Root):  python _werkzeug/build.py
 Prüft am Ende selbst: Titel ≤ 60, Description ≤ 155 Zeichen, JSON-LD parsebar, hreflang-Gruppen vollständig und gegenseitig.
 Ordner mit „_“ veröffentlicht GitHub Pages (Jekyll) nicht – das Skript bleibt privat.
-Rechtliche Seiten und Presse werden NICHT gebaut (nur EN/DE, ihr <head> wurde einmal von Hand ergänzt).
+Presse (/press/, /presse/) wird mit gebaut (nur EN/DE, samt ZIP-Pressepaket); rechtliche Seiten NICHT (von Hand gepflegt).
 Spiel-Fakten stammen aus dem Spiel-Repo (src/world/track.ts, tracks/*.ts, src/i18n/*.ts, input/tastenBelegung.ts).
 """
 import html
@@ -20,7 +20,7 @@ import re
 import sys
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from texte import PFAD, FAQ, TX, TRACK_TX, DIFF_INTL, TYP_INTL, BILD_ALT, IN_MX  # noqa: E402
+from texte import PFAD, FAQ, TX, TRACK_TX, DIFF_INTL, TYP_INTL, BILD_ALT, IN_MX, PRESSE, PRESSE_SHOTS  # noqa: E402
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SITE = 'https://mxroyale.com'
@@ -230,6 +230,11 @@ footer{padding:40px 16px 60px;color:var(--muted);font-size:15px;border-top:1px s
 footer .wrap{display:flex;flex-wrap:wrap;gap:14px 36px;justify-content:space-between}
 .nav .sprachen{display:flex;gap:0 10px;font-size:14px;letter-spacing:.04em}
 .nav .sprachen a{opacity:.75}.nav .sprachen a[aria-current]{opacity:1;color:var(--gelb)}
+.box{background:var(--bg2);padding:16px 18px;border-left:4px solid var(--gelb);margin:8px 0 18px;white-space:pre-line}
+.box b{display:block;color:var(--gelb);margin-bottom:4px}
+.dl{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px}
+.dl a{display:block;background:var(--bg2);padding:10px;text-decoration:none;color:var(--text);font-size:15px}
+.dl img{width:100%;height:auto;display:block;margin-bottom:6px}
 footer ul{list-style:none;margin:0;padding:0}footer li{margin:4px 0}
 footer a{text-decoration:none}footer a:hover{color:var(--gelb);text-decoration:underline}
 """
@@ -595,6 +600,68 @@ def ueber(lang):
     return seite(lang, pfad, titel, tx(lang, 'about_desc'), body, ld)
 
 
+# ── Presse (nur EN/DE) ─────────────────────────────────────────────────────────────────────────────
+ZIP = '/presse/mx-royale-press-kit.zip'
+
+
+def faktenblatt_txt():
+    c = ctx('en')
+    zeilen = ['MX Royale – fact sheet', f'Last updated: {STAND}', '']
+    zeilen += [f'{k}: {v.format(**c)}' for k, v in TX['en']['about_rows']]
+    zeilen += ['', 'Short description (100 words):', PRESSE['en']['texte'][1][1].format(**c), '',
+               'Website: https://mxroyale.com/  ·  Press: https://mxroyale.com/press/  ·  Contact: press@mxroyale.com', '']
+    return '\n'.join(zeilen)
+
+
+def baue_zip():
+    """Pressepaket als ZIP mit festen Zeitstempeln (gleicher Inhalt → gleiche Datei, kein Git-Rauschen)."""
+    import zipfile
+    ziel = os.path.join(ROOT, ZIP.lstrip('/'))
+    dateien = [('mx-royale-logo-1080.png', 'presse/mxroyale_logo_1080.png'), ('mx-royale-key-art-1920.jpg', 'presse/mxroyale_key_art_1920.jpg')]
+    dateien += [(n, 'presse/' + n) for _, n, _, _ in PRESSE_SHOTS]
+    with zipfile.ZipFile(ziel + '.tmp', 'w', zipfile.ZIP_DEFLATED) as z:
+        for name, rel in dateien:
+            zi = zipfile.ZipInfo('mx-royale-press-kit/' + name, date_time=(2026, 11, 27, 0, 0, 0))
+            z.writestr(zi, open(os.path.join(ROOT, rel), 'rb').read(), compress_type=zipfile.ZIP_STORED)
+        zi = zipfile.ZipInfo('mx-royale-press-kit/factsheet.txt', date_time=(2026, 11, 27, 0, 0, 0))
+        z.writestr(zi, faktenblatt_txt().encode('utf-8'), compress_type=zipfile.ZIP_DEFLATED)
+    os.replace(ziel + '.tmp', ziel)
+    return ziel
+
+
+def pressseite(lang):
+    pfad = PFAD[lang]['press']
+    t, c = PRESSE[lang], ctx(lang)
+    tab = ''.join(f'<tr><th scope="row">{e(k)}</th><td>{e(v.format(**c))}</td></tr>' for k, v in TX[lang]['about_rows'])
+    texte = ''.join(f'<div class="box"><b>{e(k)}</b>{e(v.format(**c))}</div>' for k, v in t['texte'])
+    mb = os.path.getsize(os.path.join(ROOT, ZIP.lstrip('/'))) / 1e6
+    dl = ''.join(f'<a href="/presse/{f}" download><img src="/presse/{f}" alt="{e(n)}" loading="lazy" width="480" height="270" style="object-fit:contain;aspect-ratio:16/9;background:#000">{e(n)}</a>' for f, n in t['dl'])
+    shots = ''.join(
+        f'<a href="/presse/{n}" download><img src="/presse/vorschau/{n.replace(".jpg", "-480.webp")}" width="480" height="270" alt="{e(en_ if lang == "en" else de_)} – MX Royale" loading="lazy">{e(en_ if lang == "en" else de_)}</a>'
+        for _, n, en_, de_ in PRESSE_SHOTS)
+    body = f"""{nav(lang, pfad)}
+<main id="inhalt">
+<section class="seitenkopf"><div class="wrap text">
+  <h1>{t['h1']}</h1>
+  <p class="lead">{e(t['intro'])}</p>
+  <h2>{e(t['h_fakten'])}</h2>
+  <div class="tabelle"><table>{tab}</table></div>
+  <h2>{e(t['h_texte'])}</h2>
+  {texte}
+  <h2>{e(t['h_dl'])}</h2>
+  <p><a href="{ZIP}" download>{e(t['zip'])} · {mb:.1f} MB</a></p>
+  <div class="dl">{dl}</div>
+  <h3 style="margin-top:28px">{e(t['shots'])}</h3>
+  <div class="dl">{shots}</div>
+  <p>{e(t['clips'])}</p>
+  <h2>{e(t['h_kontakt'])}</h2>
+  <p>{t['kontakt']}</p>
+</div></section>
+</main>"""
+    ld = graph(breadcrumb(lang, pfad, t['crumb']))
+    return seite(lang, pfad, t['titel'], t['desc'], body, ld, og_bild=('/presse/mxroyale_key_art_1920.jpg', 1920, 1080, 'MX Royale key art'))
+
+
 # ── Textdateien ────────────────────────────────────────────────────────────────────────────────────
 def bilder_fuer(p):
     """Bilder einer Seite für die Bilder-Sitemap."""
@@ -748,6 +815,12 @@ def main():
             pruefe_ld(txt, pfad)
             seiten[pfad] = txt
             gebaut.append(schreibe(pfad, txt))
+    baue_zip()
+    for lang in ('en', 'de'):
+        txt = pressseite(lang)
+        pruefe_ld(txt, PFAD[lang]['press'])
+        seiten[PFAD[lang]['press']] = txt
+        gebaut.append(schreibe(PFAD[lang]['press'], txt))
     pruefe_hreflang(seiten)
     gebaut.append(schreibe('sitemap.xml', sitemap()))
     gebaut.append(schreibe('robots.txt', robots()))
